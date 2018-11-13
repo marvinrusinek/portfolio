@@ -1,0 +1,52 @@
+#tabbedNavigation {
+  width: 220px;
+}
+
+.navbar {
+  width: 280px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff0f5;
+  display: block;
+  box-shadow: -4px -6px 8px 2px rgba(0,0,0,.5),
+              8px 6px 12px rgba(0,0,0,0.5);
+}
+.nav-item {
+  justify-content: space-around;
+}
+.nav > .nav-item > .active {
+  background-color: #9ACBA4;
+  font-style: oblique;
+}
+.nav-item > a {
+  color: #0275b8;
+  font-weight: 900;
+  font-size: 14px;
+}
+.nav-item:hover {
+  color: lightgray;
+}
+.nav-item > a:hover {
+  background: #9ACBA4;
+}
+
+.nav-item > a:visited:hover {
+  background: #9ACBA4;
+  font-style: oblique;
+}
+
+/* styles for resumeModal */
+h4 {
+  color: #000000;
+}
+
+.resumeModal-custom-class {
+  background-color: rgb(144, 238, 144) !important;
+}
+
+.modal-body > ul li {
+  list-style-type: none;
+  color: #1468a0;
+  padding-bottom: 10px;
+}
+
+

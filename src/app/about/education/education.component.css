@@ -1,0 +1,38 @@
+#education {
+  margin-left: -80px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul.caret li:before {
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  font-weight: bold;
+  float: left;
+  margin-top: 0px;
+  margin-left: -17px;
+  color: #0275d8;
+}
+
+hr {
+  width: 700px;
+  margin-left: 100px;
+  margin-top: 20px;
+  border-color: #228b22;
+}
+
+span.degree {
+  font-weight: bold;
+  color: #36454F;
+}
+
+.coursework {
+  width: 1200px;
+}
+
+.conferencesGrid > .conf_left > ul {
+  margin-left: 0;
+}

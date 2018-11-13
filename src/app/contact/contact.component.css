@@ -1,0 +1,164 @@
+/* @import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+@import '../../../node_modules/foundation-sites/dist/css/foundation.min.css';
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.contact {
+  background-color: #FEF5C6;
+  height: auto;
+}
+
+h2 {
+  margin: 0;
+}
+
+.get-in-touch {
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+.get-in-touch > p {
+  font-size: 22px;
+}
+
+.ul-contact-div {
+  margin-left: 30%;
+  float: left;
+}
+
+.ul-social-media-div {
+  float: left;
+  padding-left: 25px;
+}
+
+ul.ul-contact li, ul.ul-social-media li {
+  list-style-type: none;
+}
+
+ul.ul-contact > img, ul.ul-social-media > img {
+  height: 24px;
+  width: 24px;
+}
+
+ul.ul-contact span {
+  font-size: 18px;
+}
+
+ul.ul-contact span a {
+  text-decoration: none;
+}
+
+ul.ul-contact li {
+  display: block;
+  padding-bottom: 10px;
+}
+
+ul.ul-social-media li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.contactMessageFormContainer {
+  width: 500px;
+  margin-top: 30px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid #28a745 !important;
+  border-radius: 5px 5px 5px 5px;
+
+}
+
+.contactMessage {
+  font-weight: 500;
+  font-size: 22px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+form.contact_form {
+  margin-left: 10px;
+}
+
+input.form-control {
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid #28a745 !important;
+}
+textarea.form-control {
+  border: 2px solid #28a745 !important;
+}
+
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.ng-valid[required], .ng-valid.required  {
+   border-left: 5px solid #42A948;
+}
+
+label, .form-services ul li {
+  color: #0275b8;
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+  font-size: larger;
+}
+
+.form-field-error, .form-error {
+  color: #f54000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+}
+.form-field-error {
+  justify-content: left;
+  padding-left: 10px;
+}
+.form-error {
+  justify-content: center;
+}
+
+.help-block {
+  margin-top: -20px;
+}
+
+.full-name, .email, .message {
+  margin-top: -10px;
+}
+.full-name input, .email input, .message textarea {
+  width: 440px;
+}
+
+.message {
+  height: 270px;
+}
+
+.form-services {
+  margin-top: -90px;
+}
+.form-services ul {
+  margin-left: 19%;
+}
+.form-services ul li {
+  list-style-type: none;
+}
+
+.g-recaptcha {
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  text-align: -o-center;
+  text-align: -ms-center;
+  background-color: #FEF5C6;
+}
+
+button.button {
+  border: 2px solid #000;
+  border-radius: 8px 8px 8px 8px;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: green;
+}

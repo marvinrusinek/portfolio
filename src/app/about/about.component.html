@@ -1,0 +1,26 @@
+<section id="about" class="about container-fluid">
+  <h2 class="mat-h2 heading" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300">About Me</h2>
+
+  <div class="container fluid">
+    <div class="row">
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+        <div class="tab-content">
+          <div class="tab-pane active animated fadeInLeft" id="overview">
+            <app-overview></app-overview>
+          </div>
+          <div class="tab-pane fade animated fadeInLeft" id="education">
+            <app-education></app-education>
+          </div>
+          <div class="tab-pane fade animated fadeInLeft" id="tech-summary">
+            <app-techsummary></app-techsummary>
+          </div>
+        </div>
+      </div>
+      <div class="about-nav col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+        <app-about-navigation></app-about-navigation>
+      </div>
+    </div>
+  </div>
+
+  <app-resume-modal id="resumeModal"></app-resume-modal>
+</section>

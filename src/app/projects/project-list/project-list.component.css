@@ -1,0 +1,224 @@
+ul {
+  list-style-type: none;
+}
+
+mat-card {
+  height: 400px !important;
+  /* border: 3px solid #00FF7F;
+  display: inline-block;
+  /* border: 2px solid #4B3621; */
+  background-color: #EEE;
+  /* background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2)); */
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: -4px -6px 8px 2px rgba(0,0,0,.5),
+              8px 6px 12px rgba(0,0,0,0.5);
+}
+
+mat-card-title > a > h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  height: 300px !important;
+  width: 470px !important;
+  padding-top: 10px;
+  cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  object-fit: fill;
+}
+
+.projectButtons {
+  position: absolute;
+  padding-top: 10px;
+  top: 87%;
+  left: 10%;
+}
+
+button {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: lightgreen; /* old #0E9A00 */
+  color: rgba(65,197,192,0.91);
+  padding: 5px 15px;
+  padding-bottom: -15px;
+  margin-left: 25px;
+  font-size: 16px;
+  border: 3px solid green;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #00FF7F;
+}
+.projectBtn { width: 180px; }
+.codeBtn { width: 150px; }
+.projectBtn:before {
+  background: url('../../../assets/images/project.png');
+}
+.codeBtn:before {
+  background: url('../../../assets/images/filter_icons/code.png');
+}
+.category:before {
+  background: url('../../../assets/images/modal/magnifying-glass.png');
+}
+.technologies:before {
+  background: url('../../../assets/images/modal/laptop.png');
+}
+.projectDurationText:before {
+  background: url('../../../assets/images/modal/calendar.png');
+}
+.projectDescription:before {
+  background: url('../../../assets/images/modal/description.png');
+}
+
+.category:before, .technologies:before, .projectDurationText:before {
+  margin-top: 5px;
+}
+.projectDescription {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.projectBtn:before, .codeBtn:before, .category:before, .technologies:before, .projectDurationText:before, .projectDescription:before {
+  content: '';
+  background-size: cover;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: -25px;
+}
+
+.category {
+  color: darkslategray;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.technologies, .projectDurationText {
+  font-size: 13.5px;
+  font-style: italic;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  overflow: hidden;
+  outline: 0;
+  width: auto;
+  height: 100%;
+}
+
+.modal > p {
+  color: #4B3621;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.modal-custom-class {
+  background-color: rgb(144, 238, 144) !important;
+}
+
+.modal-header > button {
+  border: none;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+button.close {
+  background: none;
+}
+
+button.close:hover {
+  background: none;
+  color: darkslategray;
+}
+
+.modal-title {
+  font-size: 30px !important;
+  margin: 0 auto;
+  color: #2098D1;
+}
+
+.modal-body > img {
+  box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+.modal-body > .img-responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-dialog-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - (.5rem * 2));
+}
+
+.modal-footer > button {
+  margin: 0 auto;
+}
+
+.white {
+  color: white;
+}
+
+.projectModalViewCode {
+  margin-left: 30%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  mat-card {
+    margin-left: -50px;
+    height: 400px !important;
+  }
+  .projectButtons {
+    margin-left: -40px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .projectButtons {
+    margin-left: 15%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .projectButtons {
+    margin-left: -60px;
+  }
+}
+
+

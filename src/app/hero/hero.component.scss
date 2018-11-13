@@ -1,0 +1,20 @@
+#hero {
+  height: 400px;
+  width: 100%;
+}
+
+.container {
+  height: 85vh;
+  overflow: hidden;
+}
+
+.hero {
+  background-image: url("../../assets/images/mydesktopsetup.jpg");
+  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  text-align: center;
+  background-color: #9ACBA4;
+}

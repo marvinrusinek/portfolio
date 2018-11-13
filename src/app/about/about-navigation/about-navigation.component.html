@@ -1,0 +1,64 @@
+<div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+  <nav class="navbar navbar-expand-lg" role="navigation">
+    <ul class="nav nav-tabs nav-stacked navbar-nav flex-column justify-content-center flex-sm-row" id="tabbedNavigation">
+      <li role="presentation" class="nav-item active">
+        <a href="#overview" data-toggle="tab" aria-controls="Overview" aria-selected="true" class="flex-sm-fill text-sm-center nav-link">
+          <strong>
+            <img src="../../../assets/images/tabbednav/info.png">
+            &nbsp;Overview</strong>
+        </a>
+      </li>
+      <li role="presentation" class="nav-item">
+        <a href="#education" data-toggle="tab" aria-controls="Education" class="flex-sm-fill text-sm-center nav-link">
+          <strong>
+            <img src="../../../assets/images/tabbednav/education.png">
+            &nbsp;Education</strong>
+        </a>
+      </li>
+      <li role="presentation" class="nav-item">
+        <a href="#tech-summary" data-toggle="tab" aria-controls="Technical Summary" class="nav-link">
+          <strong>
+            <img src="../../../assets/images/tabbednav/laptop.png">
+            &nbsp;Technical Summary</strong>
+        </a>
+      </li>
+      <li role="presentation" class="nav-item">
+        <a href="#resumeModal" data-toggle="tab" aria-controls="Resume" (click)="open(resumeContent)" class="flex-sm-fill text-sm-center nav-link text-uppercase">
+          <strong>
+            <img src="../../../assets/images/tabbednav/resume.png">
+            &nbsp;R&eacute;sum&eacute;</strong>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<ng-template #resumeContent let-c="close" let-d="dismiss" id="resumeModal">
+  <div class="resumeModal-custom-class">
+    <div class="modal-header">
+      <h4 class="modal-title">R&eacute;sum&eacute;</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <p>Click below to download a printable r&eacute;sum&eacute;.</p>
+      <ul>
+        <li>
+          <img src="../../../assets/images/modal/msword.png">
+          &nbsp;&nbsp;<a href="http://www.marvinrusinek.com/assets/resume/RusinekMarvinResume_111218.doc" target="_blank">MS Word R&eacute;sum&eacute;</a>
+        </li>
+        <li>
+          <img src="../../../assets/images/modal/pdf.png">
+          &nbsp;&nbsp;<a href="http://www.marvinrusinek.com/assets/resume/RusinekMarvinResume_111218.pdf" target="_blank">PDF R&eacute;sum&eacute;</a>
+        </li>
+        <li>
+          <img src="../../../assets/images/modal/google-docs.png">
+          &nbsp;&nbsp;<a href="https://docs.google.com/document/d/1RxT_XAxUoI-lNpHr-37J0zG38f1xE1_iBE040j-x74g" target="_blank">Google Docs R&eacute;sum&eacute;</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</ng-template>
+

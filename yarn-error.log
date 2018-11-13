@@ -1,0 +1,104 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @fortawesome/fontawesome-svg-core \ yarn add @fortawesome/free-solid-svg-icons \ yarn add @fortawesome/angular-fontawesome
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files (x86)\Brackets\command;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\System32\OpenSSH\;C:\Ruby24-x64\bin;C:\Program Files\Sublime Text 3;C:\Users\multi\AppData\Local\Microsoft\WindowsApps;C:\Development\android-sdk\platform-tools;C:\Development\android-sdk\tools;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\multi\AppData\Local\atom\bin;C:\Users\multi\AppData\Local\Microsoft\WindowsApps;C:\Users\multi\AppData\Roaming\npm;C:\Users\multi\AppData\Local\Yarn\bin;C:\Program Files\Heroku\bin;
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "portfolio-web3",
+    "version": "0.0.0",
+    "main": "app.js",
+    "license": "MIT",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build --prod",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/animations": "6.0.0",
+      "@angular/cdk": "6.0.0",
+      "@angular/common": "6.0.0",
+      "@angular/compiler": "6.0.0",
+      "@angular/core": "6.0.0",
+      "@angular/flex-layout": "^6.0.0-beta.15",
+      "@angular/forms": "6.0.0",
+      "@angular/http": "6.0.0",
+      "@angular/material": "6.0.0",
+      "@angular/platform-browser": "6.0.0",
+      "@angular/platform-browser-dynamic": "6.0.0",
+      "@angular/router": "6.0.0",
+      "@ng-bootstrap/ng-bootstrap": "^1.0.2",
+      "angular-font-awesome": "^3.1.2",
+      "angularfire2": "^5.0.0-rc.6",
+      "body-parser": "^1.18.3",
+      "bootstrap": "^4.1.1",
+      "compass": "^0.1.1",
+      "core-js": "^2.4.1",
+      "express": "^4.16.3",
+      "express-handlebars": "^3.0.0",
+      "firebase": "^4.12.0",
+      "font-awesome": "^4.7.0",
+      "foundation-sites": "^6.4.4-rc1",
+      "hexo": "^3.7.1",
+      "intersection-observer": "^0.5.0",
+      "ionicons": "^4.1.2",
+      "isotope": "^1.0.0-alpha.3",
+      "isotope-layout": "^3.0.5",
+      "jquery": "^3.3.1",
+      "json-server": "^0.12.2",
+      "ngx-bootstrap": "^2.0.3",
+      "ngx-lazy-load-images": "^1.3.1",
+      "ngx-scrollspy": "^1.2.0",
+      "nodemailer": "^4.6.7",
+      "popper.js": "^1.14.3",
+      "rxjs": "^6.1.0",
+      "rxjs-compat": "^6.0.0",
+      "zone.js": "^0.8.26"
+    },
+    "devDependencies": {
+      "@angular/cli": "6.0.0",
+      "@angular/compiler-cli": "6.0.0",
+      "@angular/language-service": "6.0.0",
+      "@types/jasmine": "~2.8.3",
+      "@types/jasminewd2": "~2.0.2",
+      "@types/node": "~6.0.60",
+      "codelyzer": "^4.0.1",
+      "jasmine-core": "~2.8.0",
+      "jasmine-spec-reporter": "~4.2.1",
+      "jquery": "^3.3.1",
+      "karma": "~2.0.0",
+      "karma-chrome-launcher": "~2.2.0",
+      "karma-coverage-istanbul-reporter": "^1.2.1",
+      "karma-jasmine": "~1.1.0",
+      "karma-jasmine-html-reporter": "^0.2.2",
+      "motion-ui": "^1.2.3",
+      "protractor": "~5.1.2",
+      "ts-node": "~4.1.0",
+      "tslint": "~5.9.1",
+      "typescript": "2.7.2",
+      "@angular-devkit/build-angular": "~0.6.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, lstat 'C:\Config.Msi'

@@ -1,36 +1,231 @@
 @import url("../../styles/fontawesome-all.min.css");
 
-.experience {
-  background-color: lightseagreen;
+.services {
+  background-color: #20B2AA;
   height: auto;
 }
 
-.my-services {
-  padding-top: 35px;
-  margin-left: 15px;
+.flex-container {
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  max-width: 1200px;
+  height: auto;
+  text-align: center;
 }
 
-.my-services > .servicesSection {
-  width: 33.333333%;
+.flex-container > * { flex: 1 100%; }
+
+.col {
+  padding: 20px;
+}
+
+.my-services > .fluid {
+  flex: 1 100%;
+}
+
+.my-services > .row .flex-item {
+  display: inline-block;
+  flex: 0 1 auto;
+  width: 350px;  /* Or whatever */
+  height: auto; /* Or whatever */
+  margin: 0px;  /* Magic! */
   float: left;
-  padding-right: 10px;
-  display: block;
+}
+
+.my-services > .row span {
+  background-color: #fff;  /* old #0275d8 */
+  width: 112px;
+  height: 112px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #1d809f;
+  line-height: 120px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.my-services > .row span i {
+  font-size: 40px;
+  contain: none;
   text-align: center;
-  height: 400px;
-  margin: 0 auto;
 }
-.servicesSection > .far, .servicesSection > .fas  {
-  margin-left: 25%;
-  margin: 0 auto;
+
+.my-services > .row span img {
+  margin-top: -5px;
+  contain: none;
   text-align: center;
 }
-.servicesSection > h4 {
-  margin: 15px 0;
-  font-weight: bold;
-  padding-top: 15px;
+
+.my-services > .row h4 {
+  font-family: inherit;
+  font-weight: 800;
+  line-height: 1.2;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
-.servicesSection > p {
+
+.my-services > .row p {
   font-size: 16px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials {
+  margin-left: 125px;
+  width: 1000px;
+  height: 250px;
+}
+
+.testimonials li {
+  display: none;
+  list-style: none;
+}
+
+.testimonials ul {
+  list-style: none;
+}
+
+.testimonials p.author {
+  color: #007bff;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  margin: 10px;
+}
+
+.testimonialsIndent {
+  margin-left: 0px;
+}
+
+blockquote {
+  font-size: 24px;
+  padding: 10px 0 0px 50px;
+  border-left: 5px solid #006400;
+}
+
+blockquote p {
+  color: #353839;
+}
+
+blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}
+
+.otherServices > p {
+  margin-left: 100px;
+}
+
+.otherServiceType {
+  font-weight: bold;
+}
+
+.specialization-statement {
+  margin-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  color: #4B3621;
+}
+
+.contactCTA {
+  margin-top: 0px;
+}
+
+.contactCTA > button {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.contactButtonLink {
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .flex-container {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    margin-left: 25px;
+  }
+  .testimonials {
+    margin-left: -50px;
+    height: auto;
+  }
+  .testimonials > blockquote {
+    margin-left: -40px;
+  }
+  .testimonials > ul > li > blockquote > p {
+    margin-top: -10px;
+    font-size: 14px;
+    width: 15em;
+    display: block;
+    overflow: hidden;
+  }
+  .testimonials p.author {
+    text-align: center;
+    width: 10em;
+    margin-left: 150px;
+    display: block;
+  }
+  .otherServices > p {
+    left: 0;
+    width: 10em !important;
+    text-align: left;
+    margin-left: -800px !important;
+    display: block;
+  }
+  .otherServices > button {
+    left: 0;
+    text-align: left;
+    margin-left: -450px;
+    padding-top: 15px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .flex-container {
+    justify-content: space-around;
+    margin-left: 40px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .flex-container {
+    justify-content: space-around;
+    margin-left: 85px;
+  }
+  .otherServices {
+    margin-top: -20px;
+  }
 }

@@ -1,0 +1,29 @@
+@import url("../../styles/fontawesome-all.min.css");
+
+.footer {
+  background-color: #D56C6F;
+  height: 125px;
+  margin-top: -10px;
+  border-top: none;
+  padding-top: 15px;
+}
+
+img {
+  margin-top: -5px;
+}
+
+.development {
+  margin-top: 10px;
+}
+
+.development, .copyright {
+  font-size: 1.5em;
+}
+
+.flaticonstmt {
+  padding-bottom: 15px;
+  margin-left: -20px;
+  margin-right: -15px;
+  margin-top: -5px;
+  background-color: #D56C6F;
+}

@@ -1,0 +1,237 @@
+/* @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'; */
+
+header {
+  background-color: #4ABDAC;
+  width: 100%;
+}
+
+.logo {
+  margin-top: -25px;
+  padding-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.nav-link.active {
+  /*background-color: #9ACBA4;
+  border-radius: 5px 5px 5px 5px; */
+  border-bottom: 3px solid #0275d8;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+fa, .fab {
+  color: #1357ff;
+  font-size: 20px;
+}
+
+
+ul.menu {
+  margin-left: -20px;
+}
+
+ul li {
+  padding-right: 5px;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+  padding-right: 40px;
+  margin-top: 15px;
+  margin-left: 75px;
+  background: #4ABDAC;
+}
+
+.navbar-brand a:hover {
+  background: none;
+}
+
+a > span.navbar-text {
+  font-size: 3em;
+  color: #0275d8;
+  font-weight: bold;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+               0px -5px 35px rgba(255,255,255,0.3);
+}
+
+span {
+  color: #0275d8; /* should probably be different color */
+  font-weight: bold;
+}
+
+.fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  top: 0;
+  border-width: 0 0 1px;
+  background-color: #4ABDAC;
+}
+
+.navbar {
+  margin-bottom: 10px;
+  background-color: #4ABDAC;
+}
+
+.navbar-brand {
+  margin-top: -10px;
+}
+
+ul.navbar-nav {
+  padding-left: 70px;
+  margin-top: -45px;
+  background-color: #4ABDAC;
+  margin-bottom: -40px;
+}
+
+span.nav-span {
+  text-transform: uppercase;
+}
+
+.moveAvatar {
+  padding-top: 100px;
+}
+
+.social-container {
+  margin: 0 auto;
+  border-left: 1px solid rgba(255,255,255,0.15) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+  height: 60px;
+}
+
+.lefticons {
+  float: left;
+  margin-top: 15px;
+}
+
+.lefticons > ul li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 12.5px;
+}
+
+.fa > fa {
+  margin-bottom: 10px;
+}
+
+.righticons {
+  float: left;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.righticons > ul li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 12.5px;
+}
+.righticons > li.search-icon {
+  margin-top: 20px;
+}
+/* for underlink animation!
+li > span.nav-span {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+li > span.nav-span:hover {
+  color: #000;
+}
+
+li > span.nav-span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 5px;
+  left: 0;
+  background-color: #0275d8;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+li > span.nav-span:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+} */
+
+/* media queries that change logo size depending on screen size */
+@media (max-width: 575px) {
+  a > span.navbar-text {
+    font-size: 1.2em;
+    margin-top: -45px;
+    margin-left: -40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  a > span.navbar-text {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  a > span.navbar-text {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  a > span.navbar-text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 575px) {
+  button.navbar-toggler {
+    margin-top: -60px;
+  }
+}
+
+/* rotate the hamburger button on toggle */
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: 0;
+}
+
+.navbar-toggler span {
+  display: block;
+  height: 20px;
+  width: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1) {
+  -webkit-transition: transform .35s ease-in-out;
+  -moz-transition: transform .35s ease-in-out;
+  -o-transition: transform .35s ease-in-out;
+  transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  opacity: 0.9;
+}

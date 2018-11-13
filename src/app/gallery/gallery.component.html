@@ -1,0 +1,55 @@
+<section id="portfolio" class="portfolio container-fluid">
+  <h2 class="mat-h2 heading"
+      data-sal-duration="600"
+      data-sal="slide-up"
+      data-sal-delay="300"
+  >Portfolio</h2>
+
+    <div class="row">
+      <article class="portfolioIntro col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+           data-sal-duration="300"
+           data-sal="slide-up"
+           data-sal-delay="300"
+        >The following is a gallery of projects that I have worked on professionally and as part of my studies showcasing my programming and web development skills. <!--Projects are grouped by skill. Clicking on a filter button will allow you to inspect projects I&apos;ve worked on that utilize that particular skill. Projects within a category are dynamically sorted (and displayed from most recent to oldest). Clicking on the title below the image will bring you directly to the runnable project. Clicking the &ldquo;View Project&rdquo; button will bring up a popup window with an expanded image of the project which is then linked to the runnable project along with project information such as categories, time period, technologies used and description. Clicking the &ldquo;View Code&rdquo; button will bring you to the respective <strong><a href="https://github.com/marvinrusinek" data-toggle="tooltip" data-placement="bottom" title="Marvin Rusinek GitHub account" target="_blank">GitHub</a></strong> source code repo where you can gain a sense of my process.--> Please <strong><a href="#contact">contact me</a></strong> below if you are in need of someone with my skill set.</p>
+      </article>
+    </div>
+
+    <br clear="all" />
+
+    <div class="filtersIndent">
+      <div class="filters button-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+           data-sal-duration="600"
+           data-sal="slide-up"
+           data-sal-delay="300">
+        <span><em>Filter By:</em>&nbsp;&nbsp;</span>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="ng" style="width: 200px">
+          <img src="../../assets/images/filter_icons/angular.png" alt="Angular">&nbsp;Angular</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="web">
+          <img src="../../assets/images/filter_icons/frontend.png" alt="Front-End">&nbsp;&nbsp;Front-End</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="ux">
+          <img src="../../assets/images/filter_icons/ux.png" alt="UX">&nbsp;&nbsp;UX</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="php">
+          <img src="../../assets/images/filter_icons/php.png" alt="PHP">&nbsp;&nbsp;PHP</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="net">
+          <img src="../../assets/images/filter_icons/net-logo.png" height="16" width="16" alt=".NET">&nbsp;&nbsp;.NET</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="xml">
+          <img src="../../assets/images/filter_icons/xml-file.png" alt="XML">&nbsp;&nbsp;XML</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="cms">
+          <img src="../../assets/images/filter_icons/cms.png" alt="CMS">&nbsp;&nbsp;CMS</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="mob">
+          <img src="../../assets/images/filter_icons/mobile.png" alt="Mobile">&nbsp;Mobile</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="pro">
+          <img src="../../assets/images/filter_icons/code.png" alt="Programs">&nbsp;Programs</button>
+        <button type="button" class="button col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1" data-filter="all">
+          <img src="../../assets/images/filter_icons/grid.png" alt="show all">&nbsp;&nbsp;ALL</button>
+      </div>
+    </div>
+    <br clear="all" />
+
+    <div class="grid-indent">
+      <div class="myPortfolioGrid grid-container fluid grid-x grid-padding-x" lazy-load-images>
+        <app-project-list></app-project-list>
+      </div>
+    </div>
+</section>

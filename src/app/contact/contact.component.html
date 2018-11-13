@@ -1,0 +1,131 @@
+<section id="contact" class="contact container-fluid xxxsmall-12 xxsmall-12 xsmall-12 small-12 medium-12 large-12 xlarge-12 cell">
+  <h2 class="mat-h2 heading"
+      data-sal-duration="600"
+      data-sal="slide-up"
+      data-sal-delay="300">Contact</h2>
+
+  <br clear="all" />
+
+  <div class="get-in-touch">
+    <p class="text-center">If you have any questions or concerns, please do not hesitate to contact me.<br clear="left" />
+      I will answer your request in 24 hours by e-mail.</p>
+    <div class="ul-contact-div">
+      <ul class="ul-contact">
+        <li>
+          <img src="../../assets/images/SM/mail_icon.png" height="24" width="24">&nbsp;&nbsp;
+          <span><a href="mailto:marvinrusinek@gmail.com">marvin [dot] rusinek [at] gmail [dot] com</a></span>
+        </li>
+        <li>
+          <img src="../../assets/images/SM/pin.png">&nbsp;&nbsp;
+          <span>Brooklyn, NY</span>
+        </li>
+      </ul>
+    </div>  <!-- end of ul-contact-div -->
+    <div class="ul-social-media-div">
+      <ul class="ul-social-media">
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/marvinrusinek" aria-label="LinkedIn">
+            <img src="../../assets/images/SM/linkedin.gif">
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/marvinrusinek" aria-label="GitHub">
+            <img src="../../assets/images/SM/github.png" height="32" width="32">
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </div>  <!-- end of ul-social-media-div -->
+  </div>  <!-- end of get-in-touch div -->
+
+  <br clear="left" />
+  <div>
+        <div class="contactMessageFormContainer" *ngIf="!submittedForm">
+            <p class="contactMessage">Feel free to reach out below.</p>
+            <form class="contact_form" method="POST" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <!--<div class="form-group requestType">
+              <label for="requestType">Request Type <span class="required">*</span></label>
+              <select
+                id="requestType"
+                class="form-control"
+                formControlName="requestType">
+                <option *ngFor="let requestType of requestTypes"
+                        [value]="requestType">{{ requestType }}</option>
+              </select>
+              <span *ngIf="!contactForm.get('requestType').valid && contactForm.get('requestType').touched">The request type is invalid!</span>
+            </div>-->
+              <div class="full-name">
+                <label for="fullName">Full Name: <span class="required">*</span></label>
+                <input type="text" class="form-control" formControlName="fullName" id="fullName" aria-label="Full Name" aria-required="true" placeholder="Enter your full name&hellip;">
+                  <span *ngIf="!contactForm.get('fullName').valid && contactForm.get('fullName').touched" class="help-block form-field-error" style="margin-top: -20px">
+                    <span *ngIf="contactForm.get('fullName').errors['required']">Full Name is required!</span>
+                </span>
+              </div>
+
+              <div class="email form-group">
+                <label for="emailAddress">E-mail Address: <span class="required">*</span></label>
+                <input type="email" class="form-control" formControlName="emailAddress" id="emailAddress"  aria-label="E-Mail Address" aria-required="true" placeholder="Enter your e-mail address&hellip;">
+                <span *ngIf="!contactForm.get('emailAddress').valid && contactForm.get('emailAddress').touched" class="help-block form-field-error" style="margin-top: -20px">
+                  <span *ngIf="contactForm.get('emailAddress').errors['required']">E-mail address is required!</span>
+                </span>
+              </div>
+
+          <!--<div class="subject form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <input type="text" class="form-control" formControlName="subject" id="subject" aria-required="true">
+              <span *ngIf="!contactForm.get('subject').valid && contactForm.get('subject').touched" class="help-block">
+                <span *ngIf="contactForm.get('subject').errors['required']">Subject is required!</span>
+              </span>
+          </div>-->
+
+              <div class="message form-group">
+                <label for="message">Message: <span class="required">*</span></label>
+                <textarea type="text" class="form-control" formControlName="message" id="message" rows="4" aria-label="Message" aria-required="true" placeholder="Enter your message&hellip;"></textarea>
+                <span *ngIf="!contactForm.get('message').valid && contactForm.get('message').touched" class="help-block form-field-error" style="margin-top: -20px">
+                  <span *ngIf="contactForm.get('message').errors['required']">Message is required!</span>
+                </span>
+              </div>
+
+
+              <div class="form-services">
+                <h5 class="text-center">What services are you interested in?</h5>
+                <ul>
+                  <li>
+                    <input type="checkbox" class="checkbox">&nbsp;&nbsp;Web Development
+                  </li>
+                  <li>
+                    <input type="checkbox" class="checkbox">&nbsp;&nbsp;UI/UX Design
+                  </li>
+                  <li>
+                    <input type="checkbox" class="checkbox">&nbsp;&nbsp;Mobile Apps
+                  </li>
+                  <li>
+                    <input type="checkbox" class="checkbox">&nbsp;&nbsp;Search Engine Optimization (SEO)
+                  </li>
+                  <li>
+                    <input type="checkbox" class="checkbox">&nbsp;&nbsp;Digital Marketing
+                  </li>
+                </ul>
+              </div>
+
+              <span *ngIf="!contactForm.valid && contactForm.touched" class="help-block form-error">Please enter valid data!</span>
+
+              <div class="g-recaptcha" data-sitekey="6LdG5GIUAAAAALlBFC7aS1By9hT6wKZmwTFDiXjI"></div>
+
+              <div class="form-group text-center">
+                <button mat-raised-button type="submit" class="button bg-success hvr-rectangle-out">
+                  <strong>Submit Your Request</strong>
+                </button>
+              </div>
+            </form>
+        </div>
+        <div *ngIf="submittedForm">
+            <h5 class="text-center">Message has been sent successfully!</h5>
+        </div>
+  </div>
+  <!--
+  <div>Form status: {{contactForm.status}}</div>
+  <pre>{{contactForm.value | json}}</pre> -->
+  <br clear="all" />
+</section>
