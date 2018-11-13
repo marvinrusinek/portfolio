@@ -1,0 +1,36 @@
+@import url("../../styles/fontawesome-all.min.css");
+
+.experience {
+  background-color: lightseagreen;
+  height: auto;
+}
+
+.my-services {
+  padding-top: 35px;
+  margin-left: 15px;
+}
+
+.my-services > .servicesSection {
+  width: 33.333333%;
+  float: left;
+  padding-right: 10px;
+  display: block;
+  text-align: center;
+  height: 400px;
+  margin: 0 auto;
+}
+.servicesSection > .far, .servicesSection > .fas  {
+  margin-left: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
+.servicesSection > h4 {
+  margin: 15px 0;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.servicesSection > p {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

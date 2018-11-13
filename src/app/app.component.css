@@ -1,0 +1,28 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+.show-scroll {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+}
+
+.fa {
+  padding: 12px 14px 14px;
+  background-color: #016f86;
+  color: #fff;
+  font-size: 18px;
+  line-height: 10px;
+  cursor: pointer;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #about.container-fluid { width: 570px; }
+  #about > #overview > article { margin-left: 0px; }
+  #about > #overview > article > img { width: 200px; }
+}
