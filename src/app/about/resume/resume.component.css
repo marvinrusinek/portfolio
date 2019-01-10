@@ -1,0 +1,16 @@
+#resume {
+  margin-left: 35%;
+  margin-top: 25px;
+  overflow-y: hidden;
+}
+
+p::first-letter {
+  font-size: 150%;
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: #0275b8;
+}

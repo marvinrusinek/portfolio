@@ -11,7 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
@@ -25,6 +25,8 @@
               "node_modules/foundation-sites/dist/css/foundation.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/sal.js/dist/sal.css",
+              "node_modules/slick-carousel/slick/slick.css",
+              "node_modules/slick-carousel/slick/slick-theme.css",
               "src/styles/fontawesome-all.min.css",
               "src/styles/animate.css",
               "src/styles/styles-app-loading.scss",
@@ -32,11 +34,11 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/sal.js/dist/sal.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/foundation-sites/dist/js/foundation.min.js",
-              "node_modules/isotope-layout/dist/isotope.pkgd.min.js"
+              "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
+              "src/js/main.js"
             ]
           },
           "configurations": {
@@ -57,6 +59,14 @@
                 }
               ]
             }
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "src/tsconfig.server.json"
           }
         },
         "serve": {
@@ -86,10 +96,8 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/sal.js/dist/sal.js",
-              "node_modules/foundation-sites/dist/js/foundation.min.js",
-              "node_modules/foundation-sites/js/foundation.magellan.js",
-              "node_modules/foundation-sites/js/foundation.core.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/foundation-sites/dist/js/foundation.min.js",
               "node_modules/isotope-layout/dist/isotope.pkgd.min.js"
             ],
             "styles": [

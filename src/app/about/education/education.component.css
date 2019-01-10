@@ -1,5 +1,7 @@
 #education {
-  margin-left: -80px;
+  margin-top: 25px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 li {
@@ -15,6 +17,11 @@ ul.caret li:before {
   margin-top: 0px;
   margin-left: -17px;
   color: #0275d8;
+}
+
+ul li > a {
+  color: rgb(2, 117, 184) !important;
+  font-weight: 700;
 }
 
 hr {
@@ -35,4 +42,8 @@ span.degree {
 
 .conferencesGrid > .conf_left > ul {
   margin-left: 0;
+}
+
+.conf_left, .conf_right {
+  float: left;
 }

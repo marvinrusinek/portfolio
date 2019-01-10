@@ -50,14 +50,14 @@
         "categoryClass": "web",
         "categoryFullNames": "Front-End",
         "projectUrl": "http://www.marvinrusinek.com/portfolio/travel_to_lg/",
-        "codeUrl": "NONE",
+        "codeUrl": "https://github.com/marvinrusinek/TravelToLakeGeorge",
         "imagePath": "../../assets/images/travel_to_lg.jpg",
         "imageTitle": "Travel to Lake George website",
         "title": "\"Travel to Lake George\" website",
         "dateStarted": "2009-07-01",
         "dateCompleted": "2009-07-15",
         "technologies": "HTML, CSS and JavaScript",
-        "description": "Developed for final project of \"Advanced Web Design\" course at Pratt Institute, Summer 2009."
+        "description": "Developed for final project of \"Advanced Web Design\" course at Pratt Institute, Summer 2009. The site was created in Adobe Dreamweaver and uses a spry navigation scheme. I created a Flash slideshow for the homepage and reated a slideshow with Adobe Bridge for the Gallery page."
       },
       {
         "id": 5,
@@ -65,14 +65,14 @@
         "categoryClass": "web php",
         "categoryFullNames": "Front-End, PHP",
         "projectUrl": "http://www.marvinrusinek.com/portfolio/GadgetLibNYU/",
-        "codeUrl": "NONE",
+        "codeUrl": "https://github.com/marvinrusinek/GadgetLibrary",
         "imagePath": "../../assets/images/gadgetlib.jpg",
         "imageTitle": "GadgetLibrary website",
         "title": "GadgetLibrary website",
         "dateStarted": "2010-01-15",
         "dateCompleted": "2010-05-15",
         "technologies": "PHP and MySQL (WAMP Stack), HTML, CSS and JavaScript",
-        "description": "Developed for final project of \"Creating Interactive Websites with PHP\" course at Pratt Institute, Spring 2010."
+        "description": "Developed for final project of \"Creating Interactive Websites with PHP\" course at Pratt Institute, Spring 2010. I wanted to add the ability to add images to the MySQL relational database but couldn't quite figure it out due to time constraints."
       },
       {
         "id": 6,
@@ -87,7 +87,9 @@
         "dateStarted": "2010-01-15",
         "dateCompleted": "2010-05-15",
         "technologies": "Omeka Content Management System, ImageMagick, HTML and CSS",
-        "description": "Developed for \"Projects in Digital Archives\" course at Pratt Institute, Spring 2010."
+        "description": "Developed for \"Projects in Digital Archives\" course at Pratt Institute, Spring 2010.",
+        "problem": "The Dalton School needed a website for its 55 oral histories and reached out to the Digital Archives professor at Pratt Institute who agreed to take on the project.",
+        "solution": "The Digital Archives class at Pratt Institute digitized the oral histories and placed the files and associated metadata into Omeka CMS and hosted the website on the Pratt website."
       },
       {
         "id": 7,
@@ -102,7 +104,9 @@
         "dateStarted": "2010-07-15",
         "dateCompleted": "2010-08-15",
         "technologies": "Drupal 7",
-        "description": "Developed for final project of \"Management of Digital Content\" course at Pratt Institute, Summer 2010 (archived by archive.org)."
+        "description": "Developed for final project of \"Management of Digital Content\" course at Pratt Institute, Summer 2010 (archived by archive.org).",
+        "problem": "There aren't that many personal stamp collections out there, so we decided to create one as part of our final project for our \"Management of Digital Content\" course.",
+        "solution": "The Drupal site that we developed is for a personal digital stamp collection collected from 1993 to 1998 that consists of 161 stamps from 10 countries. Fifteen of the stamps are featured on the website including the ability to zoom in on the stamp image, sort by tags, collection slideshow and slideshow of the actual stamp album."
       },
       {
         "id": 8,
@@ -117,7 +121,9 @@
         "dateStarted": "2011-10-01",
         "dateCompleted": "2012-05-01",
         "technologies": "ASP.NET MVC 4, SQL Server, Entity Framework, C#, jQuery",
-        "description": "Developed during the \"Advanced ASP.NET\" course (Fall 2011) and \"ASP.NET MVC with SQL Server and Entity Framework\" (Spring 2012) course at NYU SPS."
+        "description": "Developed during the \"Advanced ASP.NET\" course (Fall 2011) and \"ASP.NET MVC with SQL Server and Entity Framework\" (Spring 2012) course at NYU SPS.",
+        "problem": "",
+        "solution": ""
       },
       {
         "id": 9,
@@ -154,7 +160,7 @@
         "category": "web",
         "categoryClass": "web",
         "categoryFullNames": "Front-End",
-        "projectUrl": "NONE",
+        "projectUrl": "http://www.marvinrusinek.com/portfolio/David-Chu's-China-Bistro/",
         "codeUrl": "https://github.com/marvinrusinek/html-css-js-for-web-dev/tree/gh-pages/module5-solution",
         "imagePath": "../../assets/images/davidchu-final.jpg",
         "imageTitle": "David Chu's China Bistro",
@@ -162,7 +168,7 @@
         "dateStarted": "2016-07-15",
         "dateCompleted": "2016-08-01",
         "technologies": "HTML, CSS, JavaScript/AJAX, JSON",
-        "description": "Developed a basic website for the client, David Chu's China Bistro, for the Coursera \"HTML, CSS and JavaScript\" course, Summer 2016. The site utilizes JSON and AJAX to dynamically display content."
+        "description": "Developed a basic website for the client, David Chu's China Bistro, for the Coursera \"HTML, CSS and JavaScript\" course, Summer 2016. The menu section is fully-functional and utilizes JSON and AJAX to dynamically display content."
       },
       {
         "id": 12,
@@ -200,14 +206,14 @@
         "categoryClass": "ng",
         "categoryFullNames": "AngularJS",
         "projectUrl": "http://www.marvinrusinek.com/AlbumFinder",
-        "codeUrl": "NONE",
+        "codeUrl": "https://github.com/marvinrusinek/AlbumFinder",
         "imagePath": "../../assets/images/albumfinder.jpg",
         "imageTitle": "AlbumFinder",
         "title": "AlbumFinder",
         "dateStarted": "2018-01-01",
         "dateCompleted": "2018-01-05",
-        "technologies": "AngularJS, Angular UI Grid, HTML, CSS, JavaScript/jQuery and Bootstrap",
-        "description": "Worked on a small side-project AlbumFinder that explored the Apple iTunes API. The grid provides the capability to save album data to a .csv, .pdf, or .xls file."
+        "technologies": "AngularJS 1.4.8, Angular UI Grid 4.1.3, HTML5, CSS, JavaScript/jQuery and Bootstrap",
+        "description": "Worked on a small side-project AlbumFinder that explored the Apple iTunes API. The grid provides the capability to save album data to an external .csv, .pdf, or .xls file."
       },
       {
         "id": 15,
@@ -275,7 +281,7 @@
         "categoryClass": "xml",
         "categoryFullNames": "XML",
         "projectUrl": "http://findingaids.cjh.org/?pID=365446",
-        "codeUrl": "NONE",
+        "codeUrl": "https://raw.githubusercontent.com/marvinrusinek/finding-aids-AJHS/master/American_Jewish_Congress.xml",
         "imagePath": "../../assets/images/AJCongress.jpg",
         "imageTitle": "American Jewish Congress finding aid",
         "title": "American Jewish Congress finding aid",
@@ -290,7 +296,7 @@
         "categoryClass": "xml",
         "categoryFullNames": "XML",
         "projectUrl": "http://findingaids.cjh.org/?pID=1444229",
-        "codeUrl": "NONE",
+        "codeUrl": "https://github.com/marvinrusinek/finding-aids-AJHS/blob/master/American_Association_for_Ethiopian_Jews.xml",
         "imagePath": "../../assets/images/AAEJ.jpg",
         "imageTitle": "American Association for Ethiopian Jews (AAEJ) finding aid",
         "title": "AAEJ finding aid",
@@ -305,7 +311,7 @@
         "categoryClass": "xml",
         "categoryFullNames": "XML",
         "projectUrl": "http://findingaids.cjh.org/?pID=338009",
-        "codeUrl": "NONE",
+        "codeUrl": "https://raw.githubusercontent.com/marvinrusinek/finding-aids-AJHS/master/National_Conference_on_Soviet_Jewry.xml",
         "imagePath": "../../assets/images/NCSJ.jpg",
         "imageTitle": "National Conference on Soviet Jewry (NCSJ) finding aid",
         "title": "NCSJ finding aid",
@@ -320,7 +326,7 @@
         "categoryClass": "xml",
         "categoryFullNames": "XML",
         "projectUrl": "http://findingaids.cjh.org/?pID=186993",
-        "codeUrl": "NONE",
+        "codeUrl": "https://github.com/marvinrusinek/finding-aids-AJHS/blob/master/National_Jewish_Welfare_Board.xml",
         "imagePath": "../../assets/images/NJWB.jpg",
         "imageTitle": "National Jewish Welfare Board (NJWB) finding aid",
         "title": "NJWB finding aid",
@@ -335,7 +341,7 @@
         "categoryClass": "xml",
         "categoryFullNames": "XML",
         "projectUrl": "http://findingaids.cjh.org/?pID=109184",
-        "codeUrl": "NONE",
+        "codeUrl": "https://raw.githubusercontent.com/marvinrusinek/finding-aids-AJHS/master/CeciliaRazovsky.xml",
         "imagePath": "../../assets/images/Razovsky.jpg",
         "imageTitle": "Cecilia Razovsky finding aid",
         "title": "Cecilia Razovsky finding aid",
@@ -394,15 +400,15 @@
         "category": "web, ng",
         "categoryClass": "web ng",
         "categoryFullNames": "Front-End, Angular",
-        "projectUrl": "http://ng-recipe-book-deployment-mrusinek.s3-website-us-east-1.amazonaws.com/",
-        "codeUrl": "https://github.com/marvinrusinek/Udemy-Angular5-RecipeProject-ngUniversal",
+        "projectUrl": "http://www.marvinrusinek.com/ng-recipe-book/",
+        "codeUrl": "https://github.com/marvinrusinek/Angular6-Udemy-RecipeProject-optimizations-final",
         "imagePath": "../../assets/images/ng-recipe-book.jpg",
         "imageTitle": "Angular Recipe Book application",
         "title": "ng-recipe-book",
         "dateStarted": "2018-01-01",
         "dateCompleted": "2018-03-15",
-        "technologies": "Angular 5 with NgRx and Firebase, HTML, CSS, Bootstrap",
-        "description": "Developed a fully-functional Recipe Book application with Recipes and Shopping List modules using Angular 5 as final project for the \"Angular 5 - The Complete Guide\" course on Udemy. App uses the NgRx library for state management and user authentication is achieved with Firebase on the backend."
+        "technologies": "Angular 6 with NgRx and Firebase, HTML, CSS, Bootstrap",
+        "description": "Developed a fully-functional Recipe Book app with Recipes and Shopping List modules using Angular 6 as final project for the \"Angular 6 - The Complete Guide\" course on Udemy. The app uses the NgRx library for state management and user authentication is achieved with Firebase on the backend. (Please note that the app was originally created in Angular 5 and previously deployed to AWS as shown in the above image and the app was then upgraded to Angular 6 in November 2018.)"
       },
       {
         "id": 28,
@@ -447,6 +453,6 @@
         "dateStarted": "2000-11-01",
         "dateCompleted": "2000-12-01",
         "technologies": "C++",
-        "description": "Programmed a simulation of the NYC Subway System using the Bellman-Ford algorithm to compute shortest path(s) between any two stations. The project received the Best Individual Project Award in the Advanced Algorithms in C++ class at Polytechnic University, Fall 2000."
+        "description": "Programmed a simulation of the NYC Subway System using the Bellman-Ford algorithm to compute shortest path(s) between any two stations. The project received the Best Individual Project Award in the Advanced Algorithms in C++ class at NYU, Fall 2000."
       }
 ]

@@ -1,8 +1,10 @@
-@import url("../../styles/fontawesome-all.min.css");
-
 .services {
   background-color: #20B2AA;
   height: auto;
+}
+
+.flex-container-alignment {
+  margin-left: 5px;
 }
 
 .flex-container {
@@ -19,9 +21,13 @@
   max-width: 1200px;
   height: auto;
   text-align: center;
+  margin-left: -35px;
+  margin-top: -25px;
 }
 
-.flex-container > * { flex: 1 100%; }
+.flex-container > * {
+  flex: 1 100%;
+}
 
 .col {
   padding: 20px;
@@ -34,14 +40,14 @@
 .my-services > .row .flex-item {
   display: inline-block;
   flex: 0 1 auto;
-  width: 350px;  /* Or whatever */
-  height: auto; /* Or whatever */
-  margin: 0px;  /* Magic! */
+  width: 250px;
+  height: auto;
+  margin: 0px;
   float: left;
 }
 
 .my-services > .row span {
-  background-color: #fff;  /* old #0275d8 */
+  background-color: #fff;
   width: 112px;
   height: 112px;
   display: inline-block;
@@ -74,6 +80,11 @@
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 400px;
+  text-align: center;
+  margin-left: -90px;
 }
 
 .my-services > .row p {
@@ -81,81 +92,18 @@
   margin: 0;
   padding: 0;
 }
-
-.testimonials {
-  margin-left: 125px;
-  width: 1000px;
-  height: 250px;
-}
-
-.testimonials li {
-  display: none;
-  list-style: none;
-}
-
-.testimonials ul {
-  list-style: none;
-}
-
-.testimonials p.author {
-  color: #007bff;
-  font-size: 16px;
-  font-style: italic;
-  font-weight: bold;
-  text-align: right;
-  margin: 10px;
-}
-
-.testimonialsIndent {
-  margin-left: 0px;
-}
-
-blockquote {
-  font-size: 24px;
-  padding: 10px 0 0px 50px;
-  border-left: 5px solid #006400;
-}
-
-blockquote p {
-  color: #353839;
-}
-
-blockquote p:before {
-  content: "\f10d";
-  font-family: 'Fontawesome';
-  float: left;
-  margin-right: 10px;
-}
-
 .otherServices > p {
-  margin-left: 100px;
+  margin-left: 80px;
 }
-
 .otherServiceType {
   font-weight: bold;
 }
-
 .specialization-statement {
   margin-left: 20px;
   padding-top: 40px;
   padding-bottom: 20px;
   font-size: 28px;
   color: #4B3621;
-}
-
-.contactCTA {
-  margin-top: 0px;
-}
-
-.contactCTA > button {
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-}
-
-.contactButtonLink {
-  margin: 0 auto;
-  padding-bottom: 15px;
 }
 
 
@@ -201,6 +149,55 @@ blockquote p:before {
   }
 }
 
+
+/* media queries that change logo size depending on screen size */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .form-services ul {
+    margin-left: 20%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .flex-container {
+    justify-content: space-around;
+    margin-left: -15px;
+  }
+  .otherServices {
+    margin-left: -60px;
+  }
+  .testimonials {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .testimonials p.author {
+    text-align: center;
+    margin-left: 30px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 575px) {
+  .flex-container {
+    justify-content: space-around;
+    margin-left: 10px;
+  }
+  .otherServices {
+    margin-left: -10px;
+  }
+  .testimonials {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .testimonials p.author {
+    text-align: center;
+    margin-left: 70px;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .flex-container {
@@ -223,9 +220,12 @@ blockquote p:before {
 @media (min-width: 1200px) {
   .flex-container {
     justify-content: space-around;
-    margin-left: 85px;
+    margin-left: 120px;
   }
   .otherServices {
     margin-top: -20px;
+  }
+  .testimonials {
+    margin-left: 220px;
   }
 }

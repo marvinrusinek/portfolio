@@ -1,11 +1,10 @@
-@import url("../../styles/fontawesome-all.min.css");
-
 .footer {
-  background-color: #D56C6F;
+  background: #D56C6F;
   height: 125px;
   margin-top: -10px;
   border-top: none;
   padding-top: 15px;
+  overflow: hidden;
 }
 
 img {
@@ -15,7 +14,6 @@ img {
 .development {
   margin-top: 10px;
 }
-
 .development, .copyright {
   font-size: 1.5em;
 }
@@ -26,4 +24,8 @@ img {
   margin-right: -15px;
   margin-top: -5px;
   background-color: #D56C6F;
+}
+.flaticonstmt > span > a {
+  color: rgb(2, 117, 184) !important;
+  font-weight: 700;
 }

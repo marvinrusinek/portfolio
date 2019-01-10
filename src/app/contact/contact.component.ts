@@ -1,9 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-// import { errorMessages } from './custom-validation';
-// import { AngularFireDatabase } from 'angularfire2/database';
-
-const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+import { Component } from '@angular/core';
+import { FormArray, FormBuilder, FormControl, FormGroup, Validators, ValidatorFn } from '@angular/forms';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-portfolio-contact',
@@ -11,58 +8,74 @@ const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA
   styleUrls: ['./contact.component.css']
 })
 
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   contactForm: FormGroup;
-  //errors = errorMessages;
-
-  /* requestTypes = ['Job Opportunity', 'Project Referral', 'Other'];
-  defaultRequestType = 'Job Opportunity'; */
   submittedForm = false;
 
-  //constructor(private afdb: AngularFireDatabase) {}
+  services = [
+    { id: 1, name: 'Web/App Development' },
+    { id: 2, name: 'Mobile App Development' },
+    { id: 3, name: 'UI/UX Development' },
+    { id: 4, name: 'Search Engine Optimization' },
+    { id: 5, name: 'Digital Marketing' }
+  ];
 
-  ngOnInit() {
-    this.contactForm = new FormGroup({
-      /* 'requestType': new FormControl(null, [Validators.required]), */
-      'fullName': new FormControl(null, [Validators.required, Validators.minLength(1), Validators.maxLength(30)]),
+  constructor(private http: HttpClient, private formBuilder: FormBuilder) {
+    // Create a new array with a form control for each order
+    const controls = this.services.map(c => new FormControl(false));
+    controls[0].setValue(false); // set the first checkbox to true (checked)
+
+    this.contactForm = this.formBuilder.group({
+      'name': new FormControl(null, [Validators.required, Validators.minLength(1), Validators.maxLength(30)]),
       'emailAddress': new FormControl(null, [Validators.required, Validators.email]),
-      'message': new FormControl(null, Validators.required)
+      'message': new FormControl(null, Validators.required),
+      'services': new FormArray(controls, minSelectedCheckboxes(1)),
+      'recaptchaReactive': new FormControl(null, Validators.required)
     });
-
-    /* this.contactForm.valueChanges.subscribe(
-      val => console.log(val)
-    ); */
   }
 
-  onSubmit() {
-    console.log(this.contactForm);
-
+  onSubmit(event: Event) {
+    event.preventDefault();
     this.submittedForm = true;
-    /*
-    const {
-    //requestType,
-     fullName,
-     emailAddress,
-     //subject,
-     message } = this.contactForm.value;
-    const date = Date();
-    const html = `
-      <div>From: ${firstName} ${lastName}</div>
-      <div>Email: <a href="mailto:${emailAddress}">${emailAddress}</a></div>
-      <div>Date: ${date}</div>
-      <div>Message: ${message}</div>
-    `;
 
-    let formRequest = {
-      //requestType,
-      fullName,
-      emailAddress,
-      //subject,
-      message,
-      date,
-      html };
+    const selectedServiceIds = this.contactForm.value.services
+      .map((v, i) => v ? this.services[i].id : null)
+      .filter(v => v !== null);
 
-    this.afdb.list('/messages').push(formRequest); */
-    //this.contactForm.reset();
+    let data = {
+      service_id: 'marvin_rusinek',
+      template_id: 'template1',
+      user_id: 'user_YrLIzgrpmp69hb5hAwLYa',
+      template_params: {
+        name: this.contactForm.value.name,
+        emailAddress: this.contactForm.value.emailAddress,
+        message: this.contactForm.value.message,
+        services: this.contactForm.value.services,
+        recaptchaReactive: this.contactForm.value.recaptchaReactive
+      }
+    };
+
+    this.http.post('https://api.emailjs.com/api/v1.0/email/send', data, { responseType: 'text' })
+      .subscribe((result) => {
+          alert('Your message has been sent!');
+        }, (error: HttpErrorResponse) => {
+          alert('Oops... ' + error.message);
+        }
+      );
   }
+}
+
+function minSelectedCheckboxes(min = 1) {
+  const validator: ValidatorFn = (formArray: FormArray) => {
+    const totalSelected = formArray.controls
+      // get a list of checkbox values (boolean)
+      .map(control => control.value)
+      // total up the number of checked checkboxes
+      .reduce((prev, next) => next ? prev + next : prev, 0);
+
+    // if the total is not greater than the minimum, return the error message
+    return totalSelected >= min ? null : { required: true };
+  };
+
+  return validator;
 }

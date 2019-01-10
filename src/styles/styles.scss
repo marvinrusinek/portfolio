@@ -1,4 +1,6 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
 
 * {
   margin: 0;
@@ -10,6 +12,8 @@ body {
   position: relative;
   font-weight: 300;
   font-style: normal;
+  width: 100%;
+  margin: 0%;
 }
 
 body, h2 {
@@ -26,23 +30,92 @@ body h2:before {
   display: block;
 }
 
-#header, #about, #portfolio, #services, #contact {
-  padding-left: 70px;
-  padding-right: 70px;
+.container-fluid {
+  margin: 0px !important;
+  padding: 0px !important;
+  padding-bottom: 40px !important;
+  overflow: hidden;
 }
 
-#about, #portfolio, #services, #contact { padding-bottom: 40px; }
 
-.mat-h2 {
+.center-tab .mat-ink-bar {
+  height: 5px;
+}
+
+/* label style */
+.mat-tab-label {
+  background: #00adb5;
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  height: 60px !important;
+  position: relative;
+  width: 190px !important;
+  text-align: center;
+}
+.mat-tab-label:nth-child(1):before {
+  content: url('http://marvinrusinek.com/assets/images/tabbednav/info.png');
+  margin-top: 10px;
+  padding-right: 5px;
+}
+.mat-tab-label:nth-child(2):before {
+  content: url('http://marvinrusinek.com/assets/images/tabbednav/books.png');
+  margin-top: 10px;
+  padding-right: 8px;
+}
+.mat-tab-label:nth-child(3):before {
+  content: url('http://marvinrusinek.com/assets/images/tabbednav/programming.png');
+  margin-top: 15px;
+  padding-right: 8px;
+}
+.mat-tab-label:nth-child(4):before {
+  content: url('http://marvinrusinek.com/assets/images/tabbednav/resume.png');
+  margin-top: 10px;
+  padding-right: 8px;
+}
+
+
+/* focus style */
+.mat-tab-group.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus,
+.mat-tab-group.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus,
+.mat-tab-nav-bar.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus,
+.mat-tab-nav-bar.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus {
+  background: #D56C6F;
+  color: #4B3621;
+  font-weight: 700;
+  height: 60px !important;
+  width: 190px !important;
+}
+
+.mat-tab-header, .mat-tab-label-container, .mat-ripple {
+  overflow: inherit !important;
+}
+.mat-ink-bar {
+  width: 190px !important;
+}
+.mat-ink-bar:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+
+h2.heading {
   color: #333;
   text-align: center;
   position: relative;
   overflow: hidden;
   margin-left: 0;
   margin-bottom: 30px;
-}
-
-.heading {
   padding-top: 10px;
   font-family: proxima-nova, sans-serif;
 }
@@ -56,6 +129,10 @@ h2.heading:after {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.about h2.heading:after, .services h2.heading:after {
+  margin-bottom: 35px;
 }
 
 a:hover {
@@ -103,6 +180,7 @@ p, article > p {
   right: 0;
   bottom: 0;
   background: #2098D1;
+  border-radius: 10px 10px 10px 10px;
   -webkit-transform: scale(0);
   transform: scale(0);
   -webkit-transition-property: transform;
@@ -120,20 +198,38 @@ p, article > p {
   transform: scale(1);
 }
 
+
+/* media queries that change logo size depending on screen size */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .form-services ul {
+    margin-left: 20%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media (min-width: 321px) and (max-width : 480px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 575px) {
+
+}
+
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .myNameLoading {
     font-size: 2em;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) and (max-width: 1199px) {
 
 }
 
@@ -141,3 +237,4 @@ p, article > p {
 @media (min-width: 1200px) {
 
 }
+

@@ -1,0 +1,104 @@
+#tech-summary {
+  margin-top: -30px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+h2 {
+  padding-bottom: 20px;
+  margin-left: 41%;
+}
+
+div + div {
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+
+div.front-end {
+  margin-top: 0px;
+}
+
+.front-end {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.front-end, .back-end, .dev-tools, .ux-design {
+  height: 380px !important;
+  width: 780px !important;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff0f5 !important;
+  box-shadow: -4px -6px 8px 2px rgba(0,0,0,.5),
+              8px 6px 12px rgba(0,0,0,0.5);
+  margin-left: 15%;
+}
+
+.back-end, .ux-design, .dev-tools {
+  height: 235px !important;
+}
+
+.front-end > h3,
+.back-end > h3,
+.dev-tools > h3,
+.ux-design > h3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.back-end > div > ul, .ux-design > div > ul {
+  margin-top: -20px;
+}
+
+img {
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.caption {
+  display: block;
+  color: #4B3621;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+
+/* media queries that change logo size depending on screen size */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
+/* Extra Small Devices, Phones */
+@media (min-width: 321px) and (max-width: 480px) {
+
+}
+@media (min-width: 481px) and (max-width: 575px) {
+
+}
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

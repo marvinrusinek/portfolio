@@ -3,12 +3,9 @@ ul {
 }
 
 mat-card {
-  height: 400px !important;
-  /* border: 3px solid #00FF7F;
-  display: inline-block;
-  /* border: 2px solid #4B3621; */
+  height: 430px !important;
+  width: 740px !important;
   background-color: #EEE;
-  /* background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2)); */
   margin-right: 30px;
   margin-bottom: 30px;
   border-radius: 10px 10px 10px 10px;
@@ -16,18 +13,23 @@ mat-card {
               8px 6px 12px rgba(0,0,0,0.5);
 }
 
+mat-card:hover {
+  box-shadow: 5px 2px 10px 5px rgba(39, 230, 216, 0.9);
+  -moz-box-shadow: 5px 2px 10px 5px rgba(39, 230, 216, 0.9);
+  -webkit-box-shadow: 5px 2px 10px 5px rgba(39, 230, 216, 0.9);
+}
+
 mat-card-title > a > h4 {
   text-align: center;
   padding-top: 10px;
 }
 
-img {
-  max-width: 100%;
+img.portfolio-gallery {
   position: relative;
   -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
   height: 300px !important;
-  width: 470px !important;
+  width: 600px !important;
   padding-top: 10px;
   cursor: pointer;
   border-radius: 5px 5px 5px 5px;
@@ -38,68 +40,82 @@ img {
 .projectButtons {
   position: absolute;
   padding-top: 10px;
-  top: 87%;
-  left: 10%;
+  top: 85.5%;
+  left: 5%;
 }
 
 button {
   font-size: 12px;
   font-weight: bold;
-  background-color: lightgreen; /* old #0E9A00 */
+  background-color: #90ee90;
   color: rgba(65,197,192,0.91);
   padding: 5px 15px;
-  padding-bottom: -15px;
   margin-left: 25px;
   font-size: 16px;
   border: 3px solid green;
   border-radius: 5px;
+  height: 45px;
 }
 
 button:hover {
   background-color: #00FF7F;
 }
-.projectBtn { width: 180px; }
-.codeBtn { width: 150px; }
+
+.projectBtn {
+  width: 190px;
+}
+.codeBtn {
+  width: 160px;
+}
 .projectBtn:before {
-  background: url('../../../assets/images/project.png');
+  background: url('../../../assets/images/modal/project.png') no-repeat;
 }
 .codeBtn:before {
-  background: url('../../../assets/images/filter_icons/code.png');
+  background: url('../../../assets/images/SM/github.png') no-repeat 200% 200%;
 }
 .category:before {
-  background: url('../../../assets/images/modal/magnifying-glass.png');
+  background: url('../../../assets/images/modal/magnifying-glass.png') no-repeat;
 }
 .technologies:before {
-  background: url('../../../assets/images/modal/laptop.png');
+  background: url('../../../assets/images/modal/laptop.png') no-repeat;
 }
 .projectDurationText:before {
-  background: url('../../../assets/images/modal/calendar.png');
+  background: url('../../../assets/images/modal/calendar.png') no-repeat;
 }
 .projectDescription:before {
-  background: url('../../../assets/images/modal/description.png');
+  background: url('../../../assets/images/modal/description.png') no-repeat;
 }
 
 .category:before, .technologies:before, .projectDurationText:before {
   margin-top: 5px;
 }
-.projectDescription {
-  margin-top: 10px;
-  margin-left: 10px;
-}
 
-.projectBtn:before, .codeBtn:before, .category:before, .technologies:before, .projectDurationText:before, .projectDescription:before {
+.projectBtn:before, .codeBtn:before {
   content: '';
   background-size: cover;
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 28px;
+  height: 28px;
   margin-left: -25px;
+  margin-top: -5px;
 }
 
+.category:before, .technologies:before, .projectDurationText:before, .projectDescription:before {
+  content: '';
+  background-size: cover;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -25px;
+  margin-top: 0px;
+}
+.technologies:before {
+  margin-top: 5px;
+}
+
+
 .category {
-  color: darkslategray;
-  margin-top: 10px;
-  padding-top: 10px;
+  color: #2f4f4f;
 }
 
 .technologies, .projectDurationText {
@@ -107,7 +123,8 @@ button:hover {
   font-style: italic;
 }
 
-.modal {
+
+.project-modal {
   display: none;
   position: absolute;
   top: 0;
@@ -115,55 +132,53 @@ button:hover {
   z-index: 1050;
   overflow: hidden;
   outline: 0;
-  width: auto;
   height: 100%;
+  width: 1200px !important;
+  max-width: 100% !important;
 }
 
-.modal > p {
+.project-modal > p {
   color: #4B3621;
 }
 
-.modal-dialog {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.modal-custom-class {
-  background-color: rgb(144, 238, 144) !important;
-}
-
-.modal-header > button {
-  border: none;
-  font-size: 30px;
+.project-modal-dialog > .modal-header > button {
+  border: none !important;
+  font-size: 50px !important;
   color: black;
   font-weight: bold;
 }
-
-button.close {
+.project-modal-dialog > .modal-header > button.close {
   background: none;
 }
-
-button.close:hover {
+.project-modal-dialog > .modal-header > button.close:hover {
   background: none;
   color: darkslategray;
 }
 
 .modal-title {
-  font-size: 30px !important;
+  font-size: 50px !important;
+  font-weight: bold;
   margin: 0 auto;
   color: #2098D1;
 }
 
-.modal-body > img {
-  box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+.modal-body {
+  width: 100%;
 }
 
-.modal-body > .img-responsive {
+.modal-body > img.modal-project-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+  width: 100% !important;
+  height: 60% !important;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.modal-body > img.desc_image {
+  display: block;
+  float: left;
+  height: 50px;
+  width: 50px;
 }
 
 .modal-dialog-centered {
@@ -173,7 +188,6 @@ button.close:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: calc(100% - (.5rem * 2));
 }
 
 .modal-footer > button {
@@ -189,6 +203,16 @@ button.close:hover {
   padding-bottom: 0;
   margin-bottom: 0;
   color: white;
+}
+
+.project-metadata {
+  margin-top: 20px;
+}
+.project-metadata p {
+  line-height: 2;
+}
+.project-metadata p span {
+  font-size: 16px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

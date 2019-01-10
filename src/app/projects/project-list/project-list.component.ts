@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+
 import { ProjectService } from '../project.service';
 
 @Component({
@@ -7,7 +9,6 @@ import { ProjectService } from '../project.service';
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.css']
 })
-
 
 export class ProjectListComponent implements OnInit {
   public projects = [];

@@ -10,13 +10,15 @@ import { ErrorStateMatcher } from '@angular/material';
    */
   static childrenEqual: ValidatorFn = (formGroup: FormGroup) => {
     const [firstControlName, ...otherControlNames] = Object.keys(formGroup.controls || {});
-    const isValid = otherControlNames.every(controlName => formGroup.get(controlName).value === formGroup.get(firstControlName).value);
+    const isValid = otherControlNames.every(controlName => formGroup.get(controlName).value ===
+                                            formGroup.get(firstControlName).value);
     return isValid ? null : { childrenNotEqual: true };
   }
 }
 
 /**
- * Custom ErrorStateMatcher which returns true (error exists) when the parent form group is invalid and the control has been touched
+ * Custom ErrorStateMatcher which returns true (error exists) when the parent form group is invalid and the control has
+ * been touched
  */
 export class ConfirmValidParentMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -35,10 +37,9 @@ export const regExps: { [key: string]: RegExp } = {
  * Collection of reusable error messages
  */
 export const errorMessages: { [key: string]: string } = {
-  firstName: 'First name is required and must be between 1 and 30 characters.',
-  lastName: 'Last name is required and must be between 1 and 30 characters.',
+  name: 'Name is required and must be between 1 and 30 characters.',
   emailAddress: 'Email is required and must be a valid e-mail address (username@domain)',
-  subject: 'Subject is required and must be between 1 and 80 characters.',
   message: 'Message is required and must be between 1 and 300 characters.',
-  captcha: 'The CAPTCHA verification failed. Please try again.'
+  services: 'A service must be selected.',
+  recaptchaReactive: 'The CAPTCHA verification failed. Please try again.'
 };

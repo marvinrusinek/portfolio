@@ -1,11 +1,11 @@
 <ul *ngFor="let project of projects" class="list-unstyled">
   <li>
-    <mat-card class="portfolioProject col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 {{project.categoryClass}}">
+    <mat-card class="portfolioProject {{project.categoryClass}} col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
       <mat-card-content>
         <ng-container>
           <figure>
             <div style="margin-top: 10px;">
-              <img src={{project.imagePath}} alt={{project.imageTitle}}>
+              <img class="portfolio-gallery" src={{project.imagePath}} alt={{project.imageTitle}} lazy-load-images>
             </div>
             <figcaption>
               <mat-card-title class="text-center">
@@ -16,14 +16,18 @@
             </figcaption>
           </figure>
           <div class="projectButtons">
-            <button type="button" class="white button" (click)="open(projectContent)" data-toggle="modal" data-target="projectModal">
-              &nbsp;&nbsp;&nbsp;&nbsp;<span class="projectBtn">&nbsp;<strong>View Project</strong></span>
+            <button type="button" class="white button projectButton" (click)="open(projectContent)" data-toggle="modal"
+                    data-target="projectModal" *ngIf="project.projectUrl !== 'NONE'">&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="projectBtn">&nbsp;&nbsp;&nbsp;<strong>View Project</strong></span>
             </button>
-            <a href={{project.codeUrl}} target="_blank">
-              <button type="button" class="white button">
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="codeBtn">&nbsp;<strong>View Code</strong></span>
-              </button>
-            </a>
+
+            <span *ngIf="project.codeUrl !== 'NONE'">
+              <a href={{project.codeUrl}} target="_blank">
+                <button type="button" class="white button codeButton">&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="codeBtn">&nbsp;&nbsp;&nbsp;<strong>View Code</strong></span>
+                </button>
+              </a>
+            </span>
           </div>
         </ng-container>
       </mat-card-content>
@@ -31,42 +35,51 @@
   </li>
 
   <!-- Project Modal -->
-  <ng-template #projectContent let-c="close" let-d="dismiss" id="projectModal" class="modal">
-    <div class="row justify-content-center w-100">
-      <div class="modal-dialog align-self-center h-100 mx-auto d-flex flex-column animated fadeInLeft" role="document">
-        <div class="modal-content">
-          <div class="modal-custom-class animated fadeIn">
-            <div class="modal-header">
+  <ng-template #projectContent let-c="close" let-d="dismiss" id="projectModal" class="project-modal"
+               data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="project-modal" aria-hidden="true">
+    <div class="row project-modal-dialog justify-content-center w-100" role="document">
+      <div class="modal-lg align-self-center h-100 mx-auto d-flex flex-column animated fadeInLeft" role="document">
+        <div class="project-modal-content">
+          <div class="modal-header">
               <h4 class="modal-title">{{project.title}}</h4>
-              <button type="button" class="close" aria-label="Close" (click)="d('Cross click')" title="Close">
-                <span aria-hidden="true">&times;</span>
+              <button type="button" class="close" aria-label="Close" (click)="d('Cross click')" title="Close"
+                      style="border: none !important; background:none !important;">
+                <span aria-hidden="true" style="font-size: 60px">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <a href={{project.projectUrl}} target="_blank">
-                <img src={{project.imagePath}} class="img-responsive" alt={{project.imageTitle}}>
-              </a>
-              <p class="text-center">
-                &nbsp;&nbsp;<span class="category">{{project.categoryFullNames}}</span><br />
-                &nbsp;&nbsp;<span class="technologies">{{project.technologies}}</span><br />
-                &nbsp;&nbsp;<span class="projectDurationText">
-                  <time class="dateStarted" title={{project.dateStarted}}>{{project.dateStarted | date: 'longDate'}}
-                  </time>&mdash;
-                  <time class="dateCompleted" title={{project.dateCompleted}}>{{project.dateCompleted | date: 'longDate'}}
-                  </time>
-                </span>
-              </p>
-              <p class="text-justify">
-                &nbsp;&nbsp;<span class="projectDescription">{{project.description}}</span></p>
-              <span class="projectModalViewCode">
-                <a href={{project.codeUrl}} target="_blank">
-                  <button type="button" class="white button">
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="codeBtn">&nbsp;<strong>View Code</strong></span>
-                  </button>
+          <div class="modal-body">
+              <div style="vertical-align: top">
+                <a href={{project.projectUrl}} target="_blank">
+                  <img src={{project.imagePath}} class="modal-project-image img-responsive" alt={{project.imageTitle}}>
                 </a>
-              </span>
+              </div>
+              <div class="project-metadata">
+                <p class="text-center">
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="category">{{project.categoryFullNames}}</span><br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="technologies">{{project.technologies}}</span><br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="projectDurationText">
+                                            <time class="dateStarted" title={{project.dateStarted}}>
+                                              {{project.dateStarted | date: 'longDate'}}
+                                            </time>&mdash;
+                                            <time class="dateCompleted" title={{project.dateCompleted}}>
+                                              {{project.dateCompleted | date: 'longDate'}}
+                                            </time>
+                                          </span>
+                </p>
+              </div>
+              <div style="margin-left: 10px; word-wrap: normal;">
+                <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="projectDescription">{{project.description}}</span>
+                </p>
+              </div>
             </div>
-          </div>
+          <span class="projectModalViewCode" *ngIf="project.codeUrl !== 'NONE'">
+            <a href={{project.codeUrl}} target="_blank">
+              <button type="button" class="white button">&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="codeBtn">&nbsp;&nbsp;&nbsp;<strong>View Code</strong></span>
+              </button>
+            </a>
+          </span>
         </div>
       </div>
     </div>

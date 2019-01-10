@@ -6,6 +6,7 @@ import { Data, ActivatedRoute } from '@angular/router';
   templateUrl: './error-page.component.html',
   styleUrls: ['./error-page.component.css']
 })
+
 export class ErrorPageComponent implements OnInit {
   errorMessage: string;
 
@@ -16,7 +17,6 @@ export class ErrorPageComponent implements OnInit {
       (data: Data) => {
         this.errorMessage = data['message'];
       }
-    )
+    );
   }
-
 }

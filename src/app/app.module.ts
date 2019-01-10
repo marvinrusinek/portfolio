@@ -2,86 +2,105 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-//import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
-import { MatIconModule, MatInputModule, MatButtonModule, MatCardModule } from '@angular/material';
-import { ReactiveFormsModule } from '@angular/forms';
-import { FlexLayoutModule } from "@angular/flex-layout";
+// import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
+// import { MatIconModule, MatInputModule, MatButtonModule, MatCardModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ModalModule } from 'ngx-bootstrap/modal';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 import { ScrollSpyModule } from 'ngx-scrollspy';
+import { NgBackToTopModule } from 'ng-back-to-top';
+// import { ParallaxModule } from "ngx-parallax/lib/parallax.module";
 
-import { AppRoutingModule } from "./app-routing.module";
+import { RecaptchaModule, RecaptchaSettings, RECAPTCHA_SETTINGS } from 'ng-recaptcha';
+import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
+
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
-import { ServicesComponent } from './services/services.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ServicesComponent } from './services/services.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { ProjectListComponent } from "./projects/project-list/project-list.component";
+import { ProjectListComponent } from './projects/project-list/project-list.component';
 
-import { CLASS_NAME } from 'ngx-bootstrap/modal/modal-options.class';
-CLASS_NAME.IN = 'show';
-
-import { AngularFireModule } from 'angularfire2';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
-import { AngularFireDatabase } from 'angularfire2/database';
-import { ProjectService } from "./projects/project.service";
+// import { AngularFireDatabase } from 'angularfire2/database';
+import { ProjectService } from './projects/project.service';
+import { TechSkillsService } from './about/techskills/techskills.service';
 import { OverviewComponent } from './about/overview/overview.component';
-import { TechsummaryComponent } from './about/techsummary/techsummary.component';
 import { EducationComponent } from './about/education/education.component';
-import { AboutNavigationComponent } from './about/about-navigation/about-navigation.component';
+import { TechSkillsListComponent } from './about/techskills/techskills-list/techskills-list.component';
+import { ResumeComponent } from './about/resume/resume.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    HeroComponent,
     AboutComponent,
+    OverviewComponent,
+    EducationComponent,
+    TechSkillsListComponent,
+    ResumeComponent,
     GalleryComponent,
+    ProjectListComponent,
+    ServicesComponent,
+    TestimonialsComponent,
     ContactComponent,
     FooterComponent,
-    ServicesComponent,
-    HeroComponent,
     PageNotFoundComponent,
-    ErrorPageComponent,
-    ProjectListComponent,
-    OverviewComponent,
-    TechsummaryComponent,
-    EducationComponent,
-    AboutNavigationComponent
+    ErrorPageComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'my-app'}),
     BrowserAnimationsModule,
     CommonModule,
-    HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule,
-    MatIconModule,
+    /* MatIconModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule,
-    FlexLayoutModule,
+    MatCardModule, */
+    MatTabsModule,
     NgbModule.forRoot(),
-    ModalModule.forRoot(),
     AngularFontAwesomeModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     LazyLoadImagesModule,
-    ScrollSpyModule.forRoot()
+    ScrollSpyModule.forRoot(),
+    RecaptchaModule,
+    RecaptchaFormsModule,
+    NgBackToTopModule,
+    // ParallaxModule
   ],
-  providers: [AngularFireDatabase, ProjectService],
+  providers: [
+    // AngularFireDatabase,
+    ProjectService,
+    TechSkillsService,
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: { siteKey: '6LerxYMUAAAAALaV-sOfT5i_PDfza7RI7b2D6qCD' } as RecaptchaSettings,
+    }
+  ],
   bootstrap: [AppComponent, ProjectListComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  exports: [MatTabsModule]
 })
 
 export class AppModule {

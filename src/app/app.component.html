@@ -1,13 +1,21 @@
-<app-portfolio-navbar></app-portfolio-navbar>
-<app-portfolio-hero></app-portfolio-hero>
-<app-portfolio-about></app-portfolio-about>
-<app-portfolio-services></app-portfolio-services>
-<app-portfolio-gallery></app-portfolio-gallery>
-<app-portfolio-contact></app-portfolio-contact>
-<app-portfolio-footer></app-portfolio-footer>
-
-<div class="scroll-to-top" [ngClass]="{'show-scroll': navIsFixed}">
-  <button (click)="scrollToTop()" title="Scroll to top">
-    <span class="fa fa-chevron-up"></span>
-  </button>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <app-portfolio-navbar></app-portfolio-navbar>
+      <app-portfolio-about></app-portfolio-about>
+      <app-portfolio-gallery></app-portfolio-gallery>
+      <app-portfolio-services></app-portfolio-services>
+      <app-portfolio-testimonials></app-portfolio-testimonials>
+      <app-portfolio-contact></app-portfolio-contact>
+      <app-portfolio-footer></app-portfolio-footer>
+    </div>
+  </div>
 </div>
+
+<ng-back-to-top>
+  <div class="fixed-back-to-top-btn-container">
+    <button title="Scroll to top">
+      <span class="fa fa-chevron-up"></span>
+    </button>
+  </div>
+</ng-back-to-top>

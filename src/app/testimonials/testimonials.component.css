@@ -1,0 +1,44 @@
+.testimonials {
+  background-color: #00FA9A;
+  height: auto;
+}
+
+.mytestimonials {
+  margin-top: 20px;
+  width: 1200px !important;
+  height: auto !important;
+  margin-left: 100px;
+}
+.mytestimonials blockquote {
+  font-size: 32px;
+  font-style: oblique;
+  padding: 10px 0 0px 50px;
+  border: none;
+}
+.mytestimonials blockquote p.quote {
+  color: #353839;
+  font-size: 32px;
+}
+.mytestimonials blockquote p.quote:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+  font-style: oblique;
+}
+.mytestimonials blockquote p.quote:after {
+  content: "\f10e";
+  font-family: 'Fontawesome';
+  float: right;
+  margin-right: 5px;
+  font-style: oblique;
+}
+.mytestimonials cite.author {
+  color: #353839;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  margin: 10px;
+  margin-right: 20px;
+}

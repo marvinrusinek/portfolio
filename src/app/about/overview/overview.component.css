@@ -1,9 +1,13 @@
-@import '../../../../node_modules/foundation-sites/dist/css/foundation.min.css';
+#overview {
+  margin-top: 25px;
+  width: 1500px !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
 
 article {
   float: left;
   display: inline-block;
-  margin-left: -100px;
 }
 
 .about-img {
@@ -19,11 +23,16 @@ article p {
   text-align: justify;
   color: #36454F;
   width: 100%;
+  margin-left: -15px;
 }
 
 article > p > a {
   color: rgb(2, 117, 184) !important;
   font-weight: 700;
+}
+
+article > p::first-letter {
+  font-size: 150%;
 }
 
 .name {
@@ -33,7 +42,7 @@ article > p > a {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  /* .container-fluid { width: 570px; } don't think i need this */
+  article { max-width: 575.98px; }
   article { margin-left: 0px; }
   article > img { width: 200px; }
 }

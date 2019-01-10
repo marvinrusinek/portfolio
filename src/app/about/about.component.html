@@ -1,26 +1,33 @@
 <section id="about" class="about container-fluid">
-  <h2 class="mat-h2 heading" data-sal-duration="600" data-sal="slide-up" data-sal-delay="300">About Me</h2>
+  <h2 class="heading" data-sal-duration="400" data-sal="slide-up" data-sal-delay="200">About</h2>
 
-  <div class="container fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
-        <div class="tab-content">
-          <div class="tab-pane active animated fadeInLeft" id="overview">
-            <app-overview></app-overview>
-          </div>
-          <div class="tab-pane fade animated fadeInLeft" id="education">
-            <app-education></app-education>
-          </div>
-          <div class="tab-pane fade animated fadeInLeft" id="tech-summary">
-            <app-techsummary></app-techsummary>
-          </div>
-        </div>
-      </div>
-      <div class="about-nav col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-        <app-about-navigation></app-about-navigation>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <mat-tab-group mat-align-tabs="center" class="mat-tab-group mat-primary center-tab">
+          <mat-tab label="Overview">
+            <ng-template matTabContent>
+              <app-overview></app-overview>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Education">
+            <ng-template matTabContent>
+              <app-education></app-education>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="Technical Skills">
+            <ng-template matTabContent>
+              <app-techskills-list></app-techskills-list>
+            </ng-template>
+          </mat-tab>
+          <mat-tab label="R&eacute;sum&eacute;">
+            <ng-template matTabContent>
+              <app-resume></app-resume>
+            </ng-template>
+          </mat-tab>
+        </mat-tab-group>
+        <br clear="all" /><br clear="all" />
       </div>
     </div>
   </div>
-
-  <app-resume-modal id="resumeModal"></app-resume-modal>
 </section>

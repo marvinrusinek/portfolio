@@ -1,5 +1,3 @@
-/* @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'; */
-
 header {
   background-color: #4ABDAC;
   width: 100%;
@@ -7,14 +5,12 @@ header {
 
 .logo {
   margin-top: -25px;
-  padding-right: 10px;
   height: 64px;
   width: 64px;
+  padding-right: 10px;
 }
 
 .nav-link.active {
-  /*background-color: #9ACBA4;
-  border-radius: 5px 5px 5px 5px; */
   border-bottom: 3px solid #0275d8;
 }
 
@@ -36,14 +32,11 @@ ul li {
   padding-right: 5px;
 }
 
-.navbar {
-  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
-}
 
 .navbar-brand {
   padding-top: 15px;
   padding-right: 40px;
-  margin-top: 15px;
+  margin-top: -10px;
   margin-left: 75px;
   background: #4ABDAC;
 }
@@ -61,7 +54,7 @@ a > span.navbar-text {
 }
 
 span {
-  color: #0275d8; /* should probably be different color */
+  color: #0275d8;
   font-weight: bold;
 }
 
@@ -78,10 +71,7 @@ span {
 .navbar {
   margin-bottom: 10px;
   background-color: #4ABDAC;
-}
-
-.navbar-brand {
-  margin-top: -10px;
+  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
 }
 
 ul.navbar-nav {
@@ -89,113 +79,36 @@ ul.navbar-nav {
   margin-top: -45px;
   background-color: #4ABDAC;
   margin-bottom: -40px;
+  margin-left: -55px;
 }
 
 span.nav-span {
   text-transform: uppercase;
 }
 
-.moveAvatar {
-  padding-top: 100px;
-}
-
 .social-container {
   margin: 0 auto;
-  border-left: 1px solid rgba(255,255,255,0.15) !important;
-  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
   height: 60px;
 }
-
-.lefticons {
-  float: left;
-  margin-top: 15px;
-}
-
-.lefticons > ul li {
-  display: inline;
+.social-container > ul {
   list-style-type: none;
-  padding-right: 12.5px;
 }
-
-.fa > fa {
-  margin-bottom: 10px;
-}
-
-.righticons {
-  float: left;
-  padding-left: 10px;
+.social-container > ul li {
+  display: inline-block;
   margin-top: 10px;
 }
-
-.righticons > ul li {
-  display: inline;
-  list-style-type: none;
-  padding-right: 12.5px;
+.social-container > li {
+  padding-right: 15px;
 }
-.righticons > li.search-icon {
-  margin-top: 20px;
+.social-container > ul li:nth-child(2) {
+  padding-right: 10px;
+  border-right: 1px solid #0275b8 !important;
 }
-/* for underlink animation!
-li > span.nav-span {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-  margin-top: 20px;
+.social-container > ul li:nth-child(3) {
+  padding-left: 10px;
 }
-
-li > span.nav-span:hover {
-  color: #000;
-}
-
-li > span.nav-span:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 5px;
-  left: 0;
-  background-color: #0275d8;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-li > span.nav-span:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-} */
-
-/* media queries that change logo size depending on screen size */
-@media (max-width: 575px) {
-  a > span.navbar-text {
-    font-size: 1.2em;
-    margin-top: -45px;
-    margin-left: -40px;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  a > span.navbar-text {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  a > span.navbar-text {
-    font-size: 1.75em;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  a > span.navbar-text {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 575px) {
-  button.navbar-toggler {
-    margin-top: -60px;
-  }
+.social-container > ul li > a img:hover {
+  margin-top: -5px;
 }
 
 /* rotate the hamburger button on toggle */
@@ -235,3 +148,55 @@ li > span.nav-span:hover:before {
   transform: rotate(135deg);
   opacity: 0.9;
 }
+
+
+/* media queries that change logo size depending on screen size */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .form-services ul {
+    margin-left: 20%;
+  }
+  .social-container { margin-left: -100px; }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+
+@media (min-width: 481px) and (max-width: 575px) {
+  .logo {
+    margin-top: 5px;
+  }
+  a > span.navbar-text {
+    font-size: 1.2em;
+    margin-top: -45px;
+
+  }
+  span.navbar-text {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  a > span.navbar-text {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  a > span.navbar-text {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  a > span.navbar-text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 575px) {
+  button.navbar-toggler {
+    margin-top: -60px;
+  }
+}
+
