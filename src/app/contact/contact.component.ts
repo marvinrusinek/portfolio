@@ -7,7 +7,6 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-
 export class ContactComponent {
   contactForm: FormGroup;
   submittedForm = false;

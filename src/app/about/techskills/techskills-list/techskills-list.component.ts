@@ -7,7 +7,6 @@ import { TechSkillsService } from '../techskills.service';
   templateUrl: './techskills-list.component.html',
   styleUrls: ['./techskills-list.component.css']
 })
-
 export class TechSkillsListComponent implements OnInit {
   public skills = [];
 
