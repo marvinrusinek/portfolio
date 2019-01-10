@@ -13,11 +13,17 @@ The goal of this project is to demonstrate Angular expertise in:
    - Forms (Validation)
    - NPM Package integration (Isotope, Sal.js, etc.)
    - Server Side Rendering using Angular Universal (in progress)
+   
 HTML5
+
 CSS/SCSS
+
 JavaScript/jQuery
+
 Bootstrap and Foundation
+
 Scrolling animations
+
 git
 
 This project can NOT be used for any purpose without written permission.
