@@ -1,3 +1,5 @@
+@import '../../../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css';
+
 header {
   background-color: #4ABDAC;
   width: 100%;
@@ -75,14 +77,15 @@ span {
 }
 
 ul.navbar-nav {
-  padding-left: 70px;
-  margin-top: -45px;
+  padding-left: 40px;
+  margin-top: -40px;
   background-color: #4ABDAC;
   margin-bottom: -40px;
-  margin-left: -55px;
+  margin-left: -35px;
 }
 
 span.nav-span {
+  font-size: 17px;
   text-transform: uppercase;
 }
 

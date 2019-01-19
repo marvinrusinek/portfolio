@@ -8,9 +8,15 @@ p::first-letter {
   font-size: 150%;
 }
 
+ul {
+  margin-left: 10%;
+}
+
 li {
   list-style-type: none;
   padding-bottom: 10px;
   font-weight: 700;
   color: #0275b8;
+  display: inline-block;
+  padding-right: 20px;
 }

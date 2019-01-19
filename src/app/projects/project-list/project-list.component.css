@@ -71,7 +71,7 @@ button:hover {
   background: url('../../../assets/images/modal/project.png') no-repeat;
 }
 .codeBtn:before {
-  background: url('../../../assets/images/SM/github.png') no-repeat 200% 200%;
+  background: url('../../../assets/images/modal/github.png') no-repeat 200% 200%;
 }
 .category:before {
   background: url('../../../assets/images/modal/magnifying-glass.png') no-repeat;

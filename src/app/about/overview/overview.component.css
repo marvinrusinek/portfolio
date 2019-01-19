@@ -13,9 +13,12 @@ article {
 .about-img {
   float: left;
   margin-right: 25px;
-  margin-left: -15px;
+  /* margin-left: -15px; */
   height: 250px;
   width: 220px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
 
 article p {
