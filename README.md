@@ -16,7 +16,7 @@ The goal of this project is to demonstrate Angular expertise in:
    - SSL
    
 HTML5
-CSS/SCSS
+CSS3/SCSS (Flexbox)
 JavaScript/jQuery
 Bootstrap and Foundation
 Scrolling animations
