@@ -5,8 +5,8 @@ My portfolio website is live on www.marvinrusinek.com
 The goal of this project is to demonstrate Angular expertise in:
    - Component Architecture
    - Angular Material 
-   - Reactive JS (RxJS)
    - Two-way data-binding and working with JSON data
+   - Reactive JS (RxJS), Observables
    - Modals
    - Lazyloading
    - Pre-loading
