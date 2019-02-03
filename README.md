@@ -2,7 +2,7 @@ Portfolio Website (Angular v.7)
 
 My portfolio website is live on www.marvinrusinek.com
 
-The goal of this project is to demonstrate Angular expertise in:
+The website demonstrates my Angular expertise with:
    - Component Architecture
    - Angular Material 
    - Two-way data-binding and working with JSON data
