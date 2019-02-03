@@ -1,5 +1,7 @@
 @import '../../node_modules/sal.js/dist/sal.css';
 
+
+
 .container-fluid {
   margin: 0px !important;
   padding: 0px !important;
@@ -18,11 +20,25 @@
 }
 
 .fixed-back-to-top-btn-container {
-  position: fixed;
-  right: 0;
-  bottom: 2rem;
-  padding: 20px;
-  cursor: pointer;
+   position: fixed;
+   right: 0;
+   bottom: 2rem;
+   padding: 20px;
+   cursor: pointer;
+}
+
+.ng-back-to-top {
+  content: "\f077";
+  font-family: 'Fontawesome';
+  background-color: #016f86;
+  color: #fff;
+}
+
+.fallback-btn {
+  content: "\f077";
+  font-family: 'Fontawesome';
+  background-color: #016f86;
+  color: #fff;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

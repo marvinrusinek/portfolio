@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --ssl true --ssl-cert ssl/server.crt --ssl-key ssl/server.key",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
