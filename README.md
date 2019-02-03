@@ -6,12 +6,12 @@ The goal of this project is to demonstrate Angular expertise in:
    - Component Architecture
    - Angular Material 
    - Reactive JS (RxJS)
-   - Databinding and working with JSON data
+   - Two-way data-binding and working with JSON data
    - Modals
    - Lazyloading
    - Pre-loading
    - Forms (Validation)
-   - NPM Package integration (Isotope, Sal.js, etc.)
+   - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - Server Side Rendering using Angular Universal (in progress)
    
 HTML5
