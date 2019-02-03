@@ -13,6 +13,7 @@ The goal of this project is to demonstrate Angular expertise in:
    - Forms (Validation)
    - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - Server Side Rendering using Angular Universal (in progress)
+   - SSL
    
 HTML5
 CSS/SCSS
@@ -30,7 +31,7 @@ Server settings are hidden. You need to create your own server settings JSON for
 
 How to Run locally
 
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run ng serve for a dev server. Navigate to https://localhost:4000/. The app will automatically reload if you change any of the source files.
 
 How to Run unit tests
 
