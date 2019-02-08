@@ -31,7 +31,7 @@ Server settings are hidden. You need to create your own server settings JSON for
 
 How to Run locally
 
-Run ng serve for a dev server. Navigate to https://localhost:4000/. The app will automatically reload if you change any of the source files.
+Run ng serve for a dev server. Navigate to https://localhost:4200/ since the app runs on SSL. The app will automatically reload if you change any of the source files.
 
 How to Run unit tests
 
