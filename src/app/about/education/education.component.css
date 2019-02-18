@@ -24,6 +24,15 @@ ul li > a {
   font-weight: 700;
 }
 
+.school-link {
+  display: inline-block;
+}
+
+.card {
+  background-color: #9ACBA4;
+  border: none;
+}
+
 hr {
   width: 700px;
   margin-left: 100px;

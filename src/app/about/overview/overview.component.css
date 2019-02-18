@@ -12,6 +12,7 @@ article {
 
 .about-img {
   float: left;
+  margin-top: 5px;
   margin-right: 25px;
   height: 250px;
   width: 220px;

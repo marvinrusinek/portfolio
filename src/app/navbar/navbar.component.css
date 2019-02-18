@@ -89,6 +89,15 @@ span.nav-span {
   text-transform: uppercase;
 }
 
+.blog-link {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+.blog-link > a:hover {
+  border-bottom: 3px solid #0275d8;
+  padding-bottom: 13px;
+}
+
 .social-container {
   margin: 0 auto;
   height: 60px;
@@ -112,6 +121,9 @@ span.nav-span {
 }
 .social-container > ul li > a img:hover {
   margin-top: -5px;
+}
+.search-icon {
+  margin-top: 7px;
 }
 
 /* rotate the hamburger button on toggle */
