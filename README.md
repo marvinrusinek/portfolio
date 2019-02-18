@@ -2,20 +2,21 @@ Portfolio Website (Angular v.7)
 
 My portfolio website is live on www.marvinrusinek.com
 
-The goal of this project is to demonstrate Angular expertise in:
+The website demonstrates my Angular expertise with:
    - Component Architecture
    - Angular Material 
-   - Reactive JS (RxJS)
-   - Databinding and working with JSON data
+   - Two-way data-binding and working with JSON data
+   - Reactive JS (RxJS), Observables
    - Modals
    - Lazyloading
    - Pre-loading
    - Forms (Validation)
-   - NPM Package integration (Isotope, Sal.js, etc.)
+   - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - Server Side Rendering using Angular Universal (in progress)
+   - SSL
    
 HTML5
-CSS/SCSS
+CSS3/SCSS (Flexbox)
 JavaScript/jQuery
 Bootstrap and Foundation
 Scrolling animations
@@ -30,7 +31,7 @@ Server settings are hidden. You need to create your own server settings JSON for
 
 How to Run locally
 
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run ng serve for a dev server. Navigate to https://localhost:4200/ since the app runs on SSL. The app will automatically reload if you change any of the source files.
 
 How to Run unit tests
 
