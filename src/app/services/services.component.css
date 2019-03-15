@@ -40,7 +40,7 @@
 .my-services > .row .flex-item {
   display: inline-block;
   flex: 0 1 auto;
-  width: 250px;
+  width: 280px;
   height: auto;
   margin: 0px;
   float: left;
@@ -71,6 +71,15 @@
   text-align: center;
 }
 
+.flex-item:hover {
+  background-color: #00bfff;
+  border: 2px solid green;
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;
+  -webkit-box-shadow: 5px 5px 15px 5px #34FF83;
+  box-shadow: 5px 5px 15px 5px #34FF83;
+}
+
 .my-services > .row h4 {
   font-family: inherit;
   font-weight: 800;
@@ -85,16 +94,24 @@
   width: 400px;
   text-align: center;
   margin-left: -90px;
+  text-shadow: 2px 2px 2px #1C6EA4;
 }
 
 .my-services > .row p {
   font-size: 16px;
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }
 .otherServices > p {
   margin-left: 80px;
 }
+
+h4 > a {
+  color: rgb(2, 117, 184) !important;
+  font-weight: 700;
+}
+
 .otherServiceType {
   font-weight: bold;
 }

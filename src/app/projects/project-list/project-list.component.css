@@ -83,7 +83,13 @@ button:hover {
   background: url('../../../assets/images/modal/calendar.png') no-repeat;
 }
 .projectDescription:before {
-  background: url('../../../assets/images/modal/description.png') no-repeat;
+   background: url('../../../assets/images/modal/description.png') no-repeat;
+}
+.projectProblem:before {
+  background: url('../../../assets/images/modal/puzzle.png') no-repeat;
+}
+.projectSolution:before {
+  background: url('../../../assets/images/modal/solved.png') no-repeat;
 }
 
 .category:before, .technologies:before, .projectDurationText:before {
@@ -100,7 +106,8 @@ button:hover {
   margin-top: -5px;
 }
 
-.category:before, .technologies:before, .projectDurationText:before, .projectDescription:before {
+.category:before, .technologies:before, .projectDurationText:before, .projectDescription:before,.projectProblem:before,
+.projectSolution:before  {
   content: '';
   background-size: cover;
   position: absolute;
@@ -123,6 +130,10 @@ button:hover {
   font-style: italic;
 }
 
+.project-metadata-bottom-align {
+  margin-left: 10px;
+  word-wrap: normal;
+}
 
 .project-modal {
   display: none;
@@ -148,7 +159,7 @@ button:hover {
   font-weight: bold;
 }
 .project-modal-dialog > .modal-header > button.close {
-  background: none;
+  background: none !important;
 }
 .project-modal-dialog > .modal-header > button.close:hover {
   background: none;
@@ -159,7 +170,7 @@ button:hover {
   font-size: 50px !important;
   font-weight: bold;
   margin: 0 auto;
-  color: #2098D1;
+  color: rgb(2, 117, 216);
 }
 
 .modal-body {
@@ -173,6 +184,7 @@ button:hover {
   height: 60% !important;
   padding-bottom: 20px;
   margin: 0 auto;
+  text-align: center;
 }
 .modal-body > img.desc_image {
   display: block;
@@ -198,8 +210,15 @@ button:hover {
   color: white;
 }
 
+.projectModalViewProject {
+  margin-left: 390px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: white;
+}
 .projectModalViewCode {
-  margin-left: 30%;
+  margin-right: 390px;
+  padding-left: 10px;
   padding-bottom: 0;
   margin-bottom: 0;
   color: white;
@@ -213,6 +232,11 @@ button:hover {
 }
 .project-metadata p span {
   font-size: 16px;
+}
+
+.project-metadata-descriptive {
+  color: rgb(47, 79, 79);
+  font-weight: 700;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

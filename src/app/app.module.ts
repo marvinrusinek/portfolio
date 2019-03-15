@@ -14,6 +14,8 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 import { ScrollSpyModule } from 'ngx-scrollspy';
 import { NgBackToTopModule } from 'ng-back-to-top';
 // import { ParallaxModule } from "ngx-parallax/lib/parallax.module";
+import { NgsRevealModule } from 'ngx-scrollreveal';
+import { ParallaxScrollModule } from 'ng2-parallaxscroll';
 
 import { RecaptchaModule, RecaptchaSettings, RECAPTCHA_SETTINGS } from 'ng-recaptcha';
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
@@ -38,6 +40,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 // import { AngularFireDatabase } from 'angularfire2/database';
 import { ProjectService } from './projects/project.service';
+import { TrainingService } from "./about/education/training.service";
 import { TechSkillsService } from './about/techskills/techskills.service';
 import { OverviewComponent } from './about/overview/overview.component';
 import { EducationComponent } from './about/education/education.component';
@@ -87,11 +90,14 @@ import { ResumeComponent } from './about/resume/resume.component';
     RecaptchaModule,
     RecaptchaFormsModule,
     NgBackToTopModule,
+    NgsRevealModule,
+    ParallaxScrollModule
     // ParallaxModule
   ],
   providers: [
     // AngularFireDatabase,
     ProjectService,
+    TrainingService,
     TechSkillsService,
     {
       provide: RECAPTCHA_SETTINGS,

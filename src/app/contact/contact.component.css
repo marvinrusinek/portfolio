@@ -70,6 +70,7 @@ form {
   margin-left: 10px;
   margin-top: 25px;
 }
+
 legend {
   margin-top: -10px;
   font-size: 28px;
@@ -113,9 +114,9 @@ input.ng-invalid.ng-touched {
 
 .nameField .fa-id-card, .emailField .fa-envelope {
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 10px;
-  color: #66cdaa !important;
+  color: #228B22 !important;
   font-size: 20px;
 }
 
@@ -155,6 +156,45 @@ label, .form-services ul li {
 
 .message {
   height: 270px;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea[type="text"]::-webkit-input-placeholder {
+  color: #3F704D !important;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea[type="text"]::-webkit-input-placeholder {
+  color: #228B22 !important;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-moz-placeholder,
+textarea[type="text"]::-webkit-input-placeholder {
+  color: #3F704D !important;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]:-ms-input-placeholder {
+  color: #3F704D !important;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+input[type="email"]::-moz-placeholder {
+  color: #3F704D !important;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  opacity: 1;
 }
 
 .services-query {

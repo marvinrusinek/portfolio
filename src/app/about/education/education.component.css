@@ -19,9 +19,13 @@ ul.caret li:before {
   color: #0275d8;
 }
 
-ul li > a {
+a {
   color: rgb(2, 117, 184) !important;
   font-weight: 700;
+}
+
+.list-unstyled {
+  margin-bottom: 0;
 }
 
 .school-link {

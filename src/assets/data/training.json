@@ -1,0 +1,44 @@
+[
+  {
+    "course": "\"A Smarter Way to Learn JavaScript\" - training book and online exercises",
+    "dateCompleted": "August 2018",
+    "certUrl": "http://www.asmarterwaytolearn.com/javascript-certificate-of-completion-marvin-rusinek.jpg"
+  },
+  {
+    "course": "Udemy - \"Accelerated JavaScript Training\" bootcamp",
+    "dateCompleted": "April 2018",
+    "certUrl": "https://www.udemy.com/certificate/UC-C6BBGOV8/"
+  },
+  {
+    "course": "Udemy - \"Angular (Angular 2+) & NodeJS - The MEAN Stack Guide\"",
+    "dateCompleted": "April 2018",
+    "certUrl": "https://www.udemy.com/certificate/UC-NQ97G2OH/"
+  },
+  {
+    "course": "Udemy - \"Angular 5 (formerly Angular 2) - The Complete Guide\"",
+    "dateCompleted": "March 2018",
+    "certUrl": "https://www.udemy.com/certificate/UC-X9EAFHT1/"
+  },
+  {
+    "course": "Coursera - \"Server-side Development with NodeJS\"",
+    "dateCompleted": "October 2016",
+    "certUrl": "https://www.coursera.org/account/accomplishments/certificate/NK6FZMW8QNT4"
+  },
+  {
+    "course": "Coursera - \"Multi-platform Mobile App Development with Web Technologies\" (Ionic)",
+    "dateCompleted": "September 2016",
+    "certUrl": "https://www.coursera.org/account/accomplishments/certificate/RKJ6LHJDK87H"
+  },
+  {
+    "course": "Coursera - \"Front-End JavaScript Frameworks: AngularJS\"",
+    "dateCompleted": "September 2016",
+    "certUrl": "https://www.coursera.org/account/accomplishments/certificate/VUDJ8L5BT4V9"
+  },
+  {
+    "course": "Coursera - \"Front-End Web UI Frameworks and Tools\" (Bootstrap)",
+    "dateCompleted": "August 2016",
+    "certUrl": "https://www.coursera.org/account/accomplishments/certificate/J8JUM2LZNDWU"
+  }
+]
+
+

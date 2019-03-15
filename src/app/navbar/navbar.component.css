@@ -12,10 +12,6 @@ header {
   padding-right: 10px;
 }
 
-.nav-link.active {
-  border-bottom: 3px solid #0275d8;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -48,11 +44,13 @@ ul li {
 }
 
 a > span.navbar-text {
-  font-size: 3em;
+  font-size: 2.8em;
   color: #0275d8;
   font-weight: bold;
+  margin-left: -10px;
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                0px -5px 35px rgba(255,255,255,0.3);
+  width: 100%;
 }
 
 span {
@@ -78,7 +76,7 @@ span {
 
 ul.navbar-nav {
   padding-left: 40px;
-  margin-top: -40px;
+  margin-top: -50px;
   background-color: #4ABDAC;
   margin-bottom: -40px;
   margin-left: -55px;
@@ -93,9 +91,33 @@ span.nav-span {
   margin-top: 8px;
   margin-left: 5px;
 }
-.blog-link > a:hover {
-  border-bottom: 3px solid #0275d8;
-  padding-bottom: 13px;
+
+.slide-center-out
+{
+  text-decoration: none;
+  display: inline-block;
+  color: #0275d8;
+}
+/* Add an empty string after the element with class .slide-center-out */
+.slide-center-out:after
+{
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  -moz-transition: width .5s ease, background-color .5s ease;
+  margin: auto; /* center the content so it will sliding from the middle to the left and right */
+  margin-bottom: -15px;
+}
+
+/* Change the width and background on hover, aka sliding from the middle to the left and right */
+.slide-center-out:hover:after
+{
+  width: 100%;
+  background: #0275d8;
 }
 
 .social-container {
@@ -208,10 +230,10 @@ span.nav-span {
     font-size: 2em;
   }
 }
-
+/*
 @media (max-width: 575px) {
   button.navbar-toggler {
     margin-top: -60px;
   }
-}
+}*/
 

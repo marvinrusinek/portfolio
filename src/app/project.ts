@@ -11,4 +11,6 @@ export interface IProject {
   dateCompleted: string;
   technologies: string;
   description: string;
+  problem: string;
+  solution: string;
 }

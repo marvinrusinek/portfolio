@@ -14,17 +14,15 @@ $(document).ready(function() {
   });
 });
 
-/* Smooth scroll */
-$(document).on("click", 'a[href^="#"]', function(event) {
-    event.preventDefault();
-
-    $("html, body").animate({
-      scrollTop: $($.attr(this, "href")).offset().top
-    }, 1000);
+/* Bootstrap accordion scrolling */
+$('.collapse').on('shown.bs.collapse', function(e) {
+  var $card = $(this).closest('.card');
+  $('html,body').animate({
+    scrollTop: $card.offset().top
+  }, 500);
 });
 
-
-<!-- Google Analytics -->
+/* Google Analytics */
 (function (i, s, o, g, r, a, m) {
   i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
       (i[r].q = i[r].q || []).push(arguments)
@@ -35,14 +33,14 @@ ga('create', 'UA-16826000-1', 'auto');
 ga('send', 'pageview');
 
 
-<!-- Initialize Bootstrap Scrollspy -->
+/* Initialize Bootstrap Scrollspy */
 $(document).ready(function () {
   $('body').scrollspy({
     target: '.navbar'
   });
 });
 
-<!-- configure Isotope plugin for portfolio project gallery -->
+/* configure Isotope plugin for project gallery */
 $(document).ready(function() {
     $(".myPortfolioGrid").isotope(
       {
@@ -73,6 +71,7 @@ $(document).ready(function() {
 
     $("button.button").click(function() {
       var to_filter = $(this).attr("data-filter");
-      (to_filter == "all") ? $(".myPortfolioGrid").isotope({filter: ".portfolioProject"}) : $(".myPortfolioGrid").isotope({filter: "." + to_filter});
+      (to_filter == "all") ? $(".myPortfolioGrid").isotope({filter: ".portfolioProject"})
+                              : $(".myPortfolioGrid").isotope({filter: "." + to_filter});
     });
 });

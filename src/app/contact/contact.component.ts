@@ -39,7 +39,7 @@ export class ContactComponent {
 
     const selectedServiceIds = this.contactForm.value.services
       .map((v, i) => v ? this.services[i].id : null)
-      .filter(v => v !== null);
+        .filter(v => v !== null);
 
     let data = {
       service_id: 'marvin_rusinek',
@@ -69,8 +69,8 @@ function minSelectedCheckboxes(min = 1) {
     const totalSelected = formArray.controls
       // get a list of checkbox values (boolean)
       .map(control => control.value)
-      // total up the number of checked checkboxes
-      .reduce((prev, next) => next ? prev + next : prev, 0);
+        // total up the number of checked checkboxes
+        .reduce((prev, next) => next ? prev + next : prev, 0);
 
     // if the total is not greater than the minimum, return the error message
     return totalSelected >= min ? null : { required: true };

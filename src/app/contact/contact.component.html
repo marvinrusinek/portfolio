@@ -49,7 +49,8 @@
         <div class="contactMessageFormContainer">
           <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
             <fieldset>
-              <legend class="text-center mb-10" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">Get in touch about your project</legend>
+              <legend class="text-center mb-10" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
+                Get in touch about your project</legend>
               <p class="text-center">I will get your project launched within your timeframe.</p>
                 <div class="container">
                   <div class="row">
@@ -108,7 +109,7 @@
                           </li>
                         </ul>
                       </div>
-                      <div style="margin-left: 10%; margin-top: 40px" class="form-group">
+                      <div style="margin-left: 10%; margin-top: 40px; border: 3px solid green" class="form-group">
                         <re-captcha formControlName="recaptchaReactive"></re-captcha>
                       </div>
                     </div>
@@ -123,7 +124,7 @@
                   </div>
                   <div class="container">
                     <div class="row">
-                      <div style="margin-left: 35%; display: block">
+                      <div style="margin-left: 35%; display: block" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
                         <button type="submit" class="button hvr-rectangle-out">
                           <img src="../../assets/images/contact/enter.png">&nbsp;&nbsp;Submit Your Request
                         </button>

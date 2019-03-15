@@ -11,8 +11,13 @@ article {
 }
 
 article p {
-  margin-left: -80px;
-  width: 1250px;
+  margin-left: 0px;
+  width: 1100px;
+}
+
+article p a {
+  color: rgb(2, 117, 184) !important;
+  font-weight: 700;
 }
 
 /*********************** Isotope button **********************/

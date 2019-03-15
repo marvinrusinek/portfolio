@@ -17,11 +17,11 @@ body {
 }
 
 body, h2 {
+  color: #111;
   font-family: proxima-nova, sans-serif;
   letter-spacing: normal;
   line-height: 36px;
   text-transform: none;
-  color: #111;
 }
 
 body h2:before {
@@ -111,13 +111,14 @@ body h2:before {
 
 h2.heading {
   color: #333;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  font-family: proxima-nova, sans-serif;
   margin-left: 0;
   margin-bottom: 30px;
+  overflow: hidden;
   padding-top: 10px;
-  font-family: proxima-nova, sans-serif;
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
 }
 
 h2.heading:after {
@@ -146,15 +147,16 @@ p, article > p {
 
 .modal-header::before {
   content: '';
-  width: 100%;
+  width: 1200px;
   height: .5rem;
   top: 0;
   left: 0;
   background: -moz-linear-gradient(left, #04B3BA 0%, #0ABEA2 100%);
-  background: -webkit-linear-gradient(left, #04B3BA 0%,#0ABEA2 100%);
-  background: linear-gradient(to right, #04B3BA 0%,#0ABEA2 100%);
+  background: -webkit-linear-gradient(left, #04B3BA 0%, #0ABEA2 100%);
+  background: linear-gradient(to right, #04B3BA 0%, #0ABEA2 100%);
   display: block;
   position: absolute;
+  border-radius: 10px;
 }
 
 /* Rectangle Out */
