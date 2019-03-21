@@ -1,5 +1,3 @@
-@import '../../../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css';
-
 header {
   background-color: #4ABDAC;
   width: 100%;
@@ -26,14 +24,10 @@ ul.menu {
   margin-left: -20px;
 }
 
-ul li {
-  padding-right: 5px;
-}
-
 
 .navbar-brand {
   padding-top: 15px;
-  padding-right: 40px;
+  padding-right: 20px;
   margin-top: -10px;
   margin-left: 75px;
   background: #4ABDAC;
@@ -75,16 +69,21 @@ span {
 }
 
 ul.navbar-nav {
-  padding-left: 40px;
   margin-top: -50px;
   background-color: #4ABDAC;
   margin-bottom: -40px;
-  margin-left: -55px;
+  width: auto;
 }
 
 span.nav-span {
   font-size: 17px;
   text-transform: uppercase;
+}
+
+.nav-link, li.nav-item {
+  display: inline-block;
+  color: #0275b8;
+  font-weight: bold;
 }
 
 .blog-link {
@@ -112,47 +111,17 @@ span.nav-span {
   margin: auto; /* center the content so it will sliding from the middle to the left and right */
   margin-bottom: -15px;
 }
-
 /* Change the width and background on hover, aka sliding from the middle to the left and right */
-.slide-center-out:hover:after
-{
+.slide-center-out:hover:after {
   width: 100%;
   background: #0275d8;
 }
 
-.social-container {
-  margin: 0 auto;
-  height: 60px;
-}
-.social-container > ul {
-  list-style-type: none;
-}
-.social-container > ul li {
-  display: inline-block;
-  margin-top: 10px;
-}
-.social-container > li {
-  padding-right: 15px;
-}
-.social-container > ul li:nth-child(2) {
-  padding-right: 10px;
-  border-right: 1px solid #0275b8 !important;
-}
-.social-container > ul li:nth-child(3) {
-  padding-left: 10px;
-}
-.social-container > ul li > a img:hover {
-  margin-top: -5px;
-}
-.search-icon {
-  margin-top: 7px;
-}
 
 /* rotate the hamburger button on toggle */
 .navbar-toggler:focus, .navbar-toggler:active {
   outline: 0;
 }
-
 .navbar-toggler span {
   display: block;
   height: 20px;
@@ -167,14 +136,12 @@ span.nav-span {
   left: 0;
   opacity: 1;
 }
-
 .navbar-toggler span:nth-child(1) {
   -webkit-transition: transform .35s ease-in-out;
   -moz-transition: transform .35s ease-in-out;
   -o-transition: transform .35s ease-in-out;
   transition: transform .35s ease-in-out;
 }
-
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute;
   left: 12px;
@@ -201,6 +168,12 @@ span.nav-span {
 
 }
 
+
+@media (max-width: 575px) {
+  button.navbar-toggler {
+    margin-top: -60px;
+  }
+}
 
 @media (min-width: 481px) and (max-width: 575px) {
   .logo {
@@ -230,10 +203,3 @@ span.nav-span {
     font-size: 2em;
   }
 }
-/*
-@media (max-width: 575px) {
-  button.navbar-toggler {
-    margin-top: -60px;
-  }
-}*/
-

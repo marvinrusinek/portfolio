@@ -46,94 +46,81 @@
   <br clear="left" />
 
   <div>
-        <div class="contactMessageFormContainer">
-          <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
-            <fieldset>
-              <legend class="text-center mb-10" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
-                Get in touch about your project</legend>
-              <p class="text-center">I will get your project launched within your timeframe.</p>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <div class="name form-group">
-                        <label for="Name">Name: <span class="required">*</span></label>
-                        <div class="nameField">
-                          <span class="fa fa-id-card"></span>
-                          <input type="text" class="form-control" formControlName="name" id="name" name="name"
-                                 aria-label="Name" aria-required="true" placeholder="Enter your name&hellip;">
+    <div class="contactMessageFormContainer">
+      <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
+        <fieldset>
+          <legend class="text-center mb-10" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
+            Get in touch about your project</legend>
+          <p class="text-center">I will get your project launched within your timeframe.</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="name form-group">
+                  <ul *ngFor="let contactfield of contactFormFields">
+                    <li style="list-style-type: none">
+                      <div>{{contactfield.inputName}}: <span class="required">*</span></div>
+                      <div class={{contactfield.inputClass}} style="margin-top: 5px">
+                        <span class={{contactfield.icon}}></span>
+                        <div *ngIf="contactfield.inputType === 'input'">
+                          <input type="contactfield.type" class="form-control" aria-required="true"
+                             name="contactfield.formControl" [formControlName]="contactfield.formControl"
+                             [placeholder]="contactfield.placeholderText">
                         </div>
-                        <span *ngIf="!contactForm.get('name').valid && contactForm.get('name').touched"
-                              class="help-block form-field-error" style="margin-top: -20px">
-                          <span *ngIf="contactForm.get('name').errors['required']">Name is required!</span>
-                        </span>
+                        <div *ngIf="contactfield.inputType === 'textarea'">
+                           <textarea type="contactfield.type" class="form-control" aria-required="true" rows="4"
+                             [formControlName]="contactfield.formControl" name="contactfield.formControl"
+                             [placeholder]="contactfield.placeholderText"></textarea>
+                        </div>
                       </div>
-
-                      <div class="email form-group">
-                        <label for="emailAddress">E-mail Address: <span class="required">*</span></label>
-                        <div class="emailField">
-                          <span class="fa fa-envelope"></span>
-                          <input type="email" class="form-control" formControlName="emailAddress" id="emailAddress"
-                                 name="emailAddress" aria-label="E-mail Address" aria-required="true"
-                                 placeholder="Enter your e-mail address&hellip;">
-                        </div>
-                        <span *ngIf="!contactForm.get('emailAddress').valid && contactForm.get('emailAddress').touched"
-                              class="help-block form-field-error" style="margin-top: -20px">
-                          <span *ngIf="contactForm.get('emailAddress').errors['required']">
-                            E-mail address is required!
+                      <span *ngIf="contactForm.get('contactfield.formControl') === 'invalid' &&
+                        contactForm.get('contactfield.formControl') === 'untouched'" class="help-block form-field-error"
+                        style="margin-top: -20px">
+                          <span *ngIf="contactForm.get('contactfield.formControl').errors['required']">
+                            {{contactfield.inputName}} is required!
                           </span>
-                        </span>
-                      </div>
-
-                      <div class="message form-group">
-                        <label for="message">Message: <span class="required">*</span></label>
-                        <textarea type="text" class="form-control" formControlName="message" id="message" name="message"
-                                  rows="4" aria-label="Message" aria-required="true"
-                                  placeholder="Enter your message&hellip;"></textarea>
-                        <span *ngIf="!contactForm.get('message').valid && contactForm.get('message').touched"
-                              class="help-block form-field-error" style="margin-top: -20px">
-                          <span *ngIf="contactForm.get('message').errors['required']">Message is required!</span>
-                        </span>
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                      <h5 class="text-center services-query">What services are you interested in?</h5>
-                      <div class="form-services form-group">
-                        <ul formArrayName="services" *ngFor="let service of contactForm['controls'].services['controls'];
-                         let i = index">
-                          <li>
-                            <label class="services">
-                              <input id="services" class="regular-checkbox" name="services" type="checkbox"
-                                     [formControlName]="i">&nbsp;&nbsp;{{services[i].name}}
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                      <div style="margin-left: 10%; margin-top: 40px; border: 3px solid green" class="form-group">
-                        <re-captcha formControlName="recaptchaReactive"></re-captcha>
-                      </div>
-                    </div>
-                  </div> <!-- end row-->
-                  </div>
-                  <div class="container">
-                    <div class="row">
-                      <span *ngIf="!contactForm.valid && contactForm.touched" class="help-block form-error" style="margin-top: -75px; margin-left: 270px; padding-bottom: 10px">
-                        Please enter valid data!
                       </span>
-                    </div>
-                  </div>
-                  <div class="container">
-                    <div class="row">
-                      <div style="margin-left: 35%; display: block" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
-                        <button type="submit" class="button hvr-rectangle-out">
-                          <img src="../../assets/images/contact/enter.png">&nbsp;&nbsp;Submit Your Request
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-              </fieldset>
-            </form>
-        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h5 class="text-center services-query">What services are you interested in?</h5>
+                <div class="form-services form-group">
+                  <ul formArrayName="services" *ngFor="let service of contactForm['controls'].services['controls'];
+                    let i = index">
+                    <li>
+                      <label class="services">
+                        <input id="services" class="regular-checkbox" name="services" type="checkbox"
+                          [formControlName]="i">&nbsp;&nbsp;{{services[i].name}}
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="recaptchaReactiveFormGroup form-group">
+                  <re-captcha formControlName="recaptchaReactive"></re-captcha>
+                </div>
+              </div>
+            </div> <!-- end row-->
+          </div>
+          <div class="container">
+            <div class="row">
+              <span *ngIf="!contactForm.valid && contactForm.touched" class="help-block form-error"
+                style="margin-top: -75px; margin-left: 270px; padding-bottom: 10px">Please enter valid data!</span>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="buttonContainer" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
+                <button type="submit" class="button hvr-rectangle-out">
+                  <img src="../../assets/images/contact/enter.png">&nbsp;&nbsp;Submit Your Request
+                </button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </div>
   <!--<div>Form status: {{contactForm.status}}</div>
   <pre>{{contactForm.value | json}}</pre>-->

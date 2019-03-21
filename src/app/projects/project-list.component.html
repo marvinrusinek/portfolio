@@ -88,8 +88,8 @@
               </div>
             </div>
 
-            <div>
-              <div style="float:left">
+            <div class="projectModalButtons">
+              <div class="projectModalViewProjectButtonAlign">
                 <span class="projectModalViewProject" *ngIf="project.projectUrl !== null">
                   <a href={{project.projectUrl}} target="_blank">
                     <button type="button" class="white button">&nbsp;&nbsp;&nbsp;&nbsp;
@@ -98,7 +98,7 @@
                   </a>
                 </span>
               </div>
-              <div style="float:left;">
+              <div class="projectModalViewCodeButtonAlign">
                 <span class="projectModalViewCode" *ngIf="project.codeUrl !== null">
                   <a href={{project.codeUrl}} target="_blank">
                     <button type="button" class="white button">&nbsp;&nbsp;&nbsp;&nbsp;

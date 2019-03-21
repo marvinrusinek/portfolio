@@ -1,13 +1,30 @@
 <div id="education">
-  <section class="myeducation">
-    <h3>Education</h3>
+  <section class="timeline">
+    <h3 class="text-center">Timeline</h3>
+    <p class="text-center"><em>(A synopsis of my education and experience&hellip;)</em></p>
+
+    <mgl-timeline [mobileWidthThreshold]="575">
+      <mgl-timeline-entry *ngFor="let _timeline of timelineEntries">
+        <mgl-timeline-entry-header><span>{{ _timeline.field }}</span></mgl-timeline-entry-header>
+        <mgl-timeline-entry-content><span>{{ _timeline.organization }}</span></mgl-timeline-entry-content>
+        <mgl-timeline-entry-dot><i class="fas fa-graduation-cap"></i></mgl-timeline-entry-dot>
+        <mgl-timeline-entry-side><span>{{ _timeline.duration }}</span></mgl-timeline-entry-side>
+      </mgl-timeline-entry>
+    </mgl-timeline>
+  </section>
+
+  <hr />
+
+  <section class="coursework">
+    <h3 class="text-center">Relevant Courses</h3>
+    <p class="text-center"><em>(Click the links below to view my coursework.)</em></p>
     <ul class="caret">
       <li>
         <a class="school-link" data-toggle="collapse" href="#NYUSPS" aria-expanded="false" aria-controls="NYUSPS">
           New York University School of Professional Studies
         </a>,
         <span class="degree">Certificates in Advanced Web Development and .NET Application Development</span>,
-        <br /><time>Fall 2010-Spring 2012</time>
+        <time>Fall 2010-Spring 2012</time>
         <div class="collapse" id="NYUSPS">
           <div class="card card-body">
             <ul>
@@ -51,10 +68,8 @@
       </li>
       <li>
         <a class="school-link" data-toggle="collapse" href="#NYUPoly" aria-expanded="false" aria-controls="NYUPoly">
-          New York University Tandon School of Engineering
-        </a>,
-        <span class="degree">Bachelor of Science in Computer Science</span>,
-        Graduated <time>May 2003</time>
+          New York University Tandon School of Engineering </a>, <span class="degree">Bachelor of Science in Computer
+        Science</span>, Graduated <time>May 2003</time>
         <div class="collapse" id="NYUPoly">
           <div class="card card-body">
               <ul>
@@ -62,13 +77,13 @@
                 <li>Object-Oriented Analysis and Design using Java</li>
                 <li>Application Security with Java</li>
                 <li>Software Engineering</li>
-                <li>Programming Methodology in C++</li>
+                <li>Introduction to Programming Methodology in C++</li>
                 <li>Data Structures and Algorithms in C++</li>
                 <li>Object-Oriented Programming in C++</li>
                 <li>Advanced Algorithms in C++</li>
                 <li>Programming Languages</li>
                 <li>Artificial Intelligence</li>
-                <li>Computer Architecture</li>
+                <li>Computer Architecture and Organization</li>
                 <li>Digital Logic and State Machine Design</li>
                 <li>Operating Systems</li>
                 <li>Computer Networking</li>
@@ -76,11 +91,13 @@
                 <li>Advanced Senior Project in Computer Science</li>
                 <li>Differential Equations and Numerical Methods</li>
                 <li>Discrete and Combinatorial Mathematics</li>
+                <li>Project Planning and Quality Management</li>
+                <li>Marketing</li>
               </ul>
           </div>
         </div>
       </li>
-      <!--<li>
+      <li>
         <a class="school-link" data-toggle="collapse" href="#midwood" aria-expanded="false" aria-controls="midwood">
           Midwood High School at Brooklyn College
         </a>,
@@ -113,14 +130,14 @@
             </ul>
           </div>
         </div>
-      </li>-->
+      </li>
     </ul>
   </section>
 
   <hr />
 
   <section class="training">
-    <h3>Online Training</h3>
+    <h3 class="text-center">Online Training</h3>
     <ul *ngFor="let training of trainings" class="caret list-unstyled">
       <li><span>{{training.course}}</span>, completed <span>{{training.dateCompleted}}</span>&nbsp;&nbsp;
         <span><a href={{training.certUrl}}>View Certificate</a></span>
@@ -131,7 +148,7 @@
   <hr />
 
   <section class="conferences">
-    <h3>Professional Conferences and Training</h3>
+    <h3 class="text-center">Professional Conferences and Training</h3>
     <div class="conferencesGrid">
       <div class="conf_left">
         <ul class="caret">
@@ -193,7 +210,7 @@
   <hr style="padding-top: -20px" />
 
   <section>
-    <h3>Meet-Up Groups</h3>
+    <h3 class="text-center">Meet-Up Groups</h3>
     <ul class="caret">
       <li><a href="https://www.angularnyc.com" target="_blank">Angular NYC</a></li>
       <li><a href="https://www.meetup.com/ReactNYC" target="_blank">React NYC</a></li>

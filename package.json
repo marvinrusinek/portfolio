@@ -36,6 +36,7 @@
     "@types/lodash": "^4.14.121",
     "angular-bootstrap-md": "^7.4.1",
     "angular-font-awesome": "^3.1.2",
+    "angular-mgl-timeline": "^0.3.1",
     "angular-sanitize": "^1.7.7",
     "angularfire2": "5.1.1",
     "body-parser": "^1.18.3",

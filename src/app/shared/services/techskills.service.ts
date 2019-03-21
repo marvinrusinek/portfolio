@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { ISkill } from '../../skill';
+import { ISkill } from '../models/skill';
 
 @Injectable()
 export class TechSkillsService {

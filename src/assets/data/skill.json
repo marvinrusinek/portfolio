@@ -1,182 +1,182 @@
 [
   {
     "id": 1,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/HTML5.png",
-    "skillName": "HTML5"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/HTML5.png",
+    "name": "HTML5"
   },
   {
     "id": 2,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/CSS3.png",
-    "skillName": "CSS3"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/CSS3.png",
+    "name": "CSS3"
   },
   {
     "id": 3,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/JavaScript.png",
-    "skillName": "JavaScript"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/JavaScript.png",
+    "name": "JavaScript"
   },
   {
     "id": 4,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/jquery.png",
-    "skillName": "jQuery"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/jquery.png",
+    "name": "jQuery"
   },
   {
     "id": 5,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/Bootstrap.jpg",
-    "skillName": "Bootstrap"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/Bootstrap.jpg",
+    "name": "Bootstrap"
   },
   {
     "id": 6,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/foundation.png",
-    "skillName": "Foundation"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/foundation.png",
+    "name": "Foundation"
   },
   {
     "id": 7,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/Sass.png",
-    "skillName": "Sass"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/Sass.png",
+    "name": "Sass"
   },
   {
     "id": 8,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/typescript.png",
-    "skillName": "TypeScript"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/typescript.png",
+    "name": "TypeScript"
   },
   {
     "id": 9,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/Angular.png",
-    "skillName": "Angular"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/Angular.png",
+    "name": "Angular"
   },
   {
     "id": 10,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/React.png",
-    "skillName": "React"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/React.png",
+    "name": "React"
   },
   {
     "id": 11,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/Knockout.png",
-    "skillName": "Knockout"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/Knockout.png",
+    "name": "Knockout"
   },
   {
     "id": 12,
-    "skillType": "front-end",
-    "skillImage": "../../assets/images/tech/front-end/ionic.png",
-    "skillName": "Ionic"
+    "type": "front-end",
+    "image": "../../assets/images/tech/front-end/ionic.png",
+    "name": "Ionic"
   },
   {
     "id": 13,
-    "skillType": "back-end",
-    "skillImage": "../../assets/images/tech/back-end/DotNetCore.png",
-    "skillName": ".NET"
+    "type": "back-end",
+    "image": "../../assets/images/tech/back-end/DotNetCore.png",
+    "name": ".NET"
   },
   {
     "id": 14,
-    "skillType": "back-end",
-    "skillImage": "../../assets/images/tech/back-end/nodejs.png",
-    "skillName": "NodeJS"
+    "type": "back-end",
+    "image": "../../assets/images/tech/back-end/nodejs.png",
+    "name": "NodeJS"
   },
   {
     "id": 15,
-    "skillType": "back-end",
-    "skillImage": "../../assets/images/tech/back-end/php_mysql.png",
-    "skillName": "PHP/MySQL"
+    "type": "back-end",
+    "image": "../../assets/images/tech/back-end/php_mysql.png",
+    "name": "PHP/MySQL"
   },
   {
     "id": 16,
-    "skillType": "back-end",
-    "skillImage": "../../assets/images/tech/back-end/java.png",
-    "skillName": "Java"
+    "type": "back-end",
+    "image": "../../assets/images/tech/back-end/java.png",
+    "name": "Java"
   },
   {
     "id": 17,
-    "skillType": "back-end",
-    "skillImage": "../../assets/images/tech/back-end/mongodb.png",
-    "skillName": "MongoDB"
+    "type": "back-end",
+    "image": "../../assets/images/tech/back-end/mongodb.png",
+    "name": "MongoDB"
   },
   {
     "id": 18,
-    "skillType": "back-end",
-    "skillImage": "../../assets/images/tech/back-end/firebase.png",
-    "skillName": "Firebase"
+    "type": "back-end",
+    "image": "../../assets/images/tech/back-end/firebase.png",
+    "name": "Firebase"
   },
   {
     "id": 19,
-    "skillType": "dev-tools",
-    "skillImage": "../../assets/images/tech/dev-tools/vscode.png",
-    "skillName": "VSCode"
+    "type": "dev-tools",
+    "image": "../../assets/images/tech/dev-tools/vscode.png",
+    "name": "VSCode"
   },
   {
     "id": 20,
-    "skillType": "dev-tools",
-    "skillImage": "../../assets/images/tech/dev-tools/WebStorm.png",
-    "skillName": "WebStorm"
+    "type": "dev-tools",
+    "image": "../../assets/images/tech/dev-tools/WebStorm.png",
+    "name": "WebStorm"
   },
   {
     "id": 21,
-    "skillType": "dev-tools",
-    "skillImage": "../../assets/images/tech/dev-tools/IntelliJ.jpg",
-    "skillName": "IntelliJ"
+    "type": "dev-tools",
+    "image": "../../assets/images/tech/dev-tools/IntelliJ.jpg",
+    "name": "IntelliJ"
   },
   {
     "id": 22,
-    "skillType": "dev-tools",
-    "skillImage": "../../assets/images/tech/dev-tools/git.png",
-    "skillName": "Git"
+    "type": "dev-tools",
+    "image": "../../assets/images/tech/dev-tools/git.png",
+    "name": "Git"
   },
   {
     "id": 23,
-    "skillType": "dev-tools",
-    "skillImage": "../../assets/images/tech/dev-tools/gulp.png",
-    "skillName": "Gulp"
+    "type": "dev-tools",
+    "image": "../../assets/images/tech/dev-tools/gulp.png",
+    "name": "Gulp"
   },
   {
     "id": 24,
-    "skillType": "dev-tools",
-    "skillImage": "../../assets/images/tech/dev-tools/grunt.png",
-    "skillName": "Grunt"
+    "type": "dev-tools",
+    "image": "../../assets/images/tech/dev-tools/grunt.png",
+    "name": "Grunt"
   },
   {
     "id": 25,
-    "skillType": "ux-design",
-    "skillImage": "../../assets/images/tech/ux-design/photoshop.png",
-    "skillName": "PhotoShop"
+    "type": "ux-design",
+    "image": "../../assets/images/tech/ux-design/photoshop.png",
+    "name": "PhotoShop"
   },
   {
     "id": 26,
-    "skillType": "ux-design",
-    "skillImage": "../../assets/images/tech/ux-design/illustrator.png",
-    "skillName": "Illustrator"
+    "type": "ux-design",
+    "image": "../../assets/images/tech/ux-design/illustrator.png",
+    "name": "Illustrator"
   },
   {
     "id": 27,
-    "skillType": "ux-design",
-    "skillImage": "../../assets/images/tech/ux-design/fireworks.png",
-    "skillName": "Fireworks"
+    "type": "ux-design",
+    "image": "../../assets/images/tech/ux-design/fireworks.png",
+    "name": "Fireworks"
   },
   {
     "id": 28,
-    "skillType": "ux-design",
-    "skillImage": "../../assets/images/tech/ux-design/visio.png",
-    "skillName": "Visio"
+    "type": "ux-design",
+    "image": "../../assets/images/tech/ux-design/visio.png",
+    "name": "Visio"
   },
   {
     "id": 29,
-    "skillType": "ux-design",
-    "skillImage": "../../assets/images/tech/ux-design/axure-rp.png",
-    "skillName": "Axure"
+    "type": "ux-design",
+    "image": "../../assets/images/tech/ux-design/axure-rp.png",
+    "name": "Axure"
   },
   {
     "id": 30,
-    "skillType": "ux-design",
-    "skillImage": "../../assets/images/tech/ux-design/morae.png",
-    "skillName": "Morae"
+    "type": "ux-design",
+    "image": "../../assets/images/tech/ux-design/morae.png",
+    "name": "Morae"
   }
 ]

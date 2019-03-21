@@ -1,0 +1,31 @@
+[
+  {
+    "inputName": "Name",
+    "inputType": "input",
+    "type": "text",
+    "inputClass": "nameField",
+    "icon": "fa fa-id-card",
+    "formControl": "name",
+    "placeholderText": "Enter your full name..."
+  },
+  {
+    "inputName": "E-mail Address",
+    "inputType": "input",
+    "type": "email",
+    "inputClass": "emailField",
+    "icon": "fa fa-envelope",
+    "formControl": "emailAddress",
+    "placeholderText": "Enter your e-mail address..."
+  },
+  {
+    "inputName": "Message",
+    "inputType": "textarea",
+    "type": "text",
+    "inputClass": "message",
+    "icon": "fas fa-sticky-note",
+    "formControl": "message",
+    "placeholderText": "       Enter your message..."
+  }
+
+
+]

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
-import { ProjectService } from '../project.service';
+import { ProjectService } from '../shared/services/project.service';
 
 @Component({
   selector: 'app-project-list',

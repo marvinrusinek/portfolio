@@ -68,28 +68,28 @@ button:hover {
   width: 160px;
 }
 .projectBtn:before {
-  background: url('../../../assets/images/modal/project.png') no-repeat;
+  background: url('../../assets/images/modal/project.png') no-repeat;
 }
 .codeBtn:before {
-  background: url('../../../assets/images/modal/github.png') no-repeat 200% 200%;
+  background: url('../../assets/images/modal/github.png') no-repeat 200% 200%;
 }
 .category:before {
-  background: url('../../../assets/images/modal/magnifying-glass.png') no-repeat;
+  background: url('../../assets/images/modal/magnifying-glass.png') no-repeat;
 }
 .technologies:before {
-  background: url('../../../assets/images/modal/laptop.png') no-repeat;
+  background: url('../../assets/images/modal/laptop.png') no-repeat;
 }
 .projectDurationText:before {
-  background: url('../../../assets/images/modal/calendar.png') no-repeat;
+  background: url('../../assets/images/modal/calendar.png') no-repeat;
 }
 .projectDescription:before {
-   background: url('../../../assets/images/modal/description.png') no-repeat;
+   background: url('../../assets/images/modal/description.png') no-repeat;
 }
 .projectProblem:before {
-  background: url('../../../assets/images/modal/puzzle.png') no-repeat;
+  background: url('../../assets/images/modal/puzzle.png') no-repeat;
 }
 .projectSolution:before {
-  background: url('../../../assets/images/modal/solved.png') no-repeat;
+  background: url('../../assets/images/modal/solved.png') no-repeat;
 }
 
 .category:before, .technologies:before, .projectDurationText:before {
@@ -222,6 +222,9 @@ button:hover {
   padding-bottom: 0;
   margin-bottom: 0;
   color: white;
+}
+.projectModalViewProjectButtonAlign, .projectModalViewCodeButtonAlign {
+  float: left;
 }
 
 .project-metadata {

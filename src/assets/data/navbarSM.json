@@ -1,0 +1,22 @@
+[
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/marvinrusinek",
+    "image": "http://www.marvinrusinek.com/assets/images/contact/linkedin.gif"
+  },
+  {
+    "name": "GitHub",
+    "link": "https://github.com/marvinrusinek",
+    "image": "http://www.marvinrusinek.com/assets/images/contact/github.png"
+  },
+  {
+    "name": "E-Mail",
+    "link": "#contact",
+    "image": "http://www.marvinrusinek.com/assets/images/contact/mail.png"
+  },
+  {
+    "name": "Search",
+    "link": "",
+    "image": "http://www.marvinrusinek.com/assets/images/search.png"
+  }
+]

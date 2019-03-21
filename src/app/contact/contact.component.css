@@ -119,6 +119,14 @@ input.ng-invalid.ng-touched {
   color: #228B22 !important;
   font-size: 20px;
 }
+.fa-sticky-note {
+  position: absolute;
+  top: 212px;
+  left: 45px;
+  color: #228B22 !important;
+  font-size: 20px;
+}
+
 
 label, .form-services ul li {
   color: #0275b8;
@@ -150,6 +158,12 @@ label, .form-services ul li {
   margin-top: 20px;
 }
 
+.recaptchaReactiveFormGroup {
+  margin-left: 10%;
+  margin-top: 40px;
+  border: 3px solid green;
+}
+
 .name, .email, .message {
   margin-top: -10px;
 }
@@ -157,6 +171,7 @@ label, .form-services ul li {
 .message {
   height: 270px;
 }
+
 input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
 textarea[type="text"]::-webkit-input-placeholder {
@@ -169,14 +184,6 @@ input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
 textarea[type="text"]::-webkit-input-placeholder {
   color: #228B22 !important;
-  font-weight: 900;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
-input[type="text"]::-webkit-input-placeholder,
-input[type="email"]::-moz-placeholder,
-textarea[type="text"]::-webkit-input-placeholder {
-  color: #3F704D !important;
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -195,6 +202,11 @@ input[type="email"]::-moz-placeholder {
   font-size: 16px;
   margin-top: 10px;
   opacity: 1;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea[type="text"]:focus {
+  background-color: powderblue;
 }
 
 .services-query {
@@ -265,6 +277,10 @@ button.button {
   font-weight: bold;
   cursor: pointer;
   background: #66cdaa !important;
+}
+.buttonContainer {
+  margin-left: 35%;
+  display: block;
 }
 
 

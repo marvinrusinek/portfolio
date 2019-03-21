@@ -1,0 +1,31 @@
+.social-container {
+  top: 10%;
+  height: auto;
+  width: auto;
+  position: fixed;
+  right: 2px;
+  float: right;
+  background: none;
+  z-index: 99;
+}
+.social-container > table {
+  text-align: right;
+}
+.social-container > table > tr > td {
+  text-align: center;
+  background: none;
+  margin: 0;
+}
+
+.social-container > table > tr > td > a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #4ABDAC;
+  font-size: 20px;
+}
+
+/* adds a slight animation effect to the SM icons */
+.social-container > table > tr > td > a > img:hover {
+  margin-top: -5px;
+}

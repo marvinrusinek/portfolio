@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "field": "Certificates in Advanced Web Development and ASP.NET Application Development",
+    "organization": "New York University (NYU) School of Continuing and Professional Studies",
+    "duration": "2010-2012"
+  },
+  {
+    "id": 2,
+    "field": "Master of Science in Library and Information Science",
+    "organization": "Pratt Institute School of Information and Library Science",
+    "duration": "2008-2010"
+  },
+  {
+    "id": 3,
+    "field": "Archivist, Librarian and Webmaster",
+    "organization": "American Jewish Historical Society (AJHS)",
+    "duration": "2006-2015"
+  },
+  {
+    "id": 4,
+    "field": "Bachelor of Science in Computer Science",
+    "organization": "NYU Tandon School of Engineering (formerly Polytechnic University)",
+    "duration": "1999-2003"
+  },
+  {
+    "id": 5,
+    "field": "Medical Science Institute, Accelerated Mathematics Program and Intel Science Research Program",
+    "organization": "Midwood High School at Brooklyn College",
+    "duration": "1995-1999"
+  },
+  {
+    "id": 6,
+    "field": "Mathematics Talent",
+    "organization": "Mark Twain Intermediate School 239",
+    "duration": "1993-1995"
+  }
+]

@@ -13,6 +13,7 @@ article {
 article p {
   margin-left: 0px;
   width: 1100px;
+  text-align: justify;
 }
 
 article p a {

@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup, Validators, ValidatorFn } from '@angular/forms';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+
+import { ContactFormService } from "../shared/services/contactform.service";
 
 @Component({
   selector: 'app-portfolio-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  public contactFormFields = [];
   contactForm: FormGroup;
   submittedForm = false;
 
@@ -19,7 +22,7 @@ export class ContactComponent {
     { id: 5, name: 'Digital Marketing' }
   ];
 
-  constructor(private http: HttpClient, private formBuilder: FormBuilder) {
+  constructor(private http: HttpClient, private formBuilder: FormBuilder, private _contactFormService: ContactFormService) {
     // Create a new array with a form control for each order
     const controls = this.services.map(c => new FormControl(false));
     controls[0].setValue(false); // set the first checkbox to true (checked)
@@ -31,6 +34,11 @@ export class ContactComponent {
       'services': new FormArray(controls, minSelectedCheckboxes(1)),
       'recaptchaReactive': new FormControl(null, Validators.required)
     });
+  }
+
+  ngOnInit() {
+    this._contactFormService.getFormFields()
+      .subscribe(data => this.contactFormFields = data);
   }
 
   onSubmit(event: Event) {

@@ -1,0 +1,12 @@
+<div class="social-container nav-item">
+  <table cellspacing="0" cellpadding="0">
+    <tr>
+      <td *ngFor="let navSM of navbarSM">
+        <a target="_blank" href={{navSM.link}}>
+          <img src={{navSM.image}} height="24" width="24" />
+          <span class="sr-only">{{navSM.name}}</span>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>

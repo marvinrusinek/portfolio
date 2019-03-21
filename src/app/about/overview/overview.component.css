@@ -25,6 +25,7 @@ article p {
   color: #36454F;
   width: 100%;
   margin-left: -15px;
+  text-align: justify;
 }
 
 article > p > a {

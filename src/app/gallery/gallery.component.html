@@ -3,22 +3,22 @@
 
   <div class="container">
     <div class="row">
-      <article class="portfolioIntro col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
-               data-sal-duration="300" data-sal="slide-up" data-sal-delay="300">
+      <article class="portfolioIntro col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" data-sal-duration="300"
+               data-sal="slide-up" data-sal-delay="300">
         <p>The following is a portfolio gallery of web development, UX design and programming projects that I have
-          worked on professionally and as part of my studies. The title below the image is linked to the runnable
-          project. Note that if no project is available upon clicking the link, you will be redirected back to the top.
-          Most projects should have both buttons displayed below the title but please be aware that some projects may
-          not have a project or code link available.</p>
+          worked on professionally and as part of my studies. Each title below a project image is linked to its runnable
+          project. When no project link is available upon clicking, you will be redirected back to the top. Most
+          projects should have both &ldquo;View Project&rdquo; and &ldquo;View Code&rdquo; buttons displayed but please
+          be aware that some projects may not have a project or code link available.</p>
         <p>Clicking the &ldquo;View Project&rdquo; button will bring up a pop-up window with a larger image of the
           project, relevant project metadata, the problem encountered and its solution along with contextual
-          information. Buttons are available near the bottom to view the live project or to see the source code. When
-          clicked, the &ldquo;View Code&rdquo; button on the portfolio section or in the pop-up window will bring you to
-          the respective <strong><a href="https://github.com/marvinrusinek" data-toggle="tooltip" data-placement="bottom"
-          title="Marvin Rusinek GitHub account" target="_blank">GitHub</a></strong> code repository where you can view
-          the code and gain a sense of my process. If any of these projects and/or skills are a match with your
-          requirements or if you need any additional information about the services that I offer, please feel free to
-          <strong><a href="#contact">contact me</a></strong> below.</p>
+          information. Buttons are available near the bottom of the window to view the live project or to see the source
+          code. When clicked, the &ldquo;View Code&rdquo; button on the portfolio section or in the pop-up window will
+          bring you to the respective <strong><a href="https://github.com/marvinrusinek" data-toggle="tooltip"
+          data-placement="bottom" title="Marvin Rusinek GitHub account" target="_blank">GitHub</a></strong> code
+          repository where you can view the code and gain a sense of my process. If any of these projects and/or skills
+          are a match with your requirements or if you need any further information about the services that I offer,
+          please feel free to <strong><a href="#contact">contact me</a></strong> below.</p>
       </article>
     </div>
 
@@ -30,26 +30,11 @@
            data-sal="slide-up"
            data-sal-delay="300">
         <span><em>Filter By:</em>&nbsp;&nbsp;</span>
-        <button type="button" class="button" data-filter="ng" style="width: 115px">
-          <img src="../../assets/images/filter_icons/angular.png">&nbsp;Angular</button>
-        <button type="button" class="button" data-filter="web">
-          <img src="../../assets/images/filter_icons/frontend.png">&nbsp;&nbsp;Front-End</button>
-        <button type="button" class="button" data-filter="ux">
-          <img src="../../assets/images/filter_icons/ux.png">&nbsp;&nbsp;UX</button>
-        <button type="button" class="button" data-filter="php">
-          <img src="../../assets/images/filter_icons/php.png">&nbsp;&nbsp;PHP</button>
-        <button type="button" class="button" data-filter="net">
-          <img src="../../assets/images/filter_icons/net-logo.png" height="16" width="16">&nbsp;&nbsp;.NET</button>
-        <button type="button" class="button" data-filter="xml">
-          <img src="../../assets/images/filter_icons/xml-file.png">&nbsp;&nbsp;XML</button>
-        <button type="button" class="button" data-filter="cms">
-          <img src="../../assets/images/filter_icons/cms.png">&nbsp;&nbsp;CMS</button>
-        <button type="button" class="button" data-filter="mob">
-          <img src="../../assets/images/filter_icons/mobile.png">&nbsp;Mobile</button>
-        <button type="button" class="button" data-filter="pro">
-          <img src="../../assets/images/filter_icons/code.png">&nbsp;Programs</button>
-        <button type="button" class="button" data-filter="all">
-          <img src="../../assets/images/filter_icons/grid.png">&nbsp;&nbsp;ALL</button>
+        <div *ngFor="let filter of filters">
+          <button type="button" class="button" [attr.data-filter]="filter.filter">
+            <img src={{filter.icon}} height="16" width="16">&nbsp;<span>{{filter.name}}</span>
+          </button>
+        </div>
       </div>
     </div>
     <br clear="all" />

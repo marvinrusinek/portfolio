@@ -3,44 +3,21 @@
 
     <div class="my-services animated fadeInLeft">
       <div class="row flex-container-alignment">
-        <div class="flex-container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <div class="flex-item col fluid col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"
-               data-sal-duration="1000" data-sal="zoom-out" data-sal-delay="250">
-            <span>
-              <img src="../../assets/images/services/webdev.png" alt="Web/App Development">
-            </span>
-            <h4>Web/App<br />Development</h4>
-            <p>I design and develop exceptional responsive interactive websites that utilize the latest frameworks and
-              offer a friendly, intuitive user interface with clear navigation that adheres to your specifications.</p>
-          </div>
-          <div class="flex-item col fluid col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"
-               data-sal-duration="1000" data-sal="zoom-out" data-sal-delay="500">
-            <span>
-              <img src="../../assets/images/services/mobile-app.png" alt="Mobile Development">
-            </span>
-            <h4>Mobile App<br />Development</h4>
-            <p>I create hybrid mobile applications for iOS and Android devices leveraging the Ionic framework and the
-              latest front-end web technologies.</p>
-          </div>
-          <div class="flex-item col fluid col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"
-            data-sal-duration="1000" data-sal="zoom-out" data-sal-delay="750">
-            <span>
-              <img src="../../assets/images/services/ux-design.png" alt="UI/UX Design">
-            </span>
-            <h4>UI/UX<br />Development</h4>
-            <p>I architect and deliver exceptional user interfaces that align with your company&apos;s intended goals.
-              I assess potential user behaviors and how users interact with your website/mobile app on different devices
-              and browsers.</p>
-          </div>
-          <div class="flex-item col fluid col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"
-               data-sal-duration="1000" data-sal="zoom-out" data-sal-delay="1000">
-            <span>
-              <img src="../../assets/images/services/seo-chart.png" alt="Search Engine Optimization">
-            </span>
-            <h4>Search Engine<br />Optimization</h4>
-            <p>I utilize best practices and strategies to achieve top rankings on Google and other popular search
-              engines.</p>
-          </div>
+        <div class="flex-container col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+             data-sal-duration="400" data-sal="zoom-out" data-sal-delay="400">
+          <ul>
+            <li *ngFor="let service of services" data-sal-duration="service.duration"
+                data-sal="service.animation" data-sal-delay="service.delay"
+                class="flex-item col fluid col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <span>
+                  <img src={{service.image}} alt={{service.name}}>
+                </span>
+                <div>
+                  <h4>{{service.name}}</h4>
+                  <p>{{service.description}}</p>
+                </div>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -52,7 +29,7 @@
             <span class="specialization-statement lead col-12 col-sm-12 col-md-12 col-lg-12 col-xs-12">
               I am capable of completing any custom web project from the ground up.<br />
               I am results-driven and will meet and exceed your expectations.</span><br /><br />
-            <h4 class="text-center">If you have questions or are interested in working with me, please
+            <h4 class="text-center">If you have any questions or are interested in working with me, please
               <a href="#contact">contact</a> me below.</h4>
           </div>
         </div>

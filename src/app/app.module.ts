@@ -16,6 +16,7 @@ import { NgBackToTopModule } from 'ng-back-to-top';
 // import { ParallaxModule } from "ngx-parallax/lib/parallax.module";
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { ParallaxScrollModule } from 'ng2-parallaxscroll';
+import { MglTimelineModule } from 'angular-mgl-timeline';
 
 import { RecaptchaModule, RecaptchaSettings, RECAPTCHA_SETTINGS } from 'ng-recaptcha';
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
@@ -24,6 +25,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarSMComponent } from './navbarSM/navbarSM.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -33,25 +35,33 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { ProjectListComponent } from './projects/project-list/project-list.component';
+import { ProjectListComponent } from './projects/project-list.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 // import { AngularFireDatabase } from 'angularfire2/database';
-import { ProjectService } from './projects/project.service';
-import { TrainingService } from "./about/education/training.service";
-import { TechSkillsService } from './about/techskills/techskills.service';
 import { OverviewComponent } from './about/overview/overview.component';
 import { EducationComponent } from './about/education/education.component';
-import { TechSkillsListComponent } from './about/techskills/techskills-list/techskills-list.component';
+import { TechSkillsListComponent } from './about/techskills/techskills-list.component';
 import { ResumeComponent } from './about/resume/resume.component';
+import { NavbarMenuService } from "./shared/services/navbarmenu.service";
+import { NavbarSMService } from "./shared/services/navbarSM.service";
+import { TimelineService } from "./shared/services/timeline.service";
+import { ProjectService } from './shared/services/project.service';
+import { TrainingService } from "./shared/services/training.service";
+import { TechSkillsService } from './shared/services/techskills.service';
+import { ServicesService } from "./shared/services/services.service";
+import { TestimonialsService } from "./shared/services/testimonials.service";
+import { FilterBtnService } from "./shared/services/filterBtn.service";
+import { ContactFormService } from "./shared/services/contactform.service";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    NavbarSMComponent,
     HeroComponent,
     AboutComponent,
     OverviewComponent,
@@ -91,14 +101,22 @@ import { ResumeComponent } from './about/resume/resume.component';
     RecaptchaFormsModule,
     NgBackToTopModule,
     NgsRevealModule,
-    ParallaxScrollModule
+    ParallaxScrollModule,
     // ParallaxModule
+    MglTimelineModule
   ],
   providers: [
     // AngularFireDatabase,
+    NavbarMenuService,
+    NavbarSMService,
     ProjectService,
     TrainingService,
+    TimelineService,
     TechSkillsService,
+    ServicesService,
+    TestimonialsService,
+    FilterBtnService,
+    ContactFormService,
     {
       provide: RECAPTCHA_SETTINGS,
       useValue: { siteKey: '6LerxYMUAAAAALaV-sOfT5i_PDfza7RI7b2D6qCD' } as RecaptchaSettings,

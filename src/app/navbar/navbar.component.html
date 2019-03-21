@@ -12,80 +12,14 @@
     </button>
 
     <div class="collapse navbar-collapse" id="collapsableNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item" data-sal-duration="200"
-            data-sal="slide-down"
-            data-sal-delay="200">
-          <a class="nav-link slide-center-out" href="#about">
-            <span class="nav-span" aria-label="About">About</span>
-          </a>
-        </li>
-        <li class="nav-item" data-sal-duration="200"
-            data-sal="slide-down"
-            data-sal-delay="400">
-          <a class="nav-link slide-center-out" href="#portfolio">
-            <span class="nav-span" aria-label="Portfolio">Portfolio</span>
-          </a>
-        </li>
-        <li class="nav-item" data-sal-duration="200"
-            data-sal="slide-down"
-            data-sal-delay="600">
-          <a class="nav-link slide-center-out" href="#services">
-            <span class="nav-span" aria-label="Services">Services</span>
-          </a>
-        </li>
-        <li class="nav-item" data-sal-duration="200"
-            data-sal="slide-down"
-            data-sal-delay="800">
-          <a class="nav-link slide-center-out" href="#testimonials">
-            <span class="nav-span" aria-label="Testimonials">Testimonials</span>
-          </a>
-        </li>
-        <li class="nav-item" data-sal-duration="200"
-            data-sal="slide-down"
-            data-sal-delay="1000">
-          <a class="nav-link slide-center-out" href="#contact">
-            <span class="nav-span" aria-label="Contact">Contact</span>
-          </a>
-        </li>
-        <li class="blog-link" data-sal-duration="200"
-            data-sal="slide-down"
-            data-sal-delay="1200">
-          <a href="http://www.marvinrusinek.com/blog" class="slide-center-out" target="_blank">
-            <span class="nav-span" aria-label="Blog">Blog</span>
+      <ul class="navbar-nav" *ngFor="let nav_item of navitems">
+        <li class="nav-item" data-sal-duration="nav_item.duration" data-sal="nav_item.animation"
+            data-sal-delay="nav_item.delay">
+          <a class="nav-link slide-center-out" href={{nav_item.link}}>
+            <span class="nav-span">{{nav_item.name}}</span>
           </a>
         </li>
       </ul>
-    </div>
-
-    <div class="social-container nav-item">
-        <ul>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/in/marvinrusinek" aria-label="LinkedIn">
-              <img src="../../assets/images/contact/linkedin.gif" height="24" width="24" />
-              <span class="sr-only">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com/marvinrusinek" aria-label="GitHub">
-              <img src="../../assets/images/contact/github.png" height="24" width="24" />
-              <span class="sr-only">GitHub</span>
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="#contact" aria-label="E-Mail">
-              <img src="../../assets/images/contact/mail.png" height="24" width="24" />
-              <span class="sr-only">E-Mail</span>
-            </a>
-          </li>
-          <li class="search-icon">
-            <a href="#" class="trigger-overlay search-icon highlighted" data-area="search" aria-label="Search"
-               data-container="box-container">
-              <img src="../../assets/images/search.png" height="24" width="24" />
-              <span class="sr-only">Search</span>
-            </a>
-          </li>
-        </ul>
     </div>
   </nav>
 </header>

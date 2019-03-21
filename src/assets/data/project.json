@@ -14,7 +14,7 @@
         "technologies": "HTML, CSS, JavaScript, jQuery, Drupal, ColdFusion",
         "context": "I was the webmaster of the AJHS website from 2008 to 2015.",
         "problem": "The AJHS needed a hand with updating and maintaining of the AJHS website.",
-        "solution": "I was responsible for administration, maintenance and development of the American Jewish Historical Society website using front-end technologies and Drupal CMS. I also learned some ColdFusion along the way."
+        "solution": "I was responsible for the administration, maintenance and development of the American Jewish Historical Society website using front-end technologies and Drupal CMS. I also learned some ColdFusion along the way."
       },
       {
         "id": 2,
@@ -29,7 +29,7 @@
         "dateStarted": "2012-10-01",
         "dateCompleted": "2015-10-02",
         "technologies": "XML, Encoded Archival Description (EAD)",
-        "context": "The UJA-Federation of New York collection is a special off-site collection at the American Jewish Historical Society. The finished project was the combined effort of six archivists and the assistance of dedicated volunteers.",
+        "context": "The United Jewish Appeal-Federation of New York collection is a special off-site collection at the American Jewish Historical Society. The finished project was the combined effort of six archivists and the assistance of dedicated volunteers.",
         "problem": "The records of the UJA-Federation of New York needed to become accessible to the public within four years.",
         "solution": "The entire collection was processed within four years under a generous grant from the UJA and an online finding aid was generated. I was responsible for creating the folder-level database for the entire collection (2324.25 linear feet) which was linked to the finding aid as well as processing roughly half the collection. I was also responsible for encoding the entire finding aid to the collection which I completed within four days. The EAD utilizes breadcrumbs on the subsubseries level to show where you are in the overall hierarchy of the collection. The project received the Mid-Atlantic Regional Archives Conference (MARAC) First Place Finding Aid Award in 2016."
       },
@@ -48,7 +48,7 @@
         "technologies": "Adobe Fireworks",
         "context": "Developed an information architecture (IA) strategy for the Buckminster Fuller Institute (BFI) site redesign as part of the final project for the \"Information Architecture and Interaction Design\" course at Pratt Institute, Spring 2009.",
         "problem": "The BFI needed a complete site overhaul and approached the Pratt Institute's IA class",
-        "solution": "Deliverables such as scenarios, competitive analysis, content inventory, card sorting, sitemaps, prototypes/mockups, and wireframes were generated to assist in the redesign of the BFI website."
+        "solution": "We generated various information architecture deliverables such as scenarios, competitive analysis, content inventory, card sorting, sitemaps, prototypes/mockups, and wireframes to assist in the redesign of the BFI website."
       },
       {
         "id": 4,
@@ -80,7 +80,7 @@
         "dateStarted": "2010-01-15",
         "dateCompleted": "2010-05-15",
         "technologies": "PHP and MySQL (WAMP Stack), HTML, CSS and JavaScript",
-        "context": "Started working on website in the \"Creating Interactive Websites with PHP\" course at Pratt Institute, Spring 2010 and then continued working on it in the Advanced Web Development Intensive at NYU SPS, Fall 2010.",
+        "context": "Started working on website in the \"Creating Interactive Websites with PHP\" course at Pratt Institute, Spring 2010 and continued working on it in the Advanced Web Development Intensive at NYU SPS, Fall 2010.",
         "problem": "We needed to create a user-friendly interactive website that retrieves information from a database and displays it on a website.",
         "solution": "We used a MySQL relational database to store the gadget information and PHP to display the gadget information. The project includes the ability to perform CRUD operations on gadget information. As a bonus to the project, I wanted to add the ability to add images to the database and then display them but couldn't quite figure it out due to time constraints."
       },
@@ -98,8 +98,8 @@
         "dateCompleted": "2010-05-15",
         "technologies": "Omeka Content Management System, ImageMagick, HTML and CSS",
         "context": "Developed for the \"Projects in Digital Archives\" course at Pratt Institute, Spring 2010.",
-        "problem": "The Dalton School needed a website for its 55 oral histories and reached out to the Digital Archives professor at Pratt Institute who agreed to take on the project.",
-        "solution": "The Digital Archives class digitized the oral histories and placed the files and associated metadata into the Omeka CMS. The site was on the Pratt Institute webserver."
+        "problem": "The Dalton School needed a website for its 55 oral histories and approached the Digital Archives professor who agreed to take on the project.",
+        "solution": "The Digital Archives class digitized the oral histories and placed the files and associated metadata into the Omeka CMS. The site was hosted on the Pratt Institute webserver."
       },
       {
         "id": 7,
@@ -150,7 +150,7 @@
         "technologies": "ASP.NET 4 (WebForms), C#, XML, Microsoft SQL Server and AJAX/jQuery",
         "context": "Developed as final project for the \"ASP.NET Application Development Intensive\" at NYU, Spring 2011.",
         "problem": "We needed to develop a mini-Expedia website that takes the user through the entire process of booking a flight.",
-        "solution": "The Skyscanner website retrieves flight information from an XML file. The user can then search for flight(s) and search results are displayed to the user. The user can select a particular flight and then the user is guided through a wizard that calculates the flight cost and stores the selected flight information and user information in a Microsoft SQL database."
+        "solution": "The Skyscanner website that I created retrieves flight information from an XML file. The user can then search for flight(s) and search results are displayed to the user. The user can select a particular flight and then the user is guided through a wizard that calculates the flight cost and stores the selected flight information and user information in a Microsoft SQL database."
       },
       {
         "id": 10,
@@ -218,7 +218,7 @@
         "technologies": "AngularJS, NodeJS, MongoDB/Mongoose, Ionic Framework and Apache Cordova",
         "context": "Developed for the Coursera \"Multiplatform Mobile Application Development with Web Technologies\" course, Summer 2016.",
         "problem": "We needed to create a mobile app from the Ristorante con Fusion website we created in the previous Coursera course.",
-        "solution": "The solution uses the MEAN stack along with the Ionic Framework and Apache Cordova to create a mobile app for Ristorante con Fusion."
+        "solution": "The solution uses the MEAN stack along with the Ionic Framework and Apache Cordova to create a mobile app for Ristorante con Fusion that works on iOS and Android devices. Ionic is used to create the user interface and Cordova's modules are used to access the native mobile platform's capabilities from JavaScript."
       },
       {
         "id": 14,
@@ -269,7 +269,7 @@
         "technologies": "Angular 4, TypeScript, ES6",
         "context": "Developed the \"People Project\" as part of the Angular 4 training session at the Angular Summit in Boston, September 2017.",
         "problem": "We needed to display People data in a sortable table and add the ability to filter the data.",
-        "solution": "The metadata was retrieved from a .csv file on the PeopleServer and we used Angular 4, TypeScript, JavaScript with some ES6 syntax and custom Angular pipes in order to display the data in a sortable table."
+        "solution": "The metadata was retrieved from a .csv file on the PeopleServer. We used Angular 4, TypeScript, and JavaScript with some ES6 syntax and custom Angular pipes in order to display the data in a sortable table."
       },
       {
         "id": 17,
@@ -302,7 +302,7 @@
         "dateCompleted": "2010-05-15",
         "technologies": "Adobe Fireworks",
         "context": "Design project proposal created for the \"Projects in Digital Archives\" course at Pratt Institute, Spring 2010.",
-        "problem": "Our project, NYC Archivisualizer, was a website with a goal of highlighting archival collections within New York City.",
+        "problem": "Our project, NYC Archivisualizer, is a website with the goal of highlighting archival collections within New York City.",
         "solution": "A main feature of the site is an interactive Google map which allows users to browse through collections at different locations in NYC. The site employs a form to add a new archive to the site. The site also features archival events on an events calendar and lesson plans for teachers."
       },
       {
@@ -506,6 +506,6 @@
         "technologies": "C/C++",
         "context": "A simulation of a subway system was created for the \"Advanced Algorithms in C++\" class at NYU.",
         "problem": "One problem I encountered was the calculation of negative weights which I accounted for using tbe Bellman-Ford algorithm.",
-        "solution": "I programmed a simulation of the NYC Subway System by extracting the data from the nyc.data file and using the Bellman-Ford algorithm to compute shortest path(s) between any two chosen stations. Data from a Sampletown (sampletown.data) were also used for testing purposes to ensure that the shortest path(s) were being calculated correctly. My project received the Best Individual Project Award in the \"Advanced Algorithms in C++\" class at NYU in Fall 2000."
+        "solution": "I programmed a simulation of the NYC Subway System by extracting the data from the nyc.data file and by using the Bellman-Ford algorithm to compute the shortest path(s) between any two chosen stations. Data from a Sampletown (sampletown.data) were also used for testing purposes to ensure that the shortest path(s) were being calculated correctly. My project received the Best Individual Project Award in the \"Advanced Algorithms in C++\" class at NYU in Fall 2000."
       }
 ]

@@ -1,3 +1,50 @@
+/* @include '../../../../theme.scss'); */
+
+mgl-timeline-entry-header {
+  background-color: lightgreen;
+  color: #2e6da4;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  margin-top: 10px;
+}
+mgl-timeline-entry-content {
+  background-color: lightseagreen;
+  color: cyan;
+  text-align: center;
+  width: 100%;
+}
+mgl-timeline-entry-dot {
+  background-color: #add8e6;
+  z-index: 2;
+}
+.fa-graduation-cap {
+  color: #00a8e6;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-left: 7.5px;
+  z-index: 2;
+}
+
+mgl-timeline-entry-side span {
+  /* background-color: rgba(255,255,255,.3);
+  box-shadow: 0 0 2px rgba(0,0,0,.3);
+  border: 10px solid rgba(247, 252, 252, 1); */
+  color: #0c3d5d;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto;
+  position: absolute;
+  padding-right: 50px;
+  height: auto;
+  width: 250px;
+  margin-top: 15px;
+  margin-left: 15%;
+}
+
+
 #education {
   margin-top: 25px;
   width: 100%;
@@ -47,10 +94,6 @@ hr {
 span.degree {
   font-weight: bold;
   color: #36454F;
-}
-
-.training {
-  width: 1200px;
 }
 
 .conferencesGrid > .conf_left > ul {

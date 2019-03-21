@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Web/App Development",
+    "description": "I design and develop exceptional responsive interactive websites that utilize the latest frameworks and offer a friendly, intuitive user interface with clear navigation that adheres to your specifications.",
+    "image": "http://www.marvinrusinek.com/assets/images/services/webdev.png",
+    "duration": 2000,
+    "delay": 500,
+    "animation": "zoom-out"
+
+  },
+  {
+    "name": "Mobile App Development",
+    "description": "I create hybrid mobile applications for iOS and Android devices leveraging the Ionic framework and the latest front-end web technologies.",
+    "image": "http://www.marvinrusinek.com/assets/images/services/mobile-app.png",
+    "duration": 2000,
+    "delay": 1000,
+    "animation": "zoom-out"
+  },
+  {
+    "name": "UI/UX Development",
+    "description": "I architect and deliver exceptional user interfaces that align with your company's intended goals. I assess potential user behaviors and how users interact with your website/mobile app on different devices and browsers.",
+    "image": "http://www.marvinrusinek.com/assets/images/services/ux-design.png",
+    "duration": 2000,
+    "delay": 1500,
+    "animation": "zoom-out"
+  },
+  {
+    "name": "Search Engine Optimization",
+    "description": "I utilize best practices and strategies to achieve top rankings on Google and other popular search engines.",
+    "image": "http://www.marvinrusinek.com/assets/images/services/seo-chart.png",
+    "duration": 2000,
+    "delay": 2000,
+    "animation": "zoom-out"
+  }
+]

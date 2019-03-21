@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TechSkillsService } from '../techskills.service';
+import { TechSkillsService } from '../../shared/services/techskills.service';
 
 @Component({
   selector: 'app-techskills-list',
