@@ -3,15 +3,16 @@ Portfolio Website (Angular v.7)
 My portfolio website is live on www.marvinrusinek.com
 
 The website demonstrates my Angular expertise with:
-   - Component Architecture
-   - Angular Material 
+   - Angular-CLI
+   - Component Architecture 
    - Two-way data-binding and working with JSON data
-   - Reactive JS (RxJS), Observables
+   - Services using Reactive JS (RxJS) and Observables
    - Modals
    - Lazyloading
    - Pre-loading
-   - Forms (Validation)
+   - Reactive Forms (Validation and Submission)
    - NPM Package integration (Isotope, sal.js, hexo, etc.)
+   - Angular Material
    - Server Side Rendering using Angular Universal (in progress)
    - SSL
    
