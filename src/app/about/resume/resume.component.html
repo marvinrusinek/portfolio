@@ -1,19 +1,9 @@
 <div id="resume">
   <p>Click an icon below to download a printable r&eacute;sum&eacute;.</p>
-  <ul>
+  <ul *ngFor="let resume of resumes" class="resumeIconsAlignment">
     <li>
-      <a href="http://www.marvinrusinek.com/assets/resume/Marvin_Rusinek_Web_Dev_Resume_010819.doc" target="_blank">
-        <img src="../../../assets/images/resume/msword.png" alt="MS Word Resume">
-      </a>
-    </li>
-    <li>
-      <a href="http://www.marvinrusinek.com/assets/resume/Marvin_Rusinek_Web_Dev_Resume_010819.pdf" target="_blank">
-        <img src="../../../assets/images/resume/pdf.png" alt="PDF Resume">
-      </a>
-    </li>
-    <li>
-      <a href="https://docs.google.com/document/d/1RxT_XAxUoI-lNpHr-37J0zG38f1xE1_iBE040j-x74g" target="_blank">
-        <img src="../../../assets/images/resume/google-docs.png" alt="Google Docs Resume">
+      <a href={{resume.linkToResume}} target="_blank">
+        <img src={{resume.resumeImageType}} alt={{resume.resumeType}} lazy-load-images>
       </a>
     </li>
   </ul>

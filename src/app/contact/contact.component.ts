@@ -3,6 +3,7 @@ import { FormArray, FormBuilder, FormControl, FormGroup, Validators, ValidatorFn
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 import { ContactFormService } from "../shared/services/contactform.service";
+import { ContactInfoService } from "../shared/services/contactinfo.service";
 
 @Component({
   selector: 'app-portfolio-contact',
@@ -11,6 +12,7 @@ import { ContactFormService } from "../shared/services/contactform.service";
 })
 export class ContactComponent implements OnInit {
   public contactFormFields = [];
+  public contactMethods = [];
   contactForm: FormGroup;
   submittedForm = false;
 
@@ -22,7 +24,8 @@ export class ContactComponent implements OnInit {
     { id: 5, name: 'Digital Marketing' }
   ];
 
-  constructor(private http: HttpClient, private formBuilder: FormBuilder, private _contactFormService: ContactFormService) {
+  constructor(private http: HttpClient, private formBuilder: FormBuilder,
+              private _contactFormService: ContactFormService, private _contactInfoService: ContactInfoService) {
     // Create a new array with a form control for each order
     const controls = this.services.map(c => new FormControl(false));
     controls[0].setValue(false); // set the first checkbox to true (checked)
@@ -39,6 +42,8 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     this._contactFormService.getFormFields()
       .subscribe(data => this.contactFormFields = data);
+    this._contactInfoService.getContactMethods()
+      .subscribe(data => this.contactMethods = data);
   }
 
   onSubmit(event: Event) {

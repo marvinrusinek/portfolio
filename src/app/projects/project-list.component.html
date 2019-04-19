@@ -17,7 +17,8 @@
           </figure>
           <div class="projectButtons">
             <button type="button" class="white button projectButton" (click)="open(projectContent)" data-toggle="modal"
-              data-target="projectModal" *ngIf="project.context !== null || project.problem !== null || project.solution !== null">
+              data-target="projectModal" *ngIf="project.context !== null || project.problem !== null ||
+              project.solution !== null">
               &nbsp;&nbsp;&nbsp;&nbsp;<span class="projectBtn">&nbsp;&nbsp;&nbsp;<strong>View Project</strong></span>
             </button>
 
@@ -53,16 +54,16 @@
               </div>
               <div class="project-metadata">
                 <p class="text-center">
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="category">{{project.categoryFullNames}}</span><br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="technologies">{{project.technologies}}</span><br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="projectDurationText">
-                                            <time class="dateStarted" title={{project.dateStarted}}>
-                                              {{project.dateStarted | date: 'longDate'}}
-                                            </time>&mdash;
-                                            <time class="dateCompleted" title={{project.dateCompleted}}>
-                                              {{project.dateCompleted | date: 'longDate'}}
-                                            </time>
-                                          </span>
+                  <span class="category">{{project.categoryFullNames}}</span><br />
+                  <span class="technologies">{{project.technologies}}</span><br />
+                  <span class="projectDurationText">
+                    <time class="dateStarted" title={{project.dateStarted}}>
+                      {{project.dateStarted | date: 'longDate'}}
+                    </time>&mdash;
+                    <time class="dateCompleted" title={{project.dateCompleted}}>
+                      {{project.dateCompleted | date: 'longDate'}}
+                    </time>
+                  </span>
                 </p>
               </div>
               <div class="project-metadata-bottom-align">

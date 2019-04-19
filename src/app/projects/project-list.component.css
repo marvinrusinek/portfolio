@@ -106,8 +106,8 @@ button:hover {
   margin-top: -5px;
 }
 
-.category:before, .technologies:before, .projectDurationText:before, .projectDescription:before,.projectProblem:before,
-.projectSolution:before  {
+.category:before, .technologies:before, .projectDurationText:before, .projectDescription:before, .projectProblem:before,
+.projectSolution:before {
   content: '';
   background-size: cover;
   position: absolute;
@@ -115,6 +115,7 @@ button:hover {
   height: 20px;
   margin-left: -25px;
   margin-top: 0px;
+  text-indent: 10px;
 }
 .technologies:before {
   margin-top: 5px;

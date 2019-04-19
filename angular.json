@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "portfolio-web3": {
-      "root": "",
+      "root": "e2e",
       "sourceRoot": "src",
       "projectType": "application",
       "architect": {
@@ -27,6 +27,8 @@
               "node_modules/sal.js/dist/sal.css",
               "node_modules/slick-carousel/slick/slick.css",
               "node_modules/slick-carousel/slick/slick-theme.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "src/styles/fontawesome-all.min.css",
               "src/styles/animate.css",
               "src/styles/styles-app-loading.scss",

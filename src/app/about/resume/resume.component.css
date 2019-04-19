@@ -9,14 +9,17 @@ p::first-letter {
 }
 
 ul {
-  margin-left: 10%;
+  margin-left: 5%;
+  list-style-type: none;
+}
+
+.resumeIconsAlignment {
+  display: inline-block;
 }
 
 li {
-  list-style-type: none;
   padding-bottom: 10px;
   font-weight: 700;
   color: #0275b8;
-  display: inline-block;
-  padding-right: 20px;
+  display: inline !important;
 }

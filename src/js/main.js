@@ -36,7 +36,8 @@ ga('send', 'pageview');
 /* Initialize Bootstrap Scrollspy */
 $(document).ready(function () {
   $('body').scrollspy({
-    target: '.navbar'
+    target: '.navbar',
+    offset: 90
   });
 });
 
@@ -74,4 +75,11 @@ $(document).ready(function() {
       (to_filter == "all") ? $(".myPortfolioGrid").isotope({filter: ".portfolioProject"})
                               : $(".myPortfolioGrid").isotope({filter: "." + to_filter});
     });
+});
+
+$(function() {
+  $('.scroll-down').click (function() {
+    $('html, body').animate({scrollTop: $('section#about').offset().top }, 'slow');
+    return false;
+  });
 });

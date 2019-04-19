@@ -37,7 +37,7 @@ article > p::first-letter {
   font-size: 150%;
 }
 
-.name {
+.name, .education, .experience, .work-experience {
   font-weight: 900;
 }
 

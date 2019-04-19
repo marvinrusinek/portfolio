@@ -1,35 +1,40 @@
 [
   {
     "name": "About",
-    "link": "#about",
+    "link": "about",
+    "linkType": "section",
     "duration": 200,
     "delay": 200,
     "animation": "slide-down"
   },
   {
     "name": "Portfolio",
-    "link": "#portfolio",
+    "link": "portfolio",
+    "linkType": "section",
     "duration": 200,
     "delay": 400,
     "animation": "slide-down"
   },
   {
     "name": "Services",
-    "link": "#services",
+    "link": "services",
+    "linkType": "section",
     "duration": 200,
     "delay": 600,
     "animation": "slide-down"
   },
   {
     "name": "Testimonials",
-    "link": "#testimonials",
+    "link": "testimonials",
+    "linkType": "section",
     "duration": 200,
     "delay": 800,
     "animation": "slide-down"
   },
   {
     "name": "Contact",
-    "link": "#contact",
+    "link": "contact",
+    "linkType": "section",
     "duration": 200,
     "delay": 1000,
     "animation": "slide-down"
@@ -37,6 +42,7 @@
   {
     "name": "Blog",
     "link": "http://www.marvinrusinek.com/blog",
+    "linkType": "blog",
     "duration": 200,
     "delay": 1200,
     "animation": "slide-down"

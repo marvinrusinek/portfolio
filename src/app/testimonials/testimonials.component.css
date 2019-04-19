@@ -42,3 +42,82 @@
   margin: 10px;
   margin-right: 20px;
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .testimonials {
+    margin-left: -50px;
+    height: auto;
+  }
+  .testimonials > blockquote {
+    margin-left: -40px;
+  }
+  .testimonials > ul > li > blockquote > p {
+    margin-top: -10px;
+    font-size: 14px;
+    width: 15em;
+    display: block;
+    overflow: hidden;
+  }
+  .testimonials p.author {
+    text-align: center;
+    width: 10em;
+    margin-left: 150px;
+    display: block;
+  }
+}
+
+
+/* media queries that change logo size depending on screen size */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .testimonials {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .testimonials p.author {
+    text-align: center;
+    margin-left: 30px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 575px) {
+  .testimonials {
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .testimonials p.author {
+    text-align: center;
+    margin-left: 70px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .testimonials {
+    margin-left: 220px;
+  }
+}

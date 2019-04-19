@@ -1,22 +1,23 @@
 [
   {
     "id": 1,
+    "field": "Archivist, Librarian and Webmaster",
+    "organization": "American Jewish Historical Society (AJHS)",
+    "duration": "2006-2015"
+  },
+  {
+    "id": 2,
     "field": "Certificates in Advanced Web Development and ASP.NET Application Development",
     "organization": "New York University (NYU) School of Continuing and Professional Studies",
     "duration": "2010-2012"
   },
   {
-    "id": 2,
+    "id": 3,
     "field": "Master of Science in Library and Information Science",
     "organization": "Pratt Institute School of Information and Library Science",
     "duration": "2008-2010"
   },
-  {
-    "id": 3,
-    "field": "Archivist, Librarian and Webmaster",
-    "organization": "American Jewish Historical Society (AJHS)",
-    "duration": "2006-2015"
-  },
+
   {
     "id": 4,
     "field": "Bachelor of Science in Computer Science",

@@ -1,0 +1,17 @@
+[
+  {
+    "resumeType": "MS Word Resume",
+    "linkToResume": "http://www.marvinrusinek.com/assets/resume/Marvin_Rusinek_Web_Dev_Resume_041119.doc",
+    "resumeImageType": "../../../assets/images/resume/msword.png"
+  },
+  {
+    "resumeType": "PDF Resume",
+    "linkToResume": "http://www.marvinrusinek.com/assets/resume/Marvin_Rusinek_Web_Dev_Resume_041119.pdf",
+    "resumeImageType": "../../../assets/images/resume/pdf.png"
+  },
+  {
+    "resumeType": "Google Docs Resume",
+    "linkToResume": "https://docs.google.com/document/d/1RxT_XAxUoI-lNpHr-37J0zG38f1xE1_iBE040j-x74g",
+    "resumeImageType": "../../../assets/images/resume/google-docs.png"
+  }
+]

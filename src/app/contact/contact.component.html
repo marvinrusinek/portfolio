@@ -6,41 +6,7 @@
   <div class="get-in-touch">
     <p class="text-center">If you have any questions, please feel free to reach out below.<br clear="left" />
       I will answer your request as soon as possible.</p>
-    <div class="ul-contact-div">
-      <ul class="ul-contact">
-        <li>
-          <img src="../../assets/images/contact/paper-plane.png" height="24" width="24">&nbsp;&nbsp;
-          <span><a href="mailto:marvin@marvinrusinek.com">marvin@marvinrusinek.com</a></span>
-          <span class="sr-only">E-mail</span>
-        </li>
-        <li>
-          <img src="../../assets/images/contact/internet.png" height="24" width="24">&nbsp;&nbsp;
-          <span>
-            <a target="_blank" href="http://www.marvinrusinek.com" aria-label="GitHub">http://www.marvinrusinek.com</a>
-          </span>
-          <span class="sr-only">GitHub</span>
-        </li>
-        <li>
-            <img src="../../assets/images/contact/linkedin.gif" height="24" width="24">&nbsp;&nbsp;
-            <span>
-              <a target="_blank" href="https://www.linkedin.com/in/marvinrusinek" aria-label="LinkedIn">
-                https://www.linkedin.com/in/marvinrusinek
-              </a>
-            </span>
-            <span class="sr-only">LinkedIn</span>
-        </li>
-        <li>
-            <img src="../../assets/images/contact/github.png" height="24" width="24">&nbsp;&nbsp;
-            <span><a target="_blank" href="https://github.com/marvinrusinek" aria-label="GitHub">
-              https://github.com/marvinrusinek</a></span>
-            <span class="sr-only">GitHub</span>
-        </li>
-        <li>
-          <img src="../../assets/images/contact/pin.png" height="24" width="24">&nbsp;&nbsp;
-          <span>Brooklyn, NY</span>
-        </li>
-      </ul>
-    </div>  <!-- end of ul-contact-div -->
+
   </div>  <!-- end of get-in-touch div -->
 
   <br clear="left" />
@@ -51,7 +17,7 @@
         <fieldset>
           <legend class="text-center mb-10" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
             Get in touch about your project</legend>
-          <p class="text-center">I will get your project launched within your timeframe.</p>
+          <p class="text-center">I&apos;ll get your project launched within your timeframe.</p>
           <div class="container">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -72,7 +38,7 @@
                              [placeholder]="contactfield.placeholderText"></textarea>
                         </div>
                       </div>
-                      <span *ngIf="contactForm.get('contactfield.formControl') === 'invalid' &&
+                      <span *ngIf="contactForm.get('contactfield.formControl') === 'invalid' ||
                         contactForm.get('contactfield.formControl') === 'untouched'" class="help-block form-field-error"
                         style="margin-top: -20px">
                           <span *ngIf="contactForm.get('contactfield.formControl').errors['required']">
@@ -106,13 +72,13 @@
           <div class="container">
             <div class="row">
               <span *ngIf="!contactForm.valid && contactForm.touched" class="help-block form-error"
-                style="margin-top: -75px; margin-left: 270px; padding-bottom: 10px">Please enter valid data!</span>
+                style="margin-top: -100px; margin-left: 270px; padding-bottom: 10px">Please enter valid data!</span>
             </div>
           </div>
           <div class="container">
             <div class="row">
               <div class="buttonContainer" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
-                <button type="submit" class="button hvr-rectangle-out">
+                <button type="submit" class="button hvr-rectangle-out" [disabled]="contactForm.invalid">
                   <img src="../../assets/images/contact/enter.png">&nbsp;&nbsp;Submit Your Request
                 </button>
               </div>
@@ -125,4 +91,15 @@
   <!--<div>Form status: {{contactForm.status}}</div>
   <pre>{{contactForm.value | json}}</pre>-->
   <br clear="all" />
+
+  <div class="ul-contact-div" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
+    <ul class="ul-contact" *ngFor="let contactMethod of contactMethods">
+      <li>
+        <a href={{contactMethod.url}} target="_blank">
+          <img src={{contactMethod.image}} height="48" width="48">
+        </a>
+        <span class="sr-only">{{contactMethod.method}}</span>
+      </li>
+    </ul>
+  </div>  <!-- end of ul-contact-div -->
 </section>

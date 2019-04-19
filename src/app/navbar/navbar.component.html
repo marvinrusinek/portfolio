@@ -3,22 +3,32 @@
     <a href="http://www.marvinrusinek.com" class="navbar-brand" data-sal-duration="300" data-sal="slide-up"
        data-sal-delay="200">
       <img src="../../assets/images/logo.svg" class="logo">
-      <span class="navbar-text">Marvin Rusinek</span>
+      <span class="navbar-text">Marvin Rusinek</span><br/>
+      <span class="caption">Web Design and Development</span>
     </a>
 
     <button class="navbar-toggler navbar-toggler-right collapsed" data-target="#collapsableNavbar"
       data-toggle="collapse" aria-controls="collapsableNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="collapsableNavbar">
-      <ul class="navbar-nav" *ngFor="let nav_item of navitems">
-        <li class="nav-item" data-sal-duration="nav_item.duration" data-sal="nav_item.animation"
+      <ul role="navigation" id="mynavbar" class="navbar-nav" *ngFor="let nav_item of navitems">
+        <div *ngIf="nav_item.linkType === 'section'">
+          <li class="nav-item" data-sal-duration="nav_item.duration" data-sal="nav_item.animation"
             data-sal-delay="nav_item.delay">
-          <a class="nav-link slide-center-out" href={{nav_item.link}}>
-            <span class="nav-span">{{nav_item.name}}</span>
-          </a>
-        </li>
+            <a class="nav-link slide-center-out" href="#{{nav_item.link}}">
+              <span class="nav-span">{{nav_item.name}}</span>
+            </a>
+          </li>
+        </div>
+        <div *ngIf="nav_item.linkType === 'blog'">
+          <li class="nav-item" data-sal-duration="nav_item.duration" data-sal="nav_item.animation"
+              data-sal-delay="nav_item.delay">
+            <a class="nav-link slide-center-out" href="{{nav_item.link}}">
+              <span class="nav-span">{{nav_item.name}}</span>
+            </a>
+          </li>
+        </div>
       </ul>
     </div>
   </nav>

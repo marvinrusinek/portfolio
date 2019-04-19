@@ -5,6 +5,63 @@
         <h2>Technical Skills</h2>
         <div class="front-end">
           <h3 class="text-center">Front-End Web Development</h3>
+          <ul class="list-unstyled">
+            <li *ngFor="let skill of skills">
+              <figure *ngIf="skill.type === 'front-end'">
+                <img src={{skill.image}} lazy-load-images>
+                <figcaption class="caption">{{skill.name}}</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+        <div class="back-end">
+          <h3 class="text-center">Back-End Web Development</h3>
+          <ul class="list-unstyled">
+            <li *ngFor="let skill of skills">
+              <figure *ngIf="skill.type === 'back-end'">
+                <img src={{skill.image}} lazy-load-images>
+                <figcaption class="caption">{{skill.name}}</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dev-tools">
+          <h3 class="text-center">Development Tools</h3>
+          <ul class="list-unstyled text-center">
+            <li *ngFor="let skill of skills">
+              <figure *ngIf="skill.type === 'dev-tools'">
+                <img src={{skill.image}} lazy-load-images>
+                <figcaption class="caption">{{skill.name}}</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+        <div class="ux-design">
+          <h3 class="text-center">UI/UX and Graphic Design</h3>
+          <ul class="list-unstyled text-center">
+            <li *ngFor="let skill of skills">
+              <figure *ngIf="skill.type === 'ux-design'">
+                <img src={{skill.image}} lazy-load-images>
+                <figcaption class="caption">{{skill.name}}</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div id="tech-summary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h2>Technical Skills</h2>
+        <div class="front-end">
+          <h3 class="text-center">Front-End Web Development</h3>
           <ul>
             <li>
               <figure>
@@ -209,63 +266,4 @@
       </div>
     </div>
   </div>
-</div>
-
-
-<!--<div id="tech-summary">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <h2>Technical Skills</h2>
-        <div class="front-end">
-          <h3 class="text-center">Front-End Web Development</h3>
-          <ul *ngFor="let skill of skills" class="list-unstyled">
-            <li>
-              <figure *ngIf="skill.type === 'front-end'">
-                <img src={{skill.image}} lazy-load-images>
-                <figcaption class="caption">{{skill.name}}</figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-
-        <div class="back-end">
-          <h3 class="text-center">Back-End Web Development</h3>
-          <ul *ngFor="let skill of skills" class="list-unstyled text-center">
-            <li>
-              <figure *ngIf="skill.type === 'back-end'">
-                <img src={{skill.image}} lazy-load-images>
-                <figcaption class="caption">{{skill.name}}</figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-
-        <div class="dev-tools">
-          <h3 class="text-center">Development Tools</h3>
-          <ul *ngFor="let skill of skills" class="list-unstyled text-center">
-            <li>
-              <figure *ngIf="skill.type === 'dev-tools'">
-                <img src={{skill.image}} lazy-load-images>
-                <figcaption class="caption">{{skill.name}}</figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-
-        <div class="ux-design">
-          <h3 class="text-center">UI/UX and Graphic Design</h3>
-          <ul *ngFor="let skill of skills" class="list-unstyled text-center">
-            <li>
-              <figure *ngIf="skill.type === 'ux-design'">
-                <img src={{skill.image}} lazy-load-images>
-                <figcaption class="caption">{{skill.name}}</figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
--->
+</div>-->

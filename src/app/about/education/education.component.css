@@ -1,5 +1,3 @@
-/* @include '../../../../theme.scss'); */
-
 mgl-timeline-entry-header {
   background-color: lightgreen;
   color: #2e6da4;
@@ -28,9 +26,6 @@ mgl-timeline-entry-dot {
 }
 
 mgl-timeline-entry-side span {
-  /* background-color: rgba(255,255,255,.3);
-  box-shadow: 0 0 2px rgba(0,0,0,.3);
-  border: 10px solid rgba(247, 252, 252, 1); */
   color: #0c3d5d;
   font-family: Poppins, sans-serif;
   font-size: 24px;
@@ -86,7 +81,7 @@ a {
 
 hr {
   width: 700px;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-top: 20px;
   border-color: #228b22;
 }
@@ -96,10 +91,18 @@ span.degree {
   color: #36454F;
 }
 
+.conferencesGrid, .meetups {
+  margin-left: 20%;
+}
+
 .conferencesGrid > .conf_left > ul {
   margin-left: 0;
 }
 
 .conf_left, .conf_right {
   float: left;
+}
+
+.mycourses, .mytraining {
+  margin-left: 100px;
 }

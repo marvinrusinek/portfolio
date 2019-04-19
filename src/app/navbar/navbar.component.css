@@ -40,8 +40,7 @@ ul.menu {
 a > span.navbar-text {
   font-size: 2.8em;
   color: #0275d8;
-  font-weight: bold;
-  margin-left: -10px;
+  font-weight: 900;
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                0px -5px 35px rgba(255,255,255,0.3);
   width: 100%;
@@ -50,6 +49,15 @@ a > span.navbar-text {
 span {
   color: #0275d8;
   font-weight: bold;
+}
+
+span.caption {
+  margin-left: 150px;
+  margin-top: -30px;
+  color: #0275d8;
+  font-weight: 900;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+               0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 .fixed-top {
@@ -66,10 +74,12 @@ span {
   margin-bottom: 10px;
   background-color: #4ABDAC;
   border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+  display: flex;
+  justify-content: space-between;
 }
 
 ul.navbar-nav {
-  margin-top: -50px;
+  margin-top: -75px;
   background-color: #4ABDAC;
   margin-bottom: -40px;
   width: auto;
@@ -86,13 +96,18 @@ span.nav-span {
   font-weight: bold;
 }
 
+li a.nav-link.active {
+  background-color: lightgreen !important;
+  border-radius: 10px;
+  height: 40px;
+}
+
 .blog-link {
   margin-top: 8px;
   margin-left: 5px;
 }
 
-.slide-center-out
-{
+.slide-center-out {
   text-decoration: none;
   display: inline-block;
   color: #0275d8;

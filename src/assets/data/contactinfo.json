@@ -1,0 +1,26 @@
+[
+  {
+    "method": "E-mail",
+    "url_text": "marvinrusinek@gmail.com",
+    "url": "mailto:marvinrusinek@gmail.com",
+    "image": "../../assets/images/contact/paper-plane.png"
+  },
+  {
+    "method": "Website",
+    "url_text": "http://www.marvinrusinek.com",
+    "url": "http://www.marvinrusinek.com",
+    "image": "../../assets/images/contact/internet.png"
+  },
+  {
+    "method": "LinkedIn",
+    "url_text": "https://www.linkedin.com/in/marvin-rusinek-10b3994/",
+    "url": "https://www.linkedin.com/in/marvin-rusinek-10b3994/",
+    "image": "../../assets/images/contact/linkedin.gif"
+  },
+  {
+    "method": "GitHub",
+    "url_text": "https://github.com/marvinrusinek",
+    "url": "https://github.com/marvinrusinek",
+    "image": "../../assets/images/contact/github.png"
+  }
+]

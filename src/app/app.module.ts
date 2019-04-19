@@ -11,12 +11,15 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
-import { ScrollSpyModule } from 'ngx-scrollspy';
 import { NgBackToTopModule } from 'ng-back-to-top';
 // import { ParallaxModule } from "ngx-parallax/lib/parallax.module";
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { ParallaxScrollModule } from 'ng2-parallaxscroll';
 import { MglTimelineModule } from 'angular-mgl-timeline';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { RecaptchaModule, RecaptchaSettings, RECAPTCHA_SETTINGS } from 'ng-recaptcha';
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
@@ -42,6 +45,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 // import { AngularFireDatabase } from 'angularfire2/database';
 import { OverviewComponent } from './about/overview/overview.component';
+import { QualificationsComponent } from "./about/qualifications/qualifications.component";
 import { EducationComponent } from './about/education/education.component';
 import { TechSkillsListComponent } from './about/techskills/techskills-list.component';
 import { ResumeComponent } from './about/resume/resume.component';
@@ -51,10 +55,12 @@ import { TimelineService } from "./shared/services/timeline.service";
 import { ProjectService } from './shared/services/project.service';
 import { TrainingService } from "./shared/services/training.service";
 import { TechSkillsService } from './shared/services/techskills.service';
+import { ResumesService } from "./shared/services/resumes.service";
 import { ServicesService } from "./shared/services/services.service";
 import { TestimonialsService } from "./shared/services/testimonials.service";
 import { FilterBtnService } from "./shared/services/filterBtn.service";
 import { ContactFormService } from "./shared/services/contactform.service";
+import { ContactInfoService } from "./shared/services/contactinfo.service";
 
 
 @NgModule({
@@ -65,6 +71,7 @@ import { ContactFormService } from "./shared/services/contactform.service";
     HeroComponent,
     AboutComponent,
     OverviewComponent,
+    QualificationsComponent,
     EducationComponent,
     TechSkillsListComponent,
     ResumeComponent,
@@ -96,14 +103,17 @@ import { ContactFormService } from "./shared/services/contactform.service";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     LazyLoadImagesModule,
-    ScrollSpyModule.forRoot(),
     RecaptchaModule,
     RecaptchaFormsModule,
     NgBackToTopModule,
     NgsRevealModule,
-    ParallaxScrollModule,
     // ParallaxModule
-    MglTimelineModule
+    ParallaxScrollModule,
+    MglTimelineModule,
+    FlexLayoutModule,
+    InViewportModule,
+    ScrollSpyModule.forRoot(),
+    CarouselModule
   ],
   providers: [
     // AngularFireDatabase,
@@ -113,10 +123,12 @@ import { ContactFormService } from "./shared/services/contactform.service";
     TrainingService,
     TimelineService,
     TechSkillsService,
+    ResumesService,
     ServicesService,
     TestimonialsService,
     FilterBtnService,
     ContactFormService,
+    ContactInfoService,
     {
       provide: RECAPTCHA_SETTINGS,
       useValue: { siteKey: '6LerxYMUAAAAALaV-sOfT5i_PDfza7RI7b2D6qCD' } as RecaptchaSettings,

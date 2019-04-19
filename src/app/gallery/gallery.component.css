@@ -21,6 +21,10 @@ article p a {
   font-weight: 700;
 }
 
+article > p::first-letter {
+  font-size: 150%;
+}
+
 /*********************** Isotope button **********************/
 .button {
   display: inline-block;
@@ -113,7 +117,7 @@ article p a {
 }
 
 .filters {
-  margin-left: -100px;
+  margin-left: -70px;
   padding: 0;
   list-style: none;
 }
@@ -128,7 +132,7 @@ article p a {
   font-size: 14px;
 }
 
-.filtersIndent {
+.filters-container {
   margin-left: 20px;
 }
 
@@ -137,17 +141,17 @@ article p a {
 @media (max-width: 575.98px) {
   #portfolio { width: 570px; }
   #portfolio > article > p { width: 550px; }
-  .filtersIndent {  margin-left: -50px; }
-  .grid-indent {  margin-left: 0; }
-  .portfolioIntro {  margin-left: -60px; width: auto; }
+  .filters-container {  margin-left: -50px; }
+  .grid-indent { margin-left: 0; }
+  .portfolioIntro { margin-left: -60px; width: auto; }
   .button-group > button { display: block; padding-bottom: 10px; }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .filtersIndent {  margin-left: -150px; }
-  .grid-indent {  margin-left: 0; }
-  .portfolioIntro {  margin-left: -100px; width: auto; }
+  .filters-container { margin-left: -150px; }
+  .grid-indent { margin-left: 0; }
+  .portfolioIntro { margin-left: -100px; width: auto; }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -162,5 +166,5 @@ article p a {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .filtersIndent { margin-left: 40px; }
+  .filters-container { margin-left: 40px; }
 }

@@ -63,6 +63,16 @@ div.front-end {
   margin-top: -20px;
 }
 
+.back-end > ul {
+  margin-left: -130px;
+}
+.dev-tools > ul {
+  margin-left: -215px;
+}
+.ux-design > ul {
+  margin-left: -330px;
+}
+
 img {
   height: 100px !important;
   width: 100px !important;

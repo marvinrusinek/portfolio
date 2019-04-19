@@ -21,17 +21,17 @@ h2 {
 }
 
 .ul-contact-div {
-  margin-left: 37%;
+  margin-left: 38.5%;
   float: left;
 }
-
+ul.ul-contact {
+  display: inline-block;
+}
 ul.ul-contact li {
   list-style-type: none;
-}
-
-ul.ul-contact > img {
-  height: 24px;
-  width: 24px;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 ul.ul-contact span {
@@ -47,11 +47,6 @@ ul.ul-contact span a {
 ul.ul-contact span a:hover {
   color: #28a745;
   font-weight: 600;
-}
-
-ul.ul-contact li {
-  display: block;
-  padding-bottom: 10px;
 }
 
 
@@ -107,11 +102,9 @@ input.ng-invalid.ng-touched {
   color: #aaa;
   font-size: 16px;
 }
-
 .nameField input, .emailField input {
   text-indent: 32px;
 }
-
 .nameField .fa-id-card, .emailField .fa-envelope {
   position: absolute;
   top: 8px;
@@ -273,7 +266,7 @@ button.button {
   border: 2px solid #000;
   border-radius: 10px 10px 10px 10px;
   padding-top: 10px;
-  margin-top: -50px;
+  margin-top: -75px;
   font-weight: bold;
   cursor: pointer;
   background: #66cdaa !important;

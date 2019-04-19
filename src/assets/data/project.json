@@ -13,7 +13,7 @@
         "dateCompleted": "2015-10-02",
         "technologies": "HTML, CSS, JavaScript, jQuery, Drupal, ColdFusion",
         "context": "I was the webmaster of the AJHS website from 2008 to 2015.",
-        "problem": "The AJHS needed a hand with updating and maintaining of the AJHS website.",
+        "problem": "The AJHS needed some assistance with the updating and maintaining of the AJHS website.",
         "solution": "I was responsible for the administration, maintenance and development of the American Jewish Historical Society website using front-end technologies and Drupal CMS. I also learned some ColdFusion along the way."
       },
       {
@@ -48,7 +48,7 @@
         "technologies": "Adobe Fireworks",
         "context": "Developed an information architecture (IA) strategy for the Buckminster Fuller Institute (BFI) site redesign as part of the final project for the \"Information Architecture and Interaction Design\" course at Pratt Institute, Spring 2009.",
         "problem": "The BFI needed a complete site overhaul and approached the Pratt Institute's IA class",
-        "solution": "We generated various information architecture deliverables such as scenarios, competitive analysis, content inventory, card sorting, sitemaps, prototypes/mockups, and wireframes to assist in the redesign of the BFI website."
+        "solution": "We generated various information architecture deliverables such as scenarios, competitive analysis, content inventory, card sorting, sitemaps, prototypes/mockups, and wireframes to assist in the redesign of the BFI website. Our final redesign proposal was presented to the Executive Staff at the Buckminster Fuller Institute headquarters."
       },
       {
         "id": 4,
@@ -65,7 +65,7 @@
         "technologies": "HTML, CSS and JavaScript",
         "context": "Developed for the final project of the \"Advanced Web Design\" course at Pratt Institute, Summer 2009.",
         "problem": "The project needed to include five webpages incorporating all of the things we learned in the course.",
-        "solution": "The site was created in Adobe Dreamweaver and uses a spry navigation scheme. I created a Flash slideshow for the homepage and created a slideshow with Adobe Bridge for the Gallery page."
+        "solution": "The site was created in Adobe Dreamweaver and uses a spry navigation scheme. I produced a Flash slideshow for the homepage and also created a slideshow with Adobe Bridge for the Gallery page."
       },
       {
         "id": 5,
@@ -82,7 +82,7 @@
         "technologies": "PHP and MySQL (WAMP Stack), HTML, CSS and JavaScript",
         "context": "Started working on website in the \"Creating Interactive Websites with PHP\" course at Pratt Institute, Spring 2010 and continued working on it in the Advanced Web Development Intensive at NYU SPS, Fall 2010.",
         "problem": "We needed to create a user-friendly interactive website that retrieves information from a database and displays it on a website.",
-        "solution": "We used a MySQL relational database to store the gadget information and PHP to display the gadget information. The project includes the ability to perform CRUD operations on gadget information. As a bonus to the project, I wanted to add the ability to add images to the database and then display them but couldn't quite figure it out due to time constraints."
+        "solution": "We used a MySQL relational database to store the gadget information and PHP to access and display the gadget information. The project provides the ability to perform CRUD operations on gadget information. As a bonus to the project, I wanted to add the ability to add images to the database and then display them, but couldn't quite figure it out due to time constraints."
       },
       {
         "id": 6,
@@ -99,7 +99,7 @@
         "technologies": "Omeka Content Management System, ImageMagick, HTML and CSS",
         "context": "Developed for the \"Projects in Digital Archives\" course at Pratt Institute, Spring 2010.",
         "problem": "The Dalton School needed a website for its 55 oral histories and approached the Digital Archives professor who agreed to take on the project.",
-        "solution": "The Digital Archives class digitized the oral histories and placed the files and associated metadata into the Omeka CMS. The site was hosted on the Pratt Institute webserver."
+        "solution": "The Digital Archives class digitized the oral histories and placed the files and associated metadata into the Omeka CMS. I was responsible for digitization, entering the information into the CMS and developing the homepage. The site was hosted on the Pratt Institute webserver."
       },
       {
         "id": 7,
@@ -116,7 +116,7 @@
         "technologies": "Drupal 7",
         "context": "Developed for the final project of the \"Management of Digital Content\" course at Pratt Institute, Summer 2010 (archived by archive.org).",
         "problem": "There aren't that many personal stamp collection websites out there, so we decided to create one as part of our final project for our \"Management of Digital Content\" course.",
-        "solution": "The Drupal site that we developed is for a personal digital stamp collection collected from 1993 to 1998 that consists of 161 stamps from 10 countries. Fifteen of the stamps are featured on the website including the ability to zoom in on the stamp image, sort by tags, collection slideshow and slideshow of the actual stamp album."
+        "solution": "The Drupal site that we developed is for a personal digital stamp collection collected from 1993 to 1998 consisting of 161 stamps from 10 countries. Fifteen of the stamps are featured on the website including the ability to zoom in on the stamp image, sort by tags, collection slideshow and slideshow of the actual stamp album."
       },
       {
         "id": 8,
@@ -133,7 +133,7 @@
         "technologies": "ASP.NET MVC 4, Microsoft SQL Server, Entity Framework, C#, jQuery",
         "context": "Developed during the \"Advanced ASP.NET\" course (Fall 2011) and the \"ASP.NET MVC with SQL Server and Entity Framework\" (Spring 2012) course at NYU SPS.",
         "problem": "ContactWeb is an application that displays contact information.",
-        "solution": "ContactWeb facilitates CRUD (Create, Retrieval, Update and Delete) operations for the management of contact information and uses faceted search and pagination to display contacts."
+        "solution": "ContactWeb facilitates CRUD (Create, Retrieval, Update and Delete) operations in order to manage contact information. The project utilized faceted search and pagination for the display of contacts' information. The project used some interesting programming concepts such as the 'Donut Hole' method with jQuery."
       },
       {
         "id": 9,
@@ -148,9 +148,9 @@
         "dateStarted": "2011-03-01",
         "dateCompleted": "2011-05-10",
         "technologies": "ASP.NET 4 (WebForms), C#, XML, Microsoft SQL Server and AJAX/jQuery",
-        "context": "Developed as final project for the \"ASP.NET Application Development Intensive\" at NYU, Spring 2011.",
+        "context": "Developed as final project for the \"ASP.NET Application Development Intensive\" course at NYU, Spring 2011.",
         "problem": "We needed to develop a mini-Expedia website that takes the user through the entire process of booking a flight.",
-        "solution": "The Skyscanner website that I created retrieves flight information from an XML file. The user can then search for flight(s) and search results are displayed to the user. The user can select a particular flight and then the user is guided through a wizard that calculates the flight cost and stores the selected flight information and user information in a Microsoft SQL database."
+        "solution": "I created a Skyscanner website based off of the site that was currently online. The user can search for flight(s) through the user interface and then search results are displayed to the user. The flight information is retrieved from an XML file. The user can select a particular flight on the results page. Once selected, the user is guided through a wizard that calculates the flight cost and stores the selected flight information and user information in a Microsoft SQL database. I also incorporated a reCAPTCHA controller for the submission form. The project incorporated all of the major concepts covered in the course and received the highest grade in the course."
       },
       {
         "id": 10,
@@ -166,8 +166,8 @@
         "dateCompleted": "2011-03-15",
         "technologies": "ASP.NET 4.0, HTML, CSS",
         "context": "Developed a wizard created for the mid-semester project in the \"ASP.NET Application Development Intensive\" at NYU SPS, March 2011.",
-        "problem": "We needed to develop a wizard for our project that guides a user through a particular process and provide feedback.",
-        "solution": "I developed a 10 question Basketball Facts wizard quiz using the ASP.NET WebForms wizard controls. If not a member, the user has to sign up and then log in to use the application. Once logged in, the user is able to start the wizard. Feedback is given throughout the quiz and a final score is tabulated at the end."
+        "problem": "We needed to develop a wizard for our project that guided a user through a particular process and also provided feedback.",
+        "solution": "I developed a 10 question Basketball Facts wizard quiz using the ASP.NET WebForms wizard controls. If not a member, the user has to register and then log in to use the application. Once logged in, the user is able to start the wizard. Feedback is given throughout the quiz and a final score is calculated and displayed at the end."
       },
       {
         "id": 11,
@@ -218,7 +218,7 @@
         "technologies": "AngularJS, NodeJS, MongoDB/Mongoose, Ionic Framework and Apache Cordova",
         "context": "Developed for the Coursera \"Multiplatform Mobile Application Development with Web Technologies\" course, Summer 2016.",
         "problem": "We needed to create a mobile app from the Ristorante con Fusion website we created in the previous Coursera course.",
-        "solution": "The solution uses the MEAN stack along with the Ionic Framework and Apache Cordova to create a mobile app for Ristorante con Fusion that works on iOS and Android devices. Ionic is used to create the user interface and Cordova's modules are used to access the native mobile platform's capabilities from JavaScript."
+        "solution": "The solution used the MEAN stack along with the Ionic Framework and Apache Cordova to create a mobile app for Ristorante con Fusion that works for both iOS and Android devices. Ionic is used to create the user interface and Cordova's modules are used to access the native mobile platform's capabilities from JavaScript."
       },
       {
         "id": 14,
@@ -234,8 +234,8 @@
         "dateCompleted": "2018-01-05",
         "technologies": "AngularJS 1.4.8, Angular UI Grid 4.1.3, HTML5, CSS, JavaScript/jQuery and Bootstrap",
         "context": "Worked on a small side-project called AlbumFinder as part of a job application.",
-        "problem": "I needed to create this small AlbumFinder app that uses the Apple iTunes API. As a bonus, I made suggestions on how to improve the user experience.",
-        "solution": "I created an Angular application called AlbumFinder that uses an AlbumsController and iTunesService which calls the iTunes API. I replaced the artist name within the API path with the search phrase coming from the user input field. When the Search button is clicked, a call is made to the API and the list of albums is displayed, including the album name and album cover inside .albums-container in a grid. Additionally, I included the capability to save album data to an external .csv, .pdf, or .xls file from within the grid."
+        "problem": "I needed to create this small AlbumFinder app that used the Apple iTunes API.",
+        "solution": "I created an Angular application called AlbumFinder that uses an AlbumsController and iTunesService which calls the iTunes API. I replaced the artist name within the API path with the search phrase coming from the user input field. When the Search button is clicked, a call is made to the API and the list of albums is displayed, including the album name and album cover inside .albums-container in a grid. Additionally, I included the capability to save album data to an external .csv, .pdf, or .xls file from within the grid. As a bonus, I made suggestions on how I would improve the user experience."
       },
       {
         "id": 15,
@@ -252,7 +252,7 @@
         "technologies": "Angular 4, Angular Material 2, Angular CDK",
         "context": "Developed the 'Tour of Stylish Heroes' website at Maxim Salnikov's session covering Angular Material at the Angular Summit in Boston, September 2017.",
         "problem": "We needed to stylize the \"Tour of Heroes\" app on the Angular website.",
-        "solution": "The finished website is styled with Angular Material. It features a dashboard with search capability as well as a heroes view that provides the ability to create or delete heroes. We also explored how to use the Angular CDK."
+        "solution": "The finished website is styled with Angular Material 2. It features a dashboard with search capability as well as a heroes view that provides the ability to create or delete heroes. We also explored how to use the Angular CDK."
       },
       {
         "id": 16,
@@ -286,7 +286,7 @@
         "technologies": "Morae",
         "context": "Usability study of the Media Ecology Association (MEA) and the Institute of General Semantics (IGS) created for the \"Usability Leadership\" course at Pratt Institute, Fall 2009.",
         "problem": "The MEA and IGS enlisted the help of graduate students at the Pratt Institute to perform usability analysis of their websites.",
-        "solution": "As part of a group of students at Pratt Institute, I assisted in performing an initial analysis of the websites and then used the Morae software to perform extensive usability testing of the websites. Each group of students enlisted the assistance of 4 or 5 people to carry out the testing and then prepared a presentation and an analysis report of their findings."
+        "solution": "As part of a group of students at Pratt Institute, I assisted in performing an initial analysis of the websites and then used the Morae software to perform extensive usability testing of the websites. Each group of students enlisted the assistance of 4 or 5 people to carry out the testing and then prepared a presentation and an analysis of their findings."
       },
       {
         "id": 18,
@@ -303,7 +303,7 @@
         "technologies": "Adobe Fireworks",
         "context": "Design project proposal created for the \"Projects in Digital Archives\" course at Pratt Institute, Spring 2010.",
         "problem": "Our project, NYC Archivisualizer, is a website with the goal of highlighting archival collections within New York City.",
-        "solution": "A main feature of the site is an interactive Google map which allows users to browse through collections at different locations in NYC. The site employs a form to add a new archive to the site. The site also features archival events on an events calendar and lesson plans for teachers."
+        "solution": "A main feature of the site is an interactive Google map which allowed users to browse through collections at different locations in NYC. The site employed a form to add a new archive to the site. The site also featured archival events on an events calendar as well as lesson plans for teachers."
       },
       {
         "id": 19,
@@ -319,8 +319,8 @@
         "dateCompleted": "2011-10-06",
         "technologies": "XML, Encoded Archival Description (EAD)",
         "context": "Processed and encoded the finding aid to the American Jewish Congress collection at the AJHS in October 2011.",
-        "problem": "The American Jewish Congress collection consisted of two parts, the initial collection which I processed and then an accretion of boxes located off-site were transferred to AJHS and then processed under a grant. The two portions of the records were processed and arranged intellectually.",
-        "solution": "A finding aid for the AJCongress was compiled and I encoded the online finding aid to the entire collection."
+        "problem": "The American Jewish Congress collection consisted of two parts, the initial collection which I processed and then an accretion of boxes located off-site were transferred to AJHS and later processed under a grant. The two portions of the records were processed and arranged intellectually.",
+        "solution": "A finding aid for the AJCongress was compiled and I encoded the online finding aid to the entire collection using EAD."
       },
       {
         "id": 20,
@@ -370,7 +370,7 @@
         "dateCompleted": "2007-05-01",
         "context": "Created folder-level database and encoded the finding aid to the National Jewish Welfare Board (NJWB) records (1535.8 linear feet) at the AJHS in May 2007.",
         "problem": "The records to the NJWB collection needed to be processed including refoldering and separating large amounts of oversized material. Also included were audiovisual material that needed to be cataloged.",
-        "solution": "A folder listing to the entire NJWB collection was assembled by myself in 7 months. The collection also needed some processing and a new box numbering system. I encoded the entire finding aid using EAD."
+        "solution": "A folder listing to the entire NJWB collection was composed by myself in 7 months. The collection also needed some processing and a new box numbering system. I encoded the entire finding aid using EAD. This was the first finding aid at the Center that employed a downloadable external folder listing."
       },
       {
         "id": 23,
@@ -387,7 +387,7 @@
         "technologies": "XML, Encoded Archival Description (EAD)",
         "context": "Papers of Cecilia Razovsky at the American Jewish Historical Society (AJHS), processed in March 2006.",
         "problem": "The papers of Cecilia Razovsky needed to be processed and a complete online finding aid needed to be created.",
-        "solution": "I processed this small collection, however the legacy finding aid to the collection was immense (over 100 pages) and needed to be encoded with EAD. I completed the encoding of the finding aid within a week. This was one of the first collections I worked on at the AJHS."
+        "solution": "I processed this small collection as one of the first collections I processed at the AJHS. The legacy finding aid was immense (over 100 pages) and needed to be encoded using EAD. I completed the encoding of the finding aid in less than a week, astonishing the senior archivist that I worked under."
       },
       {
         "id": 24,
@@ -404,7 +404,7 @@
         "technologies": "WordPress, HTML, CSS",
         "context": "A WordPress blog site for the UJA-Federation of NY project was created and blog posts were compiled over a 4-year period.",
         "problem": "We needed to create a WordPress blog to capture interesting archival material encountered during the processing of the project.",
-        "solution": "I was one of the archivists that worked on composing blog entries in WordPress pertaining to the collection from 2012 to 2015. I was also responsible for customizing the WordPress theme and made suggestions that enhanced our blog entries."
+        "solution": "I was one of the archivists that composed blog entries in WordPress pertaining to the collection from 2012 to 2015. I was also responsible for customizing the WordPress theme and making suggestions that enhanced the quality of our blog entries."
       },
       {
         "id": 25,
@@ -421,7 +421,7 @@
         "technologies": "Drupal",
         "context": "The Federation City Interactive Map was a nice addition to the special collection's webpage on the AJHS website.",
         "problem": "The map should be an indispensable tool for researchers seeking pertinent information on the 106 agencies supported by UJA.",
-        "solution": "I worked on creating the database portion of the interactive map for the UJA-Federation of New York project. The contents of the database were entered into the Drupal CMS."
+        "solution": "I worked on creating the database portion of the interactive map for the UJA-Federation of New York project. I entered the contents of the database into the Drupal CMS."
       },
       {
         "id": 26,
@@ -452,10 +452,10 @@
         "title": "ng-recipe-book",
         "dateStarted": "2018-01-01",
         "dateCompleted": "2018-03-15",
-        "technologies": "Angular 6 with NgRx and Firebase, HTML, CSS, Bootstrap",
+        "technologies": "Angular 6 with NgRx and Google Firebase, HTML, CSS, Bootstrap",
         "context": "Developed a fully-functional Recipe Book app with Recipes and Shopping List modules using Angular 6 as final project for the \"Angular 6 - The Complete Guide\" course on Udemy.",
         "problem": "A Recipe Book app needed to be developed that contains information about recipes along with a shopping list with ingredients.",
-        "solution": "The app uses the NgRx library for state management and user authentication is achieved with Firebase on the backend. (Please note that the app was originally created in Angular 5 and previously deployed to AWS as shown in the above image and the app was then upgraded to Angular 6 in November 2018.)"
+        "solution": "The app uses the NgRx library for state management and user authentication is achieved with Google Firebase on the backend. (Please note that the app was originally created in Angular 5 and previously deployed to AWS as shown in the above image and the app was then upgraded to Angular 6 in November 2018.)"
       },
       {
         "id": 28,
@@ -489,7 +489,7 @@
         "technologies": "HTML, CSS, JavaScript/AJAX",
         "context": "Developed a Weather App as final project of the \"Accelerated JavaScript Training\" bootcamp course on Udemy.",
         "problem": "The Weather App should display real-time weather condition and temperature in Fahrenheit for searched city name.",
-        "solution": "I developed the core app with JavaScript and some AJAX. I then added city coordinates, humidity, windspeed and photo of the current condition. The app demonstrates expertise with JavaScript concepts such as the use of DOM selectors and DOM manipulation, API (OpenWeatherMap API) integration with AJAX, and basic object-oriented programming."
+        "solution": "I developed the core app using JavaScript and some AJAX. I then added city coordinates, humidity, windspeed and photo of the current condition. The app demonstrates expertise with JavaScript concepts such as the use of DOM selectors and DOM manipulation, API (OpenWeatherMap API) integration with AJAX, and basic object-oriented programming."
       },
       {
         "id": 30,

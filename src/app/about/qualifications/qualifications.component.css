@@ -1,0 +1,19 @@
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  font-size: large;
+  color: #36454F;
+  width: 100%;
+  text-align: justify;
+}
+
+p > a {
+  color: rgb(2, 117, 184) !important;
+  font-weight: 700;
+}
+
+p::first-letter {
+  font-size: 150%;
+}
