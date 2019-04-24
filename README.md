@@ -8,10 +8,12 @@ The website demonstrates my Angular expertise with:
    - Interface design
    - Two-way data-binding and working with JSON data
    - Services using Reactive JS (RxJS) and Observables
-   - Modals
+   - Dependency injection
    - Lazyloading
    - Pre-loading
+   - Modals
    - Reactive Forms (Validation and Submission)
+   - Angular Routing
    - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - Angular Material
    - Server Side Rendering using Angular Universal (in progress)
