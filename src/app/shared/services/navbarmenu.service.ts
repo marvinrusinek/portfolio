@@ -6,12 +6,11 @@ import { INavbarMenu } from "../models/navbar-menu";
 
 @Injectable()
 export class NavbarMenuService {
-  // private _url = 'http://www.marvinrusinek.com/assets/data/navbarMenu.json';
-  private _url = '../../assets/data/navbarMenu.json';
+  private url = '../../assets/data/navbarMenu.json';
 
   constructor(private http: HttpClient) {}
 
   getNavbarMenu(): Observable<INavbarMenu[]> {
-    return this.http.get<INavbarMenu[]>(this._url);
+    return this.http.get<INavbarMenu[]>(this.url);
   }
 }

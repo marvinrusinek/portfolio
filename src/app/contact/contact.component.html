@@ -30,12 +30,12 @@
                         <div *ngIf="contactfield.inputType === 'input'">
                           <input type="contactfield.type" class="form-control" aria-required="true"
                              name="contactfield.formControl" [formControlName]="contactfield.formControl"
-                             [placeholder]="contactfield.placeholderText">
+                             [placeholder]="contactfield.placeholderText" title="Please fill out this field.">
                         </div>
                         <div *ngIf="contactfield.inputType === 'textarea'">
                            <textarea type="contactfield.type" class="form-control" aria-required="true" rows="4"
                              [formControlName]="contactfield.formControl" name="contactfield.formControl"
-                             [placeholder]="contactfield.placeholderText"></textarea>
+                             [placeholder]="contactfield.placeholderText" title="Please fill out this field."></textarea>
                         </div>
                       </div>
                       <span *ngIf="contactForm.get('contactfield.formControl') === 'invalid' ||
@@ -51,7 +51,9 @@
               </div>
 
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <h5 class="text-center services-query">What services are you interested in?</h5>
+                <span>
+                  <h5 class="text-center services-query">What services are you interested in? <span class="required">*</span></h5>
+                </span>
                 <div class="form-services form-group">
                   <ul formArrayName="services" *ngFor="let service of contactForm['controls'].services['controls'];
                     let i = index">
@@ -79,7 +81,7 @@
             <div class="row">
               <div class="buttonContainer" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
                 <button type="submit" class="button hvr-rectangle-out" [disabled]="contactForm.invalid">
-                  <img src="../../assets/images/contact/enter.png">&nbsp;&nbsp;Submit Your Request
+                  <img src="../../assets/images/contact/enter.png">&nbsp;&nbsp;<span>Submit Your Request</span>
                 </button>
               </div>
             </div>

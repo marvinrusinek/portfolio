@@ -6,13 +6,11 @@ import { IResumes } from '../models/resumes';
 
 @Injectable()
 export class ResumesService {
-
-  // private _url = 'http://www.marvinrusinek.com/assets/data/resumes.json';
-  private _url = '../assets/data/resumes.json';
+  private url = '../assets/data/resumes.json';
 
   constructor(private http: HttpClient) {}
 
   getResumes(): Observable<IResumes[]> {
-    return this.http.get<IResumes[]>(this._url);
+    return this.http.get<IResumes[]>(this.url);
   }
 }

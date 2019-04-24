@@ -42,7 +42,6 @@
 }
 
 .my-services > .row .flex-item {
-  display: inline-block;
   flex: 0 1 auto;
   width: 280px;
   height: auto;
@@ -132,14 +131,24 @@ h4 > a {
 .otherServiceType {
   font-weight: bold;
 }
-.specialization-statement {
+.custom-statement {
   margin-left: 20px;
   padding-top: 40px;
   padding-bottom: 20px;
   font-size: 28px;
   color: #4B3621;
 }
-
+.results {
+  margin-left: 40px;
+}
+.contact-statement {
+  text-align: center;
+  font-size: 24px;
+  color: #4B3621;
+}
+.contact-bold {
+  font-weight: 900;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

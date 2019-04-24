@@ -6,13 +6,12 @@ import { ITestimonial } from "../models/testimonial";
 
 @Injectable()
 export class TestimonialsService {
-  // private _url = 'http://www.marvinrusinek.com/assets/data/testimonials.json';
-  private _url = '../../assets/data/testimonials.json';
+  private url = '../../assets/data/testimonials.json';
 
   constructor(private http: HttpClient) {}
 
   getTestimonials(): Observable<ITestimonial[]> {
-    return this.http.get<ITestimonial[]>(this._url);
+    return this.http.get<ITestimonial[]>(this.url);
   }
 }
 

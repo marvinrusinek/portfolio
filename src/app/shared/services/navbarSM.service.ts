@@ -6,12 +6,11 @@ import { INavbarSM } from "../models/navbarSM";
 
 @Injectable()
 export class NavbarSMService {
-  // private _url = 'http://www.marvinrusinek.com/assets/data/navbarSM.json';
-  private _url = '../../assets/data/navbarSM.json';
+  private url = '../../assets/data/navbarSM.json';
 
   constructor(private http: HttpClient) {}
 
   getNavbarSM(): Observable<INavbarSM[]> {
-    return this.http.get<INavbarSM[]>(this._url);
+    return this.http.get<INavbarSM[]>(this.url);
   }
 }

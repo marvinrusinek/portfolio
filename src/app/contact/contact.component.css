@@ -271,6 +271,10 @@ button.button {
   cursor: pointer;
   background: #66cdaa !important;
 }
+button span {
+  text-decoration: underline;
+}
+
 .buttonContainer {
   margin-left: 35%;
   display: block;

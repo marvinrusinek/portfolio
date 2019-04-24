@@ -6,13 +6,11 @@ import { ISkill } from '../models/skill';
 
 @Injectable()
 export class TechSkillsService {
-
-  // private _url = 'http://www.marvinrusinek.com/assets/data/skill.json';
-  private _url = '../../../assets/data/skill.json';
+  private url = '../../../assets/data/skill.json';
 
   constructor(private http: HttpClient) {}
 
   getSkills(): Observable<ISkill[]> {
-    return this.http.get<ISkill[]>(this._url);
+    return this.http.get<ISkill[]>(this.url);
   }
 }

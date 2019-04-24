@@ -6,12 +6,11 @@ import { ITimeline } from '../models/timeline';
 
 @Injectable()
 export class TimelineService {
-  // private _url = 'http://www.marvinrusinek.com/assets/data/timeline.json';
-  private _url = '../../assets/data/timeline.json';
+  private url = '../../assets/data/timeline.json';
 
   constructor(private http: HttpClient) {}
 
   getTimeline(): Observable<ITimeline[]> {
-    return this.http.get<ITimeline[]>(this._url);
+    return this.http.get<ITimeline[]>(this.url);
   }
 }

@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 // import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
-// import { MatIconModule, MatInputModule, MatButtonModule, MatCardModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -24,7 +23,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RecaptchaModule, RecaptchaSettings, RECAPTCHA_SETTINGS } from 'ng-recaptcha';
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+import { appRoutes } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -92,14 +91,10 @@ import { ContactInfoService } from "./shared/services/contactinfo.service";
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule,
-    /* MatIconModule,
-    MatInputModule,
-    MatButtonModule,
-    MatCardModule, */
+    RouterModule.forRoot(appRoutes),
     MatTabsModule,
     NgbModule.forRoot(),
     AngularFontAwesomeModule,
-    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     LazyLoadImagesModule,

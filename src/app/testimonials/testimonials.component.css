@@ -8,6 +8,7 @@
   width: 1200px !important;
   height: auto !important;
   margin-left: 100px;
+  padding-bottom: 10px;
 }
 .mytestimonials blockquote {
   font-size: 32px;
@@ -41,6 +42,14 @@
   text-align: right;
   margin: 10px;
   margin-right: 20px;
+}
+.entireTestimonialStyle {
+  background-color: darkseagreen;
+  margin-left: 35px;
+  border-radius: 10px;
+}
+.testimonial-centering {
+  margin-left: -45px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

@@ -6,12 +6,11 @@ import { IContactInfo } from '../models/contactinfo';
 
 @Injectable()
 export class ContactInfoService {
-  // private _url = 'http://www.marvinrusinek.com/assets/data/contactinfo.json';
-  private _url = '../assets/data/contactinfo.json';
+  private url = '../assets/data/contactinfo.json';
 
   constructor(private http: HttpClient) {}
 
   getContactMethods(): Observable<IContactInfo[]> {
-    return this.http.get<IContactInfo[]>(this._url);
+    return this.http.get<IContactInfo[]>(this.url);
   }
 }

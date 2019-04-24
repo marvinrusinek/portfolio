@@ -6,12 +6,11 @@ import { IService } from "../models/service";
 
 @Injectable()
 export class ServicesService {
-  // private _url = 'http://www.marvinrusinek.com/assets/data/service.json';
-  private _url = '../../assets/data/service.json';
+  private url = '../../assets/data/services.json';
 
   constructor(private http: HttpClient) {}
 
   getServices(): Observable<IService[]> {
-    return this.http.get<IService[]>(this._url);
+    return this.http.get<IService[]>(this.url);
   }
 }
