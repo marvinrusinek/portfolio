@@ -18,6 +18,8 @@ The website demonstrates my Angular expertise with:
    - Server Side Rendering using Angular Universal (in progress)
    - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - SSL
+   
+The website also showcases my knowledge of    
    - HTML5
    - CSS3/SCSS (Flexbox)
    - JavaScript/jQuery
