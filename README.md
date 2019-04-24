@@ -8,21 +8,24 @@ The website demonstrates my Angular expertise with:
    - Interface design
    - Two-way data-binding and working with JSON data
    - Services using Reactive JS (RxJS) and Observables
-   - Modals
+   - Dependency injection
    - Lazyloading
    - Pre-loading
+   - Modals
    - Reactive Forms (Validation and Submission)
-   - NPM Package integration (Isotope, sal.js, hexo, etc.)
+   - Angular Routing
    - Angular Material
    - Server Side Rendering using Angular Universal (in progress)
+   - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - SSL
    
-HTML5
-CSS3/SCSS (Flexbox)
-JavaScript/jQuery
-Bootstrap and Foundation
-Scrolling animations
-git
+The website also showcases my knowledge of    
+   - HTML5
+   - CSS3/SCSS (Flexbox)
+   - JavaScript/jQuery
+   - Bootstrap and Foundation
+   - Scrolling animations
+   - git
 
 This project can NOT be used for any purpose without written permission.
 
