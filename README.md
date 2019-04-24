@@ -18,13 +18,12 @@ The website demonstrates my Angular expertise with:
    - Server Side Rendering using Angular Universal (in progress)
    - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - SSL
-   
-HTML5
-CSS3/SCSS (Flexbox)
-JavaScript/jQuery
-Bootstrap and Foundation
-Scrolling animations
-git
+   - HTML5
+   - CSS3/SCSS (Flexbox)
+   - JavaScript/jQuery
+   - Bootstrap and Foundation
+   - Scrolling animations
+   - git
 
 This project can NOT be used for any purpose without written permission.
 
