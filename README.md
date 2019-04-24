@@ -14,9 +14,9 @@ The website demonstrates my Angular expertise with:
    - Modals
    - Reactive Forms (Validation and Submission)
    - Angular Routing
-   - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - Angular Material
    - Server Side Rendering using Angular Universal (in progress)
+   - NPM Package integration (Isotope, sal.js, hexo, etc.)
    - SSL
    
 HTML5
