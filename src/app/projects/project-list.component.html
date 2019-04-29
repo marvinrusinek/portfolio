@@ -55,7 +55,6 @@
               <div class="project-metadata">
                 <p class="text-center">
                   <span class="category">{{project.categoryFullNames}}</span><br />
-                  <span class="technologies">{{project.technologies}}</span><br />
                   <span class="projectDurationText">
                     <time class="dateStarted" title={{project.dateStarted}}>
                       {{project.dateStarted | date: 'longDate'}}
@@ -63,6 +62,11 @@
                     <time class="dateCompleted" title={{project.dateCompleted}}>
                       {{project.dateCompleted | date: 'longDate'}}
                     </time>
+                  </span><br />
+                  <span class="used">
+                    <mat-chip-list>
+                      <mat-chip *ngFor="let technology of project.technologies" class="chip">{{ technology }}</mat-chip>
+                    </mat-chip-list>
                   </span>
                 </p>
               </div>

@@ -243,6 +243,20 @@ button:hover {
   font-weight: 700;
 }
 
+.used {
+  word-wrap: break-word;
+  word-break: break-word;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.chip {
+  background-color: #b4c8ff;
+  margin: 4px !important;
+  color: #000000;
+}
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   mat-card {

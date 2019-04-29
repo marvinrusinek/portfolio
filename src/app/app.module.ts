@@ -5,8 +5,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 // import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
-import { MatTabsModule } from '@angular/material';
-import { RouterModule } from '@angular/router';
+import { MatTabsModule, MatIconModule, MatChipsModule } from '@angular/material';
+import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
@@ -93,6 +93,8 @@ import { ContactInfoService } from "./shared/services/contactinfo.service";
     RouterModule,
     RouterModule.forRoot(appRoutes),
     MatTabsModule,
+    MatIconModule,
+    MatChipsModule,
     NgbModule.forRoot(),
     AngularFontAwesomeModule,
     AngularFireModule.initializeApp(environment.firebase),

@@ -1,18 +1,18 @@
 [
   {
-    "quote": "Holy Cow Marvin! The site looks awesome. Did you design it yourself? It's very clean... Great job!",
+    "quote": ["Holy Cow Marvin! The site looks awesome. Did you design it yourself? It's very clean... Great job!"],
     "author": "George Pefanis",
     "authorRole": "NYU SPS Professor and Technical Program Manager at SiriusXM",
     "time": "December 2010"
   },
   {
-    "quote": "Marvin, Great job. It looks great. You are the only one who truly took everything in this semester... It was a pleasure working with you. Thanks for being an asset in class.",
+    "quote": ["Marvin, Great job. It looks great. You are the only one who truly took everything in this semester... It was a pleasure working with you. Thanks for being an asset in class."],
     "author": "George Pefanis",
     "authorRole": "NYU SPS Professor and Technical Program Manager at SiriusXM",
     "time": "May 2011"
   },
   {
-    "quote": "Marvin, we wouldn't have had such impressive spreadsheets without you on the project.",
+    "quote": ["Marvin, we wouldn't have had such impressive <a href='http://digital.cjh.org/2168528' target='_blank'>spreadsheets</a> without you on the project."],
     "author": "Susan Woodland",
     "authorRole": "Senior Archivist at the American Jewish Historical Society",
     "time": "October 2015"

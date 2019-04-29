@@ -5,7 +5,7 @@
     <div *ngFor="let testimonial of testimonials" class="entireTestimonialStyle">
       <div class="testimonial-centering">
         <blockquote>
-          <p class="quote col-12">{{testimonial.quote}}</p>
+          <p class="quote col-12" *ngFor="let quote of testimonial.quote" [innerHTML]="quote">{{quote}}</p>
         </blockquote>
         <cite class="author">{{testimonial.author}}, {{testimonial.authorRole}}, <time>{{testimonial.time}}</time></cite>
       </div>

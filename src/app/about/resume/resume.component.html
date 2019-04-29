@@ -3,7 +3,7 @@
   <ul *ngFor="let resume of resumes" class="resumeIconsAlignment">
     <li>
       <a href={{resume.linkToResume}} target="_blank">
-        <img src={{resume.resumeImageType}} alt={{resume.resumeType}} lazy-load-images>
+        <img src={{resume.resumeImageType}} title={{resume.resumeType}} lazy-load-images>
       </a>
     </li>
   </ul>

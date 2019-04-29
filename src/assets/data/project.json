@@ -11,7 +11,7 @@
         "title": "AJHS website",
         "dateStarted": "2008-10-01",
         "dateCompleted": "2015-10-02",
-        "technologies": "HTML, CSS, JavaScript, jQuery, Drupal, ColdFusion",
+        "technologies": ["HTML", "CSS", "JavaScript", "jQuery", "Drupal", "ColdFusion"],
         "context": "I was the webmaster of the AJHS website from 2008 to 2015.",
         "problem": "The AJHS needed some assistance with the updating and maintaining of the AJHS website.",
         "solution": "I was responsible for the administration, maintenance and development of the American Jewish Historical Society website using front-end technologies and Drupal CMS. I also learned some ColdFusion along the way."
@@ -28,7 +28,7 @@
         "title": "United Jewish Appeal-Fed of NY Guide",
         "dateStarted": "2012-10-01",
         "dateCompleted": "2015-10-02",
-        "technologies": "XML, Encoded Archival Description (EAD)",
+        "technologies": ["XML", "Encoded Archival Description (EAD)"],
         "context": "The United Jewish Appeal-Federation of New York collection is a special off-site collection at the American Jewish Historical Society. The finished project was the combined effort of six archivists and the assistance of dedicated volunteers.",
         "problem": "The records of the UJA-Federation of New York needed to become accessible to the public within four years.",
         "solution": "The entire collection was processed within four years under a generous grant from the UJA and an online finding aid was generated. I was responsible for creating the folder-level database for the entire collection (2324.25 linear feet) which was linked to the finding aid as well as processing roughly half the collection. I was also responsible for encoding the entire finding aid to the collection which I completed within four days. The EAD utilizes breadcrumbs on the subsubseries level to show where you are in the overall hierarchy of the collection. The project received the Mid-Atlantic Regional Archives Conference (MARAC) First Place Finding Aid Award in 2016."
@@ -45,7 +45,7 @@
         "title": "BFI IA Strategy",
         "dateStarted": "2009-01-15",
         "dateCompleted": "2009-05-01",
-        "technologies": "Adobe Fireworks",
+        "technologies": ["Adobe Fireworks"],
         "context": "Developed an information architecture (IA) strategy for the Buckminster Fuller Institute (BFI) site redesign as part of the final project for the \"Information Architecture and Interaction Design\" course at Pratt Institute, Spring 2009.",
         "problem": "The BFI needed a complete site overhaul and approached the Pratt Institute's IA class",
         "solution": "We generated various information architecture deliverables such as scenarios, competitive analysis, content inventory, card sorting, sitemaps, prototypes/mockups, and wireframes to assist in the redesign of the BFI website. Our final redesign proposal was presented to the Executive Staff at the Buckminster Fuller Institute headquarters."
@@ -62,7 +62,7 @@
         "title": "\"Travel to Lake George\" website",
         "dateStarted": "2009-07-01",
         "dateCompleted": "2009-07-15",
-        "technologies": "HTML, CSS and JavaScript",
+        "technologies": ["HTML", "CSS", "JavaScript"],
         "context": "Developed for the final project of the \"Advanced Web Design\" course at Pratt Institute, Summer 2009.",
         "problem": "The project needed to include five webpages incorporating all of the things we learned in the course.",
         "solution": "The site was created in Adobe Dreamweaver and uses a spry navigation scheme. I produced a Flash slideshow for the homepage and also created a slideshow with Adobe Bridge for the Gallery page."
@@ -79,7 +79,7 @@
         "title": "GadgetLibrary website",
         "dateStarted": "2010-01-15",
         "dateCompleted": "2010-05-15",
-        "technologies": "PHP and MySQL (WAMP Stack), HTML, CSS and JavaScript",
+        "technologies": ["PHP and MySQL (WAMP Stack)", "HTML", "CSS", "JavaScript"],
         "context": "Started working on website in the \"Creating Interactive Websites with PHP\" course at Pratt Institute, Spring 2010 and continued working on it in the Advanced Web Development Intensive at NYU SPS, Fall 2010.",
         "problem": "We needed to create a user-friendly interactive website that retrieves information from a database and displays it on a website.",
         "solution": "We used a MySQL relational database to store the gadget information and PHP to access and display the gadget information. The project provides the ability to perform CRUD operations on gadget information. As a bonus to the project, I wanted to add the ability to add images to the database and then display them, but couldn't quite figure it out due to time constraints."
@@ -96,7 +96,7 @@
         "title": "Dalton Oral History Project website",
         "dateStarted": "2010-01-15",
         "dateCompleted": "2010-05-15",
-        "technologies": "Omeka Content Management System, ImageMagick, HTML and CSS",
+        "technologies": ["Omeka CMS", "ImageMagick", "HTML", "CSS"],
         "context": "Developed for the \"Projects in Digital Archives\" course at Pratt Institute, Spring 2010.",
         "problem": "The Dalton School needed a website for its 55 oral histories and approached the Digital Archives professor who agreed to take on the project.",
         "solution": "The Digital Archives class digitized the oral histories and placed the files and associated metadata into the Omeka CMS. I was responsible for digitization, entering the information into the CMS and developing the homepage. The site was hosted on the Pratt Institute webserver."
@@ -113,7 +113,7 @@
         "title": "Digital Stamp Collection website",
         "dateStarted": "2010-07-15",
         "dateCompleted": "2010-08-15",
-        "technologies": "Drupal 7",
+        "technologies": ["Drupal 7"],
         "context": "Developed for the final project of the \"Management of Digital Content\" course at Pratt Institute, Summer 2010 (archived by archive.org).",
         "problem": "There aren't that many personal stamp collection websites out there, so we decided to create one as part of our final project for our \"Management of Digital Content\" course.",
         "solution": "The Drupal site that we developed is for a personal digital stamp collection collected from 1993 to 1998 consisting of 161 stamps from 10 countries. Fifteen of the stamps are featured on the website including the ability to zoom in on the stamp image, sort by tags, collection slideshow and slideshow of the actual stamp album."
@@ -130,7 +130,7 @@
         "title": "ContactWeb application",
         "dateStarted": "2011-10-01",
         "dateCompleted": "2012-05-01",
-        "technologies": "ASP.NET MVC 4, Microsoft SQL Server, Entity Framework, C#, jQuery",
+        "technologies": ["ASP.NET MVC 4", "Microsoft SQL Server", "Entity Framework", "C# 6.0", "jQuery"],
         "context": "Developed during the \"Advanced ASP.NET\" course (Fall 2011) and the \"ASP.NET MVC with SQL Server and Entity Framework\" (Spring 2012) course at NYU SPS.",
         "problem": "ContactWeb is an application that displays contact information.",
         "solution": "ContactWeb facilitates CRUD (Create, Retrieval, Update and Delete) operations in order to manage contact information. The project utilized faceted search and pagination for the display of contacts' information. The project used some interesting programming concepts such as the 'Donut Hole' method with jQuery."
@@ -147,7 +147,7 @@
         "title": "Skyscanner (Mini-Expedia) website",
         "dateStarted": "2011-03-01",
         "dateCompleted": "2011-05-10",
-        "technologies": "ASP.NET 4 (WebForms), C#, XML, Microsoft SQL Server and AJAX/jQuery",
+        "technologies": ["ASP.NET 4 (WebForms)", "C# 6.0", "XML", "Microsoft SQL Server", "jQuery", "AJAX"],
         "context": "Developed as final project for the \"ASP.NET Application Development Intensive\" course at NYU, Spring 2011.",
         "problem": "We needed to develop a mini-Expedia website that takes the user through the entire process of booking a flight.",
         "solution": "I created a Skyscanner website based off of the site that was currently online. The user can search for flight(s) through the user interface and then search results are displayed to the user. The flight information is retrieved from an XML file. The user can select a particular flight on the results page. Once selected, the user is guided through a wizard that calculates the flight cost and stores the selected flight information and user information in a Microsoft SQL database. I also incorporated a reCAPTCHA controller for the submission form. The project incorporated all of the major concepts covered in the course and received the highest grade in the course."
@@ -164,7 +164,7 @@
         "title": "Basketball Facts ASP.NET Wizard project",
         "dateStarted": "2011-03-01",
         "dateCompleted": "2011-03-15",
-        "technologies": "ASP.NET 4.0, HTML, CSS",
+        "technologies": ["ASP.NET 4.0", "C# 6.0", "HTML", "CSS"],
         "context": "Developed a wizard created for the mid-semester project in the \"ASP.NET Application Development Intensive\" at NYU SPS, March 2011.",
         "problem": "We needed to develop a wizard for our project that guided a user through a particular process and also provided feedback.",
         "solution": "I developed a 10 question Basketball Facts wizard quiz using the ASP.NET WebForms wizard controls. If not a member, the user has to register and then log in to use the application. Once logged in, the user is able to start the wizard. Feedback is given throughout the quiz and a final score is calculated and displayed at the end."
@@ -181,7 +181,7 @@
         "title": "David Chu's China Bistro website",
         "dateStarted": "2016-07-15",
         "dateCompleted": "2016-08-01",
-        "technologies": "HTML, CSS, JavaScript/AJAX, JSON",
+        "technologies": ["HTML", "CSS", "JavaScript", "JSON", "AJAX"],
         "context": "Developed a basic website for the client, David Chu's China Bistro, for the Coursera \"HTML, CSS and JavaScript\" course, Summer 2016.",
         "problem": "The menu section needed to dynamically display menu content to the client.",
         "solution": "A fully-functional menu section was implemented utilizing JavaScript, AJAX and JSON to dynamically display menu item information."
@@ -198,7 +198,7 @@
         "title": "Ristorante con Fusion website",
         "dateStarted": "2016-08-01",
         "dateCompleted": "2016-09-01",
-        "technologies": "MEAN stack with AngularJS, NodeJS, HTML, CSS and Bootstrap",
+        "technologies": ["MEAN stack with AngularJS", "NodeJS", "HTML", "CSS", "Bootstrap"],
         "context": "Developed for the Coursera \"Front-End JavaScript Frameworks: AngularJS\" course, Summer 2016.",
         "problem": "The Ristorante con Fusion website needed to be modified to use the AngularJS framework.",
         "solution": "The Ristorante con Fusion website was developed with AngularJS and NodeJS as part of the MEAN stack."
@@ -215,9 +215,9 @@
         "title": "Ristorante con Fusion mobile app",
         "dateStarted": "2016-09-01",
         "dateCompleted": "2016-09-30",
-        "technologies": "AngularJS, NodeJS, MongoDB/Mongoose, Ionic Framework and Apache Cordova",
+        "technologies": ["AngularJS", "NodeJS", "MongoDB/Mongoose", "Ionic Framework", "Apache Cordova"],
         "context": "Developed for the Coursera \"Multiplatform Mobile Application Development with Web Technologies\" course, Summer 2016.",
-        "problem": "We needed to create a mobile app from the Ristorante con Fusion website we created in the previous Coursera course.",
+        "problem": "We needed to create a mobile app from the Ristorante con Fusion website that we created in the previous Coursera course.",
         "solution": "The solution used the MEAN stack along with the Ionic Framework and Apache Cordova to create a mobile app for Ristorante con Fusion that works for both iOS and Android devices. Ionic is used to create the user interface and Cordova's modules are used to access the native mobile platform's capabilities from JavaScript."
       },
       {
@@ -232,7 +232,7 @@
         "title": "AlbumFinder",
         "dateStarted": "2018-01-01",
         "dateCompleted": "2018-01-05",
-        "technologies": "AngularJS 1.4.8, Angular UI Grid 4.1.3, HTML5, CSS, JavaScript/jQuery and Bootstrap",
+        "technologies": ["AngularJS 1.4.8", "Angular UI Grid 4.1.3", "HTML5", "CSS", "JavaScript", "jQuery", "Bootstrap"],
         "context": "Worked on a small side-project called AlbumFinder as part of a job application.",
         "problem": "I needed to create this small AlbumFinder app that used the Apple iTunes API.",
         "solution": "I created an Angular application called AlbumFinder that uses an AlbumsController and iTunesService which calls the iTunes API. I replaced the artist name within the API path with the search phrase coming from the user input field. When the Search button is clicked, a call is made to the API and the list of albums is displayed, including the album name and album cover inside .albums-container in a grid. Additionally, I included the capability to save album data to an external .csv, .pdf, or .xls file from within the grid. As a bonus, I made suggestions on how I would improve the user experience."
@@ -249,10 +249,10 @@
         "title": "Tour of Stylish Heroes",
         "dateStarted": "2017-09-26",
         "dateCompleted": "2017-11-01",
-        "technologies": "Angular 4, Angular Material 2, Angular CDK",
-        "context": "Developed the 'Tour of Stylish Heroes' website at Maxim Salnikov's session covering Angular Material at the Angular Summit in Boston, September 2017.",
+        "technologies": ["Angular 4", "Angular Material 2", "Angular CDK"],
+        "context": "Developed the \"Tour of Stylish Heroes\" website at Maxim Salnikov's session on Angular Material at the Angular Summit in Boston, September 2017.",
         "problem": "We needed to stylize the \"Tour of Heroes\" app on the Angular website.",
-        "solution": "The finished website is styled with Angular Material 2. It features a dashboard with search capability as well as a heroes view that provides the ability to create or delete heroes. We also explored how to use the Angular CDK."
+        "solution": "The finished website is styled with Angular Material 2. It features a dashboard with search capability as well as a heroes view that provides the ability to create or delete heroes. The Angular CDK was utilized to restyle the components."
       },
       {
         "id": 16,
@@ -266,7 +266,7 @@
         "title": "People Project",
         "dateStarted": "2017-09-25",
         "dateCompleted": "2017-09-25",
-        "technologies": "Angular 4, TypeScript, ES6",
+        "technologies": ["Angular 4", "TypeScript", "JavaScript", "ES6"],
         "context": "Developed the \"People Project\" as part of the Angular 4 training session at the Angular Summit in Boston, September 2017.",
         "problem": "We needed to display People data in a sortable table and add the ability to filter the data.",
         "solution": "The metadata was retrieved from a .csv file on the PeopleServer. We used Angular 4, TypeScript, and JavaScript with some ES6 syntax and custom Angular pipes in order to display the data in a sortable table."
@@ -283,7 +283,7 @@
         "title": "Usability Study of the MEA and IGS",
         "dateStarted": "2009-10-01",
         "dateCompleted": "2009-12-15",
-        "technologies": "Morae",
+        "technologies": ["Morae"],
         "context": "Usability study of the Media Ecology Association (MEA) and the Institute of General Semantics (IGS) created for the \"Usability Leadership\" course at Pratt Institute, Fall 2009.",
         "problem": "The MEA and IGS enlisted the help of graduate students at the Pratt Institute to perform usability analysis of their websites.",
         "solution": "As part of a group of students at Pratt Institute, I assisted in performing an initial analysis of the websites and then used the Morae software to perform extensive usability testing of the websites. Each group of students enlisted the assistance of 4 or 5 people to carry out the testing and then prepared a presentation and an analysis of their findings."
@@ -300,7 +300,7 @@
         "title": "NYC Archivisualizer",
         "dateStarted": "2010-04-01",
         "dateCompleted": "2010-05-15",
-        "technologies": "Adobe Fireworks",
+        "technologies": ["Adobe Fireworks"],
         "context": "Design project proposal created for the \"Projects in Digital Archives\" course at Pratt Institute, Spring 2010.",
         "problem": "Our project, NYC Archivisualizer, is a website with the goal of highlighting archival collections within New York City.",
         "solution": "A main feature of the site is an interactive Google map which allowed users to browse through collections at different locations in NYC. The site employed a form to add a new archive to the site. The site also featured archival events on an events calendar as well as lesson plans for teachers."
@@ -317,7 +317,7 @@
         "title": "American Jewish Congress finding aid",
         "dateStarted": "2006-04-01",
         "dateCompleted": "2011-10-06",
-        "technologies": "XML, Encoded Archival Description (EAD)",
+        "technologies": ["XML", "Encoded Archival Description"],
         "context": "Processed and encoded the finding aid to the American Jewish Congress collection at the AJHS in October 2011.",
         "problem": "The American Jewish Congress collection consisted of two parts, the initial collection which I processed and then an accretion of boxes located off-site were transferred to AJHS and later processed under a grant. The two portions of the records were processed and arranged intellectually.",
         "solution": "A finding aid for the AJCongress was compiled and I encoded the online finding aid to the entire collection using EAD."
@@ -334,7 +334,7 @@
         "title": "AAEJ finding aid",
         "dateStarted": "2011-10-01",
         "dateCompleted": "2012-01-25",
-        "technologies": "XML, Encoded Archival Description (EAD)",
+        "technologies": ["XML", "Encoded Archival Description"],
         "context": "Processed and encoded the finding aid to the Records of the American Association for Ethiopian Jews (AAEJ) at the AJHS in January 2012.",
         "problem": "The collection was partially processed and I had to process several accretions. I then arranged the collection intellectually and physically.",
         "solution": "The result was an arranged collection of 168 manuscript boxes. I encoded the container list and historical information pertaining to the AAEJ as part of the online finding aid to the collection."
@@ -351,7 +351,7 @@
         "title": "NCSJ finding aid",
         "dateStarted": "2014-09-01",
         "dateCompleted": "2015-03-01",
-        "technologies": "XML, Encoded Archival Description (EAD)",
+        "technologies": ["XML", "Encoded Archival Description"],
         "context": "Partially processed and encoded the finding aid to the National Conference on Soviet Jewry (NCSJ) collection at the AJHS in March 2015.",
         "problem": "The records of the NCSJ consisted of two parts and a finding aid needed to be created that intellectually arranged the records from the two parts.",
         "solution": "A finding aid that incorporated the two parts was compiled and I encoded the entire finding aid using EAD."
@@ -368,6 +368,7 @@
         "title": "NJWB finding aid",
         "dateStarted": "2006-11-01",
         "dateCompleted": "2007-05-01",
+        "technologies": ["XML", "Encoded Archival Description"],
         "context": "Created folder-level database and encoded the finding aid to the National Jewish Welfare Board (NJWB) records (1535.8 linear feet) at the AJHS in May 2007.",
         "problem": "The records to the NJWB collection needed to be processed including refoldering and separating large amounts of oversized material. Also included were audiovisual material that needed to be cataloged.",
         "solution": "A folder listing to the entire NJWB collection was composed by myself in 7 months. The collection also needed some processing and a new box numbering system. I encoded the entire finding aid using EAD. This was the first finding aid at the Center that employed a downloadable external folder listing."
@@ -384,7 +385,7 @@
         "title": "Cecilia Razovsky finding aid",
         "dateStarted": "2006-03-01",
         "dateCompleted": "2006-03-06",
-        "technologies": "XML, Encoded Archival Description (EAD)",
+        "technologies": ["XML", "Encoded Archival Description"],
         "context": "Papers of Cecilia Razovsky at the American Jewish Historical Society (AJHS), processed in March 2006.",
         "problem": "The papers of Cecilia Razovsky needed to be processed and a complete online finding aid needed to be created.",
         "solution": "I processed this small collection as one of the first collections I processed at the AJHS. The legacy finding aid was immense (over 100 pages) and needed to be encoded using EAD. I completed the encoding of the finding aid in less than a week, astonishing the senior archivist that I worked under."
@@ -401,7 +402,7 @@
         "title": "UJA-Federation of NY WordPress blog",
         "dateStarted": "2012-10-01",
         "dateCompleted": "2015-10-02",
-        "technologies": "WordPress, HTML, CSS",
+        "technologies": ["WordPress", "HTML", "CSS"],
         "context": "A WordPress blog site for the UJA-Federation of NY project was created and blog posts were compiled over a 4-year period.",
         "problem": "We needed to create a WordPress blog to capture interesting archival material encountered during the processing of the project.",
         "solution": "I was one of the archivists that composed blog entries in WordPress pertaining to the collection from 2012 to 2015. I was also responsible for customizing the WordPress theme and making suggestions that enhanced the quality of our blog entries."
@@ -418,10 +419,10 @@
         "title": "\"The Federation City\" Interactive Map",
         "dateStarted": "2015-01-01",
         "dateCompleted": "2015-10-02",
-        "technologies": "Drupal",
+        "technologies": ["Drupal"],
         "context": "The Federation City Interactive Map was a nice addition to the special collection's webpage on the AJHS website.",
         "problem": "The map should be an indispensable tool for researchers seeking pertinent information on the 106 agencies supported by UJA.",
-        "solution": "I worked on creating the database portion of the interactive map for the UJA-Federation of New York project. I entered the contents of the database into the Drupal CMS."
+        "solution": "I worked on creating the database portion of the interactive map for the UJA-Federation of New York project. I then entered the contents of the database into the Drupal CMS."
       },
       {
         "id": 26,
@@ -435,7 +436,7 @@
         "title": "UJA timeline",
         "dateStarted": "2015-01-01",
         "dateCompleted": "2015-10-02",
-        "technologies": "Drupal",
+        "technologies": ["Drupal"],
         "context": "The UJA timeline contains snapshots of key moments in the history of the formation of the UJA-Federation from 1909 to 2016.",
         "problem": "A timeline for the collection needed to be created that highlights key moments in the formation of UJA-Federation.",
         "solution": "I added information about when the agencies were formed and the Presidents of the Federation to the timeline using the Drupal CMS front-end. I also added some custom CSS to align the information and pictures correctly."
@@ -452,7 +453,7 @@
         "title": "ng-recipe-book",
         "dateStarted": "2018-01-01",
         "dateCompleted": "2018-03-15",
-        "technologies": "Angular 6 with NgRx and Google Firebase, HTML, CSS, Bootstrap",
+        "technologies": ["Angular 6", "NgRx", "Google Firebase", "HTML", "CSS", "Bootstrap"],
         "context": "Developed a fully-functional Recipe Book app with Recipes and Shopping List modules using Angular 6 as final project for the \"Angular 6 - The Complete Guide\" course on Udemy.",
         "problem": "A Recipe Book app needed to be developed that contains information about recipes along with a shopping list with ingredients.",
         "solution": "The app uses the NgRx library for state management and user authentication is achieved with Google Firebase on the backend. (Please note that the app was originally created in Angular 5 and previously deployed to AWS as shown in the above image and the app was then upgraded to Angular 6 in November 2018.)"
@@ -469,7 +470,7 @@
         "title": "Messenger application",
         "dateStarted": "2018-04-01",
         "dateCompleted": "2018-04-07",
-        "technologies": "Angular 2 (MEAN stack), HTML, CSS",
+        "technologies": ["Angular 2 (MEAN stack)", "HTML", "CSS"],
         "context": "Developed a Messenger application as final project for the \"Angular (Angular 2+) & NodeJS - The MEAN Stack Guide\" course on Udemy.",
         "problem": "Once a user is logged into the app we needed to allow the user to enter, edit or delete messages.",
         "solution": "The Messenger app provides the ability to make edits to messages. The app uses Message, Authentication and Error handling modules built with the MEAN stack on top of NodeJS. The app is hosted on Heroku."
@@ -486,7 +487,7 @@
         "title": "JS Accu-Weather App",
         "dateStarted": "2018-04-23",
         "dateCompleted": "2018-04-24",
-        "technologies": "HTML, CSS, JavaScript/AJAX",
+        "technologies": ["HTML", "CSS", "JavaScript", "AJAX"],
         "context": "Developed a Weather App as final project of the \"Accelerated JavaScript Training\" bootcamp course on Udemy.",
         "problem": "The Weather App should display real-time weather condition and temperature in Fahrenheit for searched city name.",
         "solution": "I developed the core app using JavaScript and some AJAX. I then added city coordinates, humidity, windspeed and photo of the current condition. The app demonstrates expertise with JavaScript concepts such as the use of DOM selectors and DOM manipulation, API (OpenWeatherMap API) integration with AJAX, and basic object-oriented programming."
@@ -503,7 +504,7 @@
         "title": "NYC Subway Map Programming Project",
         "dateStarted": "2000-11-01",
         "dateCompleted": "2000-12-01",
-        "technologies": "C/C++",
+        "technologies": ["C/C++"],
         "context": "A simulation of a subway system was created for the \"Advanced Algorithms in C++\" class at NYU.",
         "problem": "One problem I encountered was the calculation of negative weights which I accounted for using tbe Bellman-Ford algorithm.",
         "solution": "I programmed a simulation of the NYC Subway System by extracting the data from the nyc.data file and by using the Bellman-Ford algorithm to compute the shortest path(s) between any two chosen stations. Data from a Sampletown (sampletown.data) were also used for testing purposes to ensure that the shortest path(s) were being calculated correctly. My project received the Best Individual Project Award in the \"Advanced Algorithms in C++\" class at NYU in Fall 2000."
