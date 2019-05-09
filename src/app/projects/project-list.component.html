@@ -5,7 +5,17 @@
         <ng-container>
           <figure>
             <div style="margin-top: 10px;">
-              <img class="portfolio-gallery" src={{project.imagePath}} alt={{project.imageTitle}} lazy-load-images>
+              <div class="overlay-container">
+                <img class="portfolio-gallery image" src={{project.imagePath}} alt={{project.imageTitle}} lazy-load-images>
+                <div class="overlay">
+                  <div class="text">{{project.imageTitle}}</div>
+                  <div class="overlay-center">
+                    <a (click)="open(projectContent)">
+                      <div class="more-info-btn" style="margin-top: 10px;">More Info <img src="../../assets/images/banner-arrow2.gif" alt="Click for more information" style="width: 12px; height: auto; display: inline-block; margin-left: 2px;"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
             <figcaption>
               <mat-card-title class="text-center">
@@ -16,16 +26,18 @@
             </figcaption>
           </figure>
           <div class="projectButtons">
-            <button type="button" class="white button projectButton" (click)="open(projectContent)" data-toggle="modal"
-              data-target="projectModal" *ngIf="project.context !== null || project.problem !== null ||
-              project.solution !== null">
-              &nbsp;&nbsp;&nbsp;&nbsp;<span class="projectBtn">&nbsp;&nbsp;&nbsp;<strong>View Project</strong></span>
-            </button>
+            <span *ngIf="project.projectUrl !== null">
+              <a href={{project.projectUrl}} target="_blank">
+                <button type="button" class="white button">&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="project-info-btn">&nbsp;&nbsp;&nbsp;<strong>View Project</strong></span>
+                </button>
+              </a>
+            </span>
 
             <span *ngIf="project.codeUrl !== null">
               <a href={{project.codeUrl}} target="_blank">
-                <button type="button" class="white button codeButton">&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="codeBtn">&nbsp;&nbsp;&nbsp;<strong>View Code</strong></span>
+                <button type="button" class="white button">&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="code-btn">&nbsp;&nbsp;&nbsp;<strong>View Code</strong></span>
                 </button>
               </a>
             </span>
@@ -36,11 +48,11 @@
   </li>
 
   <!-- Project Modal -->
-  <ng-template #projectContent let-c="close" let-d="dismiss" id="projectModal" class="project-modal"
-               data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="project-modal" aria-hidden="true">
-    <div class="row project-modal-dialog justify-content-center w-100" role="document">
+  <ng-template #projectContent let-c="close" let-d="dismiss" id="project-info-modal" class="project-info-modal"
+               data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="project-info-modal" aria-hidden="true">
+    <div class="row project-info-modal-dialog justify-content-center w-100" role="document">
       <div class="modal-lg align-self-center h-100 mx-auto d-flex flex-column animated fadeInLeft" role="document">
-        <div class="project-modal-content">
+        <div class="project-info-modal-content">
           <div class="modal-header text-center">
               <h4 class="modal-title w-100 d-inline-block">{{project.title}}</h4>
               <button type="button" class="close" aria-label="Close" (click)="d('Cross click')" title="Close"
@@ -52,10 +64,10 @@
               <div style="vertical-align: top">
                 <img src={{project.imagePath}} class="modal-project-image img-responsive" alt={{project.imageTitle}}>
               </div>
-              <div class="project-metadata">
+              <div class="project-info-metadata">
                 <p class="text-center">
                   <span class="category">{{project.categoryFullNames}}</span><br />
-                  <span class="projectDurationText">
+                  <span class="project-duration-text">
                     <time class="dateStarted" title={{project.dateStarted}}>
                       {{project.dateStarted | date: 'longDate'}}
                     </time>&mdash;
@@ -70,44 +82,44 @@
                   </span>
                 </p>
               </div>
-              <div class="project-metadata-bottom-align">
+              <div class="project-info-metadata-bottom-align">
                 <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="projectDescription">
-                    <span class="project-metadata-descriptive">Context:</span> {{project.context}}
+                  <span class="project-description">
+                    <span class="project-info-metadata-descriptive">Context:</span> {{project.context}}
                   </span>
                 </p>
               </div>
-              <div class="project-metadata-bottom-align">
+              <div class="project-info-metadata-bottom-align">
                 <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="projectProblem">
-                    <span class="project-metadata-descriptive">Problem:</span> {{project.problem}}
+                  <span class="project-problem">
+                    <span class="project-info-metadata-descriptive">Problem:</span> {{project.problem}}
                   </span>
                 </p>
               </div>
-              <div class="project-metadata-bottom-align">
+              <div class="project-info-metadata-bottom-align">
                 <p class="text-justify">&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="projectSolution">
-                    <span class="project-metadata-descriptive">Solution:</span> {{project.solution}}
+                  <span class="project-solution">
+                    <span class="project-info-metadata-descriptive">Solution:</span> {{project.solution}}
                   </span>
                 </p>
               </div>
             </div>
 
-            <div class="projectModalButtons">
-              <div class="projectModalViewProjectButtonAlign">
-                <span class="projectModalViewProject" *ngIf="project.projectUrl !== null">
+            <div class="project-info-modal-buttons">
+              <div class="project-info-modal-view-project-button-align">
+                <span class="project-info-modal-view-project" *ngIf="project.projectUrl !== null">
                   <a href={{project.projectUrl}} target="_blank">
                     <button type="button" class="white button">&nbsp;&nbsp;&nbsp;&nbsp;
-                      <span class="projectBtn">&nbsp;&nbsp;&nbsp;<strong>View Project</strong></span>
+                      <span class="project-info-btn">&nbsp;&nbsp;&nbsp;<strong>View Project</strong></span>
                     </button>
                   </a>
                 </span>
               </div>
-              <div class="projectModalViewCodeButtonAlign">
-                <span class="projectModalViewCode" *ngIf="project.codeUrl !== null">
+              <div class="project-info-modal-view-code-button-align">
+                <span class="project-info-modal-view-code" *ngIf="project.codeUrl !== null">
                   <a href={{project.codeUrl}} target="_blank">
                     <button type="button" class="white button">&nbsp;&nbsp;&nbsp;&nbsp;
-                      <span class="codeBtn">&nbsp;&nbsp;&nbsp;<strong>View Code</strong></span>
+                      <span class="code-btn">&nbsp;&nbsp;&nbsp;<strong>View Code</strong></span>
                     </button>
                   </a>
                 </span>

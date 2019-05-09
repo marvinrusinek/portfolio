@@ -17,7 +17,7 @@
         <fieldset>
           <legend class="text-center mb-10" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
             Get in touch about your project</legend>
-          <p class="text-center">I&apos;ll get it launched within your timeframe.</p>
+          <p class="text-center">I will get it launched within your timeframe.</p>
           <div class="container">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -30,14 +30,15 @@
                         <div *ngIf="contactfield.inputType === 'input'">
                           <input type="contactfield.type" class="form-control" aria-required="true"
                              name="contactfield.formControl" [formControlName]="contactfield.formControl"
-                             [placeholder]="contactfield.placeholderText" title="Please fill out this field.">
+                             [placeholder]="contactfield.placeholderText">
                         </div>
                         <div *ngIf="contactfield.inputType === 'textarea'">
                            <textarea type="contactfield.type" class="form-control" aria-required="true" rows="4"
                              [formControlName]="contactfield.formControl" name="contactfield.formControl"
-                             [placeholder]="contactfield.placeholderText" title="Please fill out this field."></textarea>
+                             [placeholder]="contactfield.placeholderText"></textarea>
                         </div>
                       </div>
+
                       <span *ngIf="contactForm.get('contactfield.formControl') === 'invalid' ||
                         contactForm.get('contactfield.formControl') === 'untouched'" class="help-block form-field-error"
                         style="margin-top: -20px">
@@ -81,7 +82,8 @@
             <div class="row">
               <div class="buttonContainer" data-sal-duration="600" data-sal="slide-up" data-sal-delay="200">
                 <button type="submit" class="button hvr-rectangle-out" [disabled]="contactForm.invalid">
-                  <img src="../../assets/images/contact/enter.png">&nbsp;&nbsp;<span>Submit Your Request</span>
+                  <img src="../../assets/images/contact/enter.png">&nbsp;&nbsp;
+                  <span>Submit Your Request</span>
                 </button>
               </div>
             </div>

@@ -1,12 +1,12 @@
 [
   {
     "resumeType": "Microsoft Word Resume",
-    "linkToResume": "http://www.marvinrusinek.com/assets/resume/Marvin_Rusinek_Web_Dev_Resume_042919.doc",
+    "linkToResume": "http://www.marvinrusinek.com/assets/resume/Marvin_Rusinek_Resume_050819.doc",
     "resumeImageType": "../../../assets/images/resume/msword.png"
   },
   {
     "resumeType": "PDF Resume",
-    "linkToResume": "http://www.marvinrusinek.com/assets/resume/Marvin_Rusinek_Web_Dev_Resume_042919.pdf",
+    "linkToResume": "http://www.marvinrusinek.com/assets/resume/Marvin_Rusinek_Resume_050819.pdf",
     "resumeImageType": "../../../assets/images/resume/pdf.png"
   },
   {

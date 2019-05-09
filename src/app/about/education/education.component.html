@@ -118,7 +118,7 @@
                     <li>Research Biology</li>
                     <li>Microbiology</li>
                     <li>Research Chemistry</li>
-                    <li>AP Physics</li>
+                    <li>AP Physics B</li>
                     <li>Introduction to Engineering</li>
                     <li>AP Chemistry</li>
                   </ul>
@@ -143,8 +143,8 @@
     <p class="text-center"><em>(Click on a link to view a certificate for a course I took online.)</em></p>
     <div class="mytraining">
       <ul *ngFor="let training of trainings" class="caret list-unstyled">
-        <li><span>{{training.course}}</span>, completed <span>{{training.dateCompleted}}</span>&nbsp;&nbsp;
-          <span><a href={{training.certUrl}}>View Certificate</a></span>
+        <li><span>{{ training.course }}</span>, completed <span>{{ training.dateCompleted }}</span>&nbsp;&nbsp;
+          <span><a href={{ training.certUrl }}>View Certificate</a></span>
         </li>
       </ul>
     </div>

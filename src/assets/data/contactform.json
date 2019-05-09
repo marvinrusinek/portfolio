@@ -15,7 +15,16 @@
     "inputClass": "emailField",
     "icon": "fa fa-envelope",
     "formControl": "emailAddress",
-    "placeholderText": "Enter your e-mail address..."
+    "placeholderText": "Enter an e-mail address..."
+  },
+  {
+    "inputName": "Subject",
+    "inputType": "input",
+    "type": "text",
+    "inputClass": "subjectField",
+    "icon": "fas fa-sitemap",
+    "formControl": "subject",
+    "placeholderText": "Enter a subject..."
   },
   {
     "inputName": "Message",
@@ -26,6 +35,4 @@
     "formControl": "message",
     "placeholderText": "       Enter your message..."
   }
-
-
 ]

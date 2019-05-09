@@ -102,7 +102,7 @@ input.ng-invalid.ng-touched {
   color: #aaa;
   font-size: 16px;
 }
-.nameField input, .emailField input {
+.nameField input, .emailField input, .subjectField input {
   text-indent: 32px;
 }
 .nameField .fa-id-card, .emailField .fa-envelope {
@@ -112,9 +112,18 @@ input.ng-invalid.ng-touched {
   color: #228B22 !important;
   font-size: 20px;
 }
+
+.subjectField .fa-sitemap {
+  position: absolute;
+  top: 213px;
+  left: 45px;
+  color: #228B22 !important;
+  font-size: 20px;
+}
+
 .fa-sticky-note {
   position: absolute;
-  top: 212px;
+  top: 305px;
   left: 45px;
   color: #228B22 !important;
   font-size: 20px;
@@ -157,7 +166,7 @@ label, .form-services ul li {
   border: 3px solid green;
 }
 
-.name, .email, .message {
+.name, .email {
   margin-top: -10px;
 }
 
@@ -273,6 +282,7 @@ button.button {
 }
 button span {
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .buttonContainer {

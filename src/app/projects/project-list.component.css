@@ -48,7 +48,7 @@ button {
   font-size: 12px;
   font-weight: bold;
   background-color: #90ee90;
-  color: rgba(65,197,192,0.91);
+  color: rgba(65, 197, 192, 0.91);
   padding: 5px 15px;
   margin-left: 25px;
   font-size: 16px;
@@ -61,16 +61,16 @@ button:hover {
   background-color: #00FF7F;
 }
 
-.projectBtn {
+.project-info-btn {
   width: 190px;
 }
-.codeBtn {
+.code-btn {
   width: 160px;
 }
-.projectBtn:before {
+.project-info-btn:before {
   background: url('../../assets/images/modal/project.png') no-repeat;
 }
-.codeBtn:before {
+.code-btn:before {
   background: url('../../assets/images/modal/github.png') no-repeat 200% 200%;
 }
 .category:before {
@@ -79,24 +79,24 @@ button:hover {
 .technologies:before {
   background: url('../../assets/images/modal/laptop.png') no-repeat;
 }
-.projectDurationText:before {
+.project-duration-text:before {
   background: url('../../assets/images/modal/calendar.png') no-repeat;
 }
-.projectDescription:before {
+.project-description:before {
    background: url('../../assets/images/modal/description.png') no-repeat;
 }
-.projectProblem:before {
+.project-problem:before {
   background: url('../../assets/images/modal/puzzle.png') no-repeat;
 }
-.projectSolution:before {
+.project-solution:before {
   background: url('../../assets/images/modal/solved.png') no-repeat;
 }
 
-.category:before, .technologies:before, .projectDurationText:before {
+.category:before, .technologies:before, .project-durationText:before {
   margin-top: 5px;
 }
 
-.projectBtn:before, .codeBtn:before {
+.project-info-btn:before, .code-btn:before {
   content: '';
   background-size: cover;
   position: absolute;
@@ -106,8 +106,8 @@ button:hover {
   margin-top: -5px;
 }
 
-.category:before, .technologies:before, .projectDurationText:before, .projectDescription:before, .projectProblem:before,
-.projectSolution:before {
+.category:before, .technologies:before, .project-duration-text:before, .project-description:before,
+.project-problem:before, .project-solution:before {
   content: '';
   background-size: cover;
   position: absolute;
@@ -126,17 +126,17 @@ button:hover {
   color: #2f4f4f;
 }
 
-.technologies, .projectDurationText {
+.technologies, .project-durationText {
   font-size: 13.5px;
   font-style: italic;
 }
 
-.project-metadata-bottom-align {
+.project-info-metadata-bottom-align {
   margin-left: 10px;
   word-wrap: normal;
 }
 
-.project-modal {
+.project-info-modal {
   display: none;
   position: absolute;
   top: 0;
@@ -149,20 +149,20 @@ button:hover {
   max-width: 100% !important;
 }
 
-.project-modal > p {
+.project-info-modal > p {
   color: #4B3621;
 }
 
-.project-modal-dialog > .modal-header > button {
+.project-info-modal-dialog > .modal-header > button {
   border: none !important;
   font-size: 50px !important;
   color: black;
   font-weight: bold;
 }
-.project-modal-dialog > .modal-header > button.close {
+.project-info-modal-dialog > .modal-header > button.close {
   background: none !important;
 }
-.project-modal-dialog > .modal-header > button.close:hover {
+.project-info-modal-dialog > .modal-header > button.close:hover {
   background: none;
   color: darkslategray;
 }
@@ -211,34 +211,34 @@ button:hover {
   color: white;
 }
 
-.projectModalViewProject {
+.project-info-modal-view-project {
   margin-left: 390px;
   padding-bottom: 0;
   margin-bottom: 0;
   color: white;
 }
-.projectModalViewCode {
+.project-info-modal-view-code {
   margin-right: 390px;
   padding-left: 10px;
   padding-bottom: 0;
   margin-bottom: 0;
   color: white;
 }
-.projectModalViewProjectButtonAlign, .projectModalViewCodeButtonAlign {
+.project-info-modal-view-project-button-align, .project-info-modal-view-code-button-align {
   float: left;
 }
 
-.project-metadata {
+.project-info-metadata {
   margin-top: 20px;
 }
-.project-metadata p {
+.project-info-metadata p {
   line-height: 2;
 }
-.project-metadata p span {
+.project-info-metadata p span {
   font-size: 16px;
 }
 
-.project-metadata-descriptive {
+.project-info-metadata-descriptive {
   color: rgb(47, 79, 79);
   font-weight: 700;
 }
@@ -254,6 +254,65 @@ button:hover {
   background-color: #b4c8ff;
   margin: 4px !important;
   color: #000000;
+}
+
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.overlay-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  opacity: 0.8;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.more-info-btn {
+  border: 1px #fff solid;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: .7em;
+  max-width: 100px;
+  width: auto;
+  font-weight: 700;
+  color: #fff;
+  height: auto;
+  width: 200px;
+  text-align: center;
+}
+.overlay-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 45%;
 }
 
 

@@ -110,20 +110,20 @@
   {
     "id": 19,
     "type": "dev-tools",
-    "image": "../../assets/images/tech/dev-tools/vscode.png",
-    "name": "VSCode"
-  },
-  {
-    "id": 20,
-    "type": "dev-tools",
     "image": "../../assets/images/tech/dev-tools/WebStorm.png",
     "name": "WebStorm"
   },
   {
-    "id": 21,
+    "id": 20,
     "type": "dev-tools",
     "image": "../../assets/images/tech/dev-tools/IntelliJ.jpg",
     "name": "IntelliJ"
+  },
+  {
+    "id": 21,
+    "type": "dev-tools",
+    "image": "../../assets/images/tech/dev-tools/vscode.png",
+    "name": "VSCode"
   },
   {
     "id": 22,
