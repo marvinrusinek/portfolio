@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
 .testimonials {
   background-color: #00FA9A;
   height: auto;
@@ -19,6 +21,8 @@
 .mytestimonials blockquote p.quote {
   color: #353839;
   font-size: 32px;
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
 }
 .mytestimonials blockquote p.quote:before {
   content: "\f10d";

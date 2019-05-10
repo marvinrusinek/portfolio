@@ -29,7 +29,7 @@ ul.menu {
   padding-top: 15px;
   padding-right: 20px;
   margin-top: -10px;
-  margin-left: 75px;
+  margin-left: 65px;
   background: #4ABDAC;
 }
 
@@ -38,12 +38,15 @@ ul.menu {
 }
 
 a > span.navbar-text {
-  font-size: 2.5em;
   color: #0275d8;
-  font-weight: 900;
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                0px -5px 35px rgba(255,255,255,0.3);
   width: 100%;
+  font-family: Garamond;
+  font-size: 2.5em;
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
 }
 
 span {
@@ -79,6 +82,9 @@ ul.navbar-nav {
 span.nav-span {
   font-size: 17px;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
 .nav-link, li.nav-item {

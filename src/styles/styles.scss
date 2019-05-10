@@ -125,7 +125,8 @@ body::-webkit-scrollbar-thumb {
 
 h2.heading {
   color: #333;
-  font-family: proxima-nova, sans-serif;
+  /* font-family: proxima-nova, sans-serif; */
+  font-family: Garamond !important;
   margin-left: 0;
   margin-bottom: 30px;
   overflow: hidden;
