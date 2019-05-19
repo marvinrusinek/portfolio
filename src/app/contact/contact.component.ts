@@ -33,6 +33,7 @@ export class ContactComponent implements OnInit {
     this.contactForm = this.formBuilder.group({
       'name': new FormControl(null, [Validators.required, Validators.minLength(1), Validators.maxLength(30)]),
       'emailAddress': new FormControl(null, [Validators.required, Validators.email]),
+      'subject': new FormControl(null, Validators.required),
       'message': new FormControl(null, Validators.required),
       'services': new FormArray(controls, minSelectedCheckboxes(1)),
       'recaptchaReactive': new FormControl(null, Validators.required)
@@ -61,6 +62,7 @@ export class ContactComponent implements OnInit {
       template_params: {
         name: this.contactForm.value.name,
         emailAddress: this.contactForm.value.emailAddress,
+        subject: this.contactForm.value.subject,
         message: this.contactForm.value.message,
         services: this.contactForm.value.services,
         recaptchaReactive: this.contactForm.value.recaptchaReactive

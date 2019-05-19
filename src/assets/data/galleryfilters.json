@@ -1,28 +1,23 @@
 [
   {
-    "name": "Angular",
-    "filter": "ng",
-    "icon": "../../assets/images/filter_icons/angular.png"
-  },
-  {
     "name": "Front-End",
     "filter": "web",
     "icon": "../../assets/images/filter_icons/frontend.png"
   },
   {
-    "name": "UX",
-    "filter": "ux",
-    "icon": "../../assets/images/filter_icons/ux.png"
-  },
-  {
-    "name": "PHP",
-    "filter": "php",
-    "icon": "../../assets/images/filter_icons/php.png"
+    "name": "Angular",
+    "filter": "ng",
+    "icon": "../../assets/images/filter_icons/angular.png"
   },
   {
     "name": ".NET",
     "filter": "net",
     "icon": "../../assets/images/filter_icons/net-logo.png"
+  },
+  {
+    "name": "PHP",
+    "filter": "php",
+    "icon": "../../assets/images/filter_icons/php.png"
   },
   {
     "name": "XML",
@@ -38,6 +33,11 @@
     "name": "Mobile",
     "filter": "mob",
     "icon": "../../assets/images/filter_icons/mobile.png"
+  },
+  {
+    "name": "UX",
+    "filter": "ux",
+    "icon": "../../assets/images/filter_icons/ux.png"
   },
   {
     "name": "Programs",

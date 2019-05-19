@@ -53,6 +53,7 @@
     "foundation-sites": "^6.5.3",
     "hexo": "^3.8.0",
     "hoverifyBootnav": "^1.0.0",
+    "imagesloaded": "^4.1.4",
     "intersection-observer": "^0.5.1",
     "ionicons": "^4.5.5",
     "isotope": "^1.0.0-alpha.3",

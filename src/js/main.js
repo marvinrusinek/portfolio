@@ -47,24 +47,35 @@ $(document).ready(function() {
       {
         percentPosition: true,
         itemSelector: ".portfolioProject",
-        filter: ".ng",
+        filter: ".web",
         layoutMode: "fitRows",
         transformsEnabled: false,
         transitionDuration: "0.5s",
         masonry: {
           gutter: 20
-        }
+        },
+        getSortData: {
+          byDate: function ($elem) {
+            console.log(Date.parse($($elem).find('time').attr('title')));
+            return Date.parse($($elem).find('time').attr('title'));
+            /* return Date.parse($($elem).find(".dateCompleted").attr("title")); */
+          }
+        },
+        sortBy: "byDate",
+        sortAscending: false
       }
     );
 
     $(".myPortfolioGrid").isotope({
       itemSelector: ".portfolioProject",
       getSortData: {
-        dateCompleted: function($elem) {
-          return Date.parse($($elem).find(".dateCompleted").attr("title"));
+        byDate: function ($elem) {
+          console.log(Date.parse($($elem).find('time').attr('title')));
+          return Date.parse($($elem).find('time').attr('title'));
+          /* return Date.parse($($elem).find(".dateCompleted").attr("title")); */
         }
       },
-      sortBy: "dateCompleted",
+      sortBy: "byDate",
       sortAscending: false
     });
 

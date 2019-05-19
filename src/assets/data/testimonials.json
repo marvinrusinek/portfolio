@@ -1,6 +1,6 @@
 [
   {
-    "quote": ["Holy Cow Marvin! The site looks awesome. Did you design it yourself? It's very clean... Great job!"],
+    "quote": ["Holy Cow Marvin! The site looks awesome. Did you design it yourself? It&apos;s very clean... Great job!"],
     "author": "George Pefanis",
     "authorRole": "NYU SPS Professor and Technical Program Manager at SiriusXM",
     "time": "December 2010"
@@ -12,7 +12,7 @@
     "time": "May 2011"
   },
   {
-    "quote": ["Marvin, we wouldn't have had such impressive <a href='http://digital.cjh.org/2168528' target='_blank'>spreadsheets</a> without you on the project."],
+    "quote": ["Marvin, we wouldn&apos;t have had such impressive <a href='http://digital.cjh.org/2168528' target='_blank'>spreadsheets</a> without you on the project."],
     "author": "Susan Woodland",
     "authorRole": "Senior Archivist at the American Jewish Historical Society",
     "time": "October 2015"

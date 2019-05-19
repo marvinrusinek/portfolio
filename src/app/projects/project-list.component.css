@@ -1,3 +1,5 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
 ul {
   list-style-type: none;
 }
@@ -284,17 +286,27 @@ button:hover {
   height: 100%;
   opacity: 0.8;
 }
+.project-diagram {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 36px;
+  font-weight: 900;
+  color: orange; /* # 016f86; /* rgb(135, 229, 145); */
+}
 .text {
   color: white;
   font-size: 20px;
   font-weight: 800;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 70%;
+  padding-bottom: 15px;
 }
 .more-info-btn {
   border: 1px #fff solid;

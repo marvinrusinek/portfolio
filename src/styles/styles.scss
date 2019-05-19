@@ -51,6 +51,17 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
 
+.align-lines {
+  margin-left: 25px;
+}
+.align-lines-top {
+  float: top;
+  margin-top: 40px;
+}
+.loading-message {
+  color: #0275b8;
+  font-weight: bold;
+}
 
 .center-tab .mat-ink-bar {
   height: 5px;

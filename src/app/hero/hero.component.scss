@@ -1,5 +1,5 @@
 #hero {
-  height: 700px;
+  height: 800px;
   width: 100%;
   background-image: url("../../assets/images/mydesktopsetup.jpg");
   background-size: cover;
@@ -69,3 +69,23 @@
     transform: translateY(-5px);
   }
 }
+
+
+/*.ct-btn-scroll {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+img,
+figure {
+  max-width: 100%;
+} */

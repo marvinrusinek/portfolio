@@ -13,8 +13,8 @@
         "dateCompleted": "2015-10-02",
         "technologies": ["HTML", "CSS", "JavaScript", "jQuery", "Drupal", "ColdFusion"],
         "context": "I was the webmaster of the AJHS website from 2008 to 2015.",
-        "problem": "The AJHS needed some assistance with the updating and maintaining of the AJHS website.",
-        "solution": "I was responsible for the administration, maintenance and development of the American Jewish Historical Society website using front-end technologies and Drupal CMS. I also learned some ColdFusion along the way."
+        "problem": "The AJHS needed assistance with the updating and maintaining of the AJHS website.",
+        "solution": "I was responsible for the administration, maintenance and development of the American Jewish Historical Society website using the Drupal CMS and front-end technologies. While refactoring the previous code, I also learned some ColdFusion."
       },
       {
         "id": 2,
@@ -24,7 +24,7 @@
         "projectUrl": "http://digifindingaids.cjh.org/?pID=1944506",
         "codeUrl": null,
         "imagePath": "../../assets/images/uja_fa_ss.jpg",
-        "imageTitle": "Finding aid for the UJA-Federation of New York collection",
+        "imageTitle": "UJA-Federation of New York finding aid",
         "title": "United Jewish Appeal-Fed of NY Guide",
         "dateStarted": "2012-10-01",
         "dateCompleted": "2015-10-02",

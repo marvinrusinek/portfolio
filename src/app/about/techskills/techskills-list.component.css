@@ -90,19 +90,17 @@ img {
   text-align: center;
   padding-top: 40px;
 }
-
 .cta-button {
   background-color: #008b8b;
   border: 3px solid black;
   text-align: center;
-  text-transform: uppercase;
   font-size: 24px;
   font-weight: 900;
   color: #fff !important;
   border-radius: 3em;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   display: inline-block;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
   width: auto;
 }
 .cta-button:hover {

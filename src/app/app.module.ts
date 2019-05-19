@@ -33,6 +33,7 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ServicesComponent } from './services/services.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { BlogComponent } from "./blog/blog.component";
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -78,6 +79,7 @@ import { ContactInfoService } from "./shared/services/contactinfo.service";
     ProjectListComponent,
     ServicesComponent,
     TestimonialsComponent,
+    BlogComponent,
     ContactComponent,
     FooterComponent,
     PageNotFoundComponent,

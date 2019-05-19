@@ -29,7 +29,7 @@
               "node_modules/slick-carousel/slick/slick-theme.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
-              "src/styles/fontawesome-all.min.css",
+              "src/styles/fontawesome.min.css",
               "src/styles/animate.css",
               "src/styles/styles-app-loading.scss",
               "src/styles/styles.scss"
@@ -41,7 +41,8 @@
               "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
               "node_modules/slick-carousel/slick/slick.min.js",
               "node_modules/scrollreveal/dist/scrollreveal.js",
-              "src/js/main.js"
+              "src/js/main.js",
+              "src/js/scroll-down.js"
             ]
           },
           "configurations": {

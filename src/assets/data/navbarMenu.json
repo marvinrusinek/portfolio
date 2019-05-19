@@ -16,11 +16,19 @@
     "animation": "slide-down"
   },
   {
+    "name": "Blog",
+    "link": "blog",
+    "linkType": "section",
+    "duration": 200,
+    "delay": 600,
+    "animation": "slide-down"
+  },
+  {
     "name": "Services",
     "link": "services",
     "linkType": "section",
     "duration": 200,
-    "delay": 600,
+    "delay": 800,
     "animation": "slide-down"
   },
   {
@@ -28,21 +36,13 @@
     "link": "testimonials",
     "linkType": "section",
     "duration": 200,
-    "delay": 800,
+    "delay": 1000,
     "animation": "slide-down"
   },
   {
     "name": "Contact",
     "link": "contact",
     "linkType": "section",
-    "duration": 200,
-    "delay": 1000,
-    "animation": "slide-down"
-  },
-  {
-    "name": "Blog",
-    "link": "http://www.marvinrusinek.com/blog",
-    "linkType": "blog",
     "duration": 200,
     "delay": 1200,
     "animation": "slide-down"

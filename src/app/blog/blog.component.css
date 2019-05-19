@@ -1,0 +1,35 @@
+.blog {
+  background-color: #0abea2;
+}
+
+ul {
+  margin-left: 30%;
+}
+
+li {
+  list-style-type: none;
+  color: #4B3621;
+}
+
+.date {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #4B3621;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.title {
+  display: block;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  font-size: 22px;
+}
+
+a {
+  text-transform: none;
+  font-size: 16px;
+  color: #0275b8;
+  font-weight: 700;
+  font-size: 22px;
+}
