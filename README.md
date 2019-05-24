@@ -7,7 +7,7 @@ The website demonstrates my Angular expertise with:
    - Component architecture
    - Interface design
    - RESTful API using RxJS and Observables
-   - Two-way data-binding and working with JSON data
+   - Two-way data-binding (working with JSON)
    - Dependency injection
    - Lazyloading
    - Pre-loading
