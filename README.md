@@ -6,13 +6,13 @@ The website demonstrates my Angular expertise with:
    - Angular-CLI
    - Component architecture
    - Interface design
+   - RESTful API using RxJS and Observables
    - Two-way data-binding and working with JSON data
-   - Services using Reactive JS (RxJS) and Observables
    - Dependency injection
    - Lazyloading
    - Pre-loading
    - Modals
-   - Reactive Forms (Validation and Submission)
+   - Reactive forms (validation/submission)
    - Angular Routing
    - Angular Material
    - Server Side Rendering using Angular Universal (in progress)
