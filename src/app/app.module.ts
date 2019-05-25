@@ -61,6 +61,7 @@ import { TestimonialsService } from "./shared/services/testimonials.service";
 import { FilterBtnService } from "./shared/services/filterBtn.service";
 import { ContactFormService } from "./shared/services/contactform.service";
 import { ContactInfoService } from "./shared/services/contactinfo.service";
+import { BlogPostService } from "./shared/services/blogpost.service";
 
 
 @NgModule({
@@ -128,6 +129,7 @@ import { ContactInfoService } from "./shared/services/contactinfo.service";
     FilterBtnService,
     ContactFormService,
     ContactInfoService,
+    BlogPostService,
     {
       provide: RECAPTCHA_SETTINGS,
       useValue: { siteKey: '6LerxYMUAAAAALaV-sOfT5i_PDfza7RI7b2D6qCD' } as RecaptchaSettings,

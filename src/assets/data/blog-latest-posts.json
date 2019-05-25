@@ -1,0 +1,32 @@
+[
+  {
+    "image": "../../assets/images/JSON_file_example.png",
+    "blogImageTitle": "JSON and Data-Binding",
+    "blogTitle": "JSON and Two-Way Data-Binding",
+    "blogDate": "29 Jan. 2019",
+    "blogUrl": "http://www.marvinrusinek.com/blog/2019/01/29/JSON-and-Data-Binding/",
+    "duration": "2000",
+    "animation": "500",
+    "delay": "flip-down"
+  },
+  {
+    "image": "../../assets/images/ngUniversal.png",
+    "blogImageTitle": "Angular Universal",
+    "blogTitle": "Benefits of using Angular Universal in your Angular project",
+    "blogDate": "26 Jan. 2019",
+    "blogUrl": "http://www.marvinrusinek.com/blog/2019/01/26/Angular-Universal/",
+    "duration": "2000",
+    "animation": "1000",
+    "delay": "flip-down"
+  },
+  {
+    "image": "../../assets/images/emailjs-code.png",
+    "blogImageTitle": "EmailJS with Angular reactive form",
+    "blogTitle": "How to use EmailJS in your Angular reactive form",
+    "blogDate": "26 Jan. 2019",
+    "blogUrl": "http://www.marvinrusinek.com/blog/2019/01/26/EmailJS/",
+    "duration": "2000",
+    "animation": "1500",
+    "delay": "flip-down"
+  }
+]

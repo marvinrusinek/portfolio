@@ -1,26 +1,26 @@
 <section id="blog" class="blog container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
   <h2 class="heading" data-sal-duration="400" data-sal="slide-up" data-sal-delay="200">Blog</h2>
-  <ul>
-    <li>
-      <time class="date">29 Jan. 2019</time>
-      <span class="title">
-        <a href="http://www.marvinrusinek.com/blog/2019/01/29/JSON-and-Data-Binding/" target="_blank">JSON and Two-Way
-          Data-Binding</a>
-      </span>
-    </li>
-    <li>
-      <time class="date">26 Jan. 2019</time>
-      <span class="title">
-        <a href="http://www.marvinrusinek.com/blog/2019/01/26/Angular-Universal/" target="_blank">Benefits of using
-          Angular Universal in your Angular project</a>
-      </span>
-    </li>
-    <li>
-      <time class="date">26 Jan. 2019</time>
-      <span class="title">
-        <a href="http://www.marvinrusinek.com/blog/2019/01/26/EmailJS/" target="_blank">How to use EmailJS in your
-          Angular reactive form</a>
-      </span>
-    </li>
-  </ul>
+  <p class="align-blog-subheading"><a href="http://www.marvinrusinek.com/blog">Click here to view my blog website</a></p>
+
+  <div class="container">
+    <div class="row">
+      <p class="my-latest-posts-text">My Latest Posts:</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" *ngFor="let blogpost of blogposts"
+           data-sal-duration="blogpost.duration" data-sal="blogpost.animation" data-sal-delay="blogpost.delay">
+        <figure>
+          <img src={{blogpost.image}} class="blog-component-image" title={{blogpost.blogImageTitle}} />
+        </figure>
+        <figcaption>
+          <span class="title">{{blogpost.blogTitle}}</span>
+          <!--<time class="date">29 Jan. 2019</time>-->
+          <a href={{blogpost.blogUrl}} class="btn" target="_blank">View blog</a>
+        </figcaption>
+      </div>
+    </div>
+  </div>
 </section>
