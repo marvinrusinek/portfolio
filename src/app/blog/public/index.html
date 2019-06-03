@@ -16,6 +16,9 @@
     <link rel="icon" href="/favicon.png">
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles-sidebar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
   <body>
@@ -24,42 +27,43 @@
         <header id="header">
           <div id="banner"></div>
           <div id="header-outer" class="outer">
-          <div id="header-title" class="inner">
-            <h1 id="logo-wrap">
-              <a href="/" id="logo">Welcome to my Web Development Blog!</a>
-            </h1>
-          </div>
-          <div id="header-inner" class="inner">
-            <nav id="main-nav">
-              <a id="main-nav-toggle" class="nav-icon"></a>
-                <a class="main-nav-link" href="/">Home</a>
-            </nav>
-            <nav id="sub-nav">
-              <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-            </nav>
-            <div id="search-form-wrap">
-              <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-                <input type="search" name="q" class="search-form-input" placeholder="Search">
-                <button type="submit" class="search-form-submit">&#xF002;</button>
-                <input type="hidden" name="sitesearch" value="http://www.marvinrusinek.com"></form>
+            <div id="header-title" class="inner" style="margin-top: -40px;">
+              <h1 id="logo-wrap">
+                <a href="/blog" id="logo">Marvin Rusinek Blog</a><br />
+                <span style="color: #ffffff; font-size: 16px;">Angular and JavaScript Web Development</span>
+              </h1>
+            </div>
+            <div id="header-inner" class="inner">
+              <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                  <a class="main-nav-link nounderline" href="/">Home</a>
+              </nav>
+              <nav id="sub-nav">
+                <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+              </nav>
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+                  <input type="search" name="q" class="search-form-input" placeholder="Search">
+                  <button type="submit" class="search-form-submit">&#xF002;</button>
+                  <input type="hidden" name="sitesearch" value="http://www.marvinrusinek.com"></form>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
 
         <div class="outer">
           <section id="main">
             <article id="post-JSON-and-Data-Binding" class="article article-type-post" itemscope="" itemprop="blogPost">
               <div class="article-meta">
                 <a href="/blog/2019/01/29/JSON-and-Data-Binding/" class="article-date">
-                  <time datetime="2019-01-29T19:00:00.000Z" itemprop="datePublished">2019-01-29</time>
+                  <time datetime="2019-01-29T19:00:00.000Z" itemprop="datePublished">Tuesday, January 29, 2019</time>
                 </a>
               </div>
               <div class="article-inner">
                 <header class="article-header">
-                  <h1 itemprop="name">
+                  <h5 itemprop="name">
                     <a class="article-title" href="/blog/2019/01/29/JSON-and-Data-Binding/">JSON and Two-Way Data-Binding</a>
-                  </h1>
+                  </h5>
                 </header>
                 <div class="article-entry" itemprop="articleBody">
                   <p>One of the interesting aspects of Angular is the ability to bind data from a model to the view and
@@ -147,14 +151,14 @@ export interface IProject {
             <article id="post-Angular-Universal" class="article article-type-post" itemscope="" itemprop="blogPost">
               <div class="article-meta">
                 <a href="/blog/2019/01/26/Angular-Universal/" class="article-date">
-                  <time datetime="2019-01-26T19:00:00.000Z" itemprop="datePublished">2019-01-26</time>
+                  <time datetime="2019-01-26T19:00:00.000Z" itemprop="datePublished">Saturday, January 26, 2019</time>
                 </a>
               </div>
               <div class="article-inner">
                 <header class="article-header">
-                  <h1 itemprop="name">
-                    <a class="article-title" href="/blog/2019/01/26/Angular-Universal/">Benefits of using Angular Universal in your Angular project</a>
-                  </h1>
+                  <h5 itemprop="name">
+                    <a class="article-title" href="/blog/2019/01/26/Angular-Universal/">Angular Universal (SSR)</a>
+                  </h5>
                 </header>
 
               <div class="article-entry" itemprop="articleBody">
@@ -195,20 +199,19 @@ export interface IProject {
             <article id="post-EmailJS" class="article article-type-post" itemscope="" itemprop="blogPost">
               <div class="article-meta">
                 <a href="/blog/2019/01/26/EmailJS/" class="article-date">
-                  <time datetime="2019-01-26T19:00:00.000Z" itemprop="datePublished">2019-01-26</time>
+                  <time datetime="2019-01-26T19:00:00.000Z" itemprop="datePublished">Saturday, January 26, 2019</time>
                 </a>
               </div>
               <div class="article-inner">
                 <header class="article-header">
-                  <h1 itemprop="name">
-                    <a class="article-title" href="/blog/2019/01/26/EmailJS/">How to use EmailJS in your Angular reactive form</a>
-                  </h1>
+                  <h5 itemprop="name">
+                    <a class="article-title" href="/blog/2019/01/26/EmailJS/">EmailJS in your reactive form</a>
+                  </h5>
                 </header>
                 <div class="article-entry" itemprop="articleBody">
-                  <p>This blog post is actually a combination of Angular with some JavaScript. I was really interested
-                  in setting up the form submission in Angular and utilized the EmailJS library to make this possible
-                  (after an unsuccessful try with NodeJS).  I recently added EmailJS to my portfolio website to
-                  configure and set up the form using Angular 7.</p>
+                  <p>I was really interested in setting up the submission for a reactive form in Angular and utilized
+                  the EmailJS library to make this possible (after an unsuccessful try with NodeJS). I recently added
+                  EmailJS to my portfolio website to configure and set up the form using Angular 7.</p>
                   <p><a href="http://www.emailjs.com" target="_blank">EmailJS</a> is a JavaScript solution for getting a
                   form set up on the client-side with minimal effort. Although it took me quite a while to figure it out
                   (and the customer support was very patient with me and really pulled through in the end),
@@ -335,18 +338,22 @@ export class ContactComponent {
     <article id="post-My-First-Blog-Post" class="article article-type-post" itemscope="" itemprop="blogPost">
       <div class="article-meta">
         <a href="/blog/2019/01/10/My-First-Blog-Post/" class="article-date">
-          <time datetime="2019-01-10T19:19:03.000Z" itemprop="datePublished">2019-01-10</time>
+          <time datetime="2019-01-10T19:19:03.000Z" itemprop="datePublished">Thursday, January 10, 2019</time>
         </a>
       </div>
       <div class="article-inner">
         <header class="article-header">
-          <h1 itemprop="name">
+          <h5 itemprop="name">
             <a class="article-title" href="/blog/2019/01/10/My-First-Blog-Post/">My First Blog Post</a>
-          </h1>
+          </h5>
         </header>
         <div class="article-entry" itemprop="articleBody">
-            <p>Welcome! I plan on posting soon about JavaScript and Angular goodness! Please stay tuned.</p>
-            <p>-Marvin</p>
+          <p>Hello and welcome to my blog! My name is Marvin Rusinek and with this blog website I hope to share with
+          you my experiences and skills that I am learning in web development, specifically with JavaScript and the
+          Angular framework. In the upcoming blogs I hope to share with you the things I have been learning in Angular
+          in the last couple months from courses I have taken online and I hope this information will be useful to you.
+          See you in the next blogs. Please stay tuned!</p>
+          <p>-Marvin</p>
         </div>
         <footer class="article-footer">
           <a data-url="http://www.marvinrusinek.com/blog/2019/01/10/My-First-Blog-Post/"
@@ -356,18 +363,48 @@ export class ContactComponent {
     </article>
   </section>
   <aside id="sidebar">
-    <div class="widget-wrap">
-      <h3 class="widget-title">Recent Posts</h3>
-      <div class="widget">
-        <ul>
+    <div class="widget-wrap widget-wrap-contact-box">
+      <img src="../../../assets/images/marvin-about.jpg" class="rounded-circle my-image" /><br />
+      <h3 class="name-center">Marvin Rusinek&nbsp;&nbsp;</h3><br />
+      <div class="sm-lift-center">
+        <span class="text-center sm-icons-align">
+          <a href="https://www.twitter.com/marvinrusinek" class="nounderline" target="_blank">
+            <img src="../../../assets/images/contact/twitter.svg" height="25" width="25" />
+          </a>&nbsp;
+          <a href="https://www.linkedin.com/in/marvin-rusinek-10b3994/" class="nounderline" target="_blank">
+            <img src="../../../assets/images/contact/linkedin.gif" height="25" width="25" />
+          </a>&nbsp;
+          <a href="https://github.com/marvinrusinek" class="nounderline" target="_blank">
+            <img src="../../../assets/images/contact/github.png" height="25" width="25" />
+          </a>
+        </span><br />
+        <div class="interests">
+          <span><i>Programming</i> | <i>Blogging</i></span>
+        </div>
+      </div>
+      <p class="dev-exp-align"><i>Angular and JavaScript Developer with experience in C# and Java programming</i></p>
+      <span class="text-center">
+        <a href="http://www.marvinrusinek.com/index.html#contact" target="_blank" title="Contact Me" class="contact-cta">Contact Me</a>
+      </span>
+      <br />
+      <div class="location-education-align">
+        <span class="location-education-span">Location:</span><br />Brooklyn, NY</span><br />
+        <span class="location-education-span">Education:</span><br />NYU Tandon School of Engineering</span>
+      </div>
+    </div>
+    <div class="widget-wrap widget-wrap-latest-posts">
+      <h3 class="widget-title">Latest Posts</h3>
+      <!-- insert underline -->
+      <div class="widget widget-latest-posts-inner-div">
+        <ul class="latest-posts-ul">
           <li>
             <a href="/blog/2019/01/29/JSON-and-Data-Binding/">JSON and Two-Way Data-Binding</a>
           </li>
           <li>
-            <a href="/blog/2019/01/26/Angular-Universal/">The benefits of using Angular Universal in your Angular project</a>
+            <a href="/blog/2019/01/26/Angular-Universal/">Angular Universal (SSR)</a>
           </li>
           <li>
-            <a href="/blog/2019/01/26/EmailJS/">How to use EmailJS in your Angular reactive form</a>
+            <a href="/blog/2019/01/26/EmailJS/">EmailJS in your reactive form</a>
           </li>
           <li>
             <a href="/blog/2019/01/10/My-First-Blog-Post/">My First Blog Post</a>
@@ -379,15 +416,15 @@ export class ContactComponent {
   </div>
   <footer id="footer">
     <div class="outer">
-      <div id="footer-info" class="inner">
+      <div id="footer-info" class="inner text-center">
         &copy; 2019 Marvin Rusinek<br />
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
       </div>
     </div>
   </footer>
   </div>
   <nav id="mobile-nav">
-    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/" class="mobile-nav-link nounderline">Home</a>
   </nav>
   </div>
 </body>

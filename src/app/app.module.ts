@@ -5,20 +5,22 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 // import { MATERIAL_COMPATIBILITY_MODE } from '@angular/material';
-import { MatTabsModule, MatIconModule, MatChipsModule } from '@angular/material';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 import { NgBackToTopModule } from 'ng-back-to-top';
-// import { ParallaxModule } from "ngx-parallax/lib/parallax.module";
+import { ParallaxModule } from "ngx-parallax/lib/parallax.module";
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { ParallaxScrollModule } from 'ng2-parallaxscroll';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+//noinspection TypeScriptCheckImport
 
 import { RecaptchaModule, RecaptchaSettings, RECAPTCHA_SETTINGS } from 'ng-recaptcha';
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
@@ -107,13 +109,12 @@ import { BlogPostService } from "./shared/services/blogpost.service";
     RecaptchaFormsModule,
     NgBackToTopModule,
     NgsRevealModule,
-    // ParallaxModule
+    ParallaxModule,
     ParallaxScrollModule,
     MglTimelineModule,
     FlexLayoutModule,
     InViewportModule,
-    ScrollSpyModule.forRoot(),
-    CarouselModule
+    ScrollSpyModule.forRoot()
   ],
   providers: [
     // AngularFireDatabase,

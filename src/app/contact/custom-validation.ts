@@ -1,5 +1,5 @@
 import { FormGroup, FormControl, FormGroupDirective, NgForm, ValidatorFn } from '@angular/forms';
-import { ErrorStateMatcher } from '@angular/material';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 /**
  * Custom validator functions for reactive form validation

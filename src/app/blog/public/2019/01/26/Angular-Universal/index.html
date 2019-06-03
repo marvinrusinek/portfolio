@@ -2,22 +2,25 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
-  <title>Benefits of using Angular Universal in your Angular project</title>
+  <title>Angular Universal (SSR)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Angular Universal is a way of making your front-end code render faster">
+  <meta name="description" content="Angular Universal (SSR) is a way of making your front-end code render faster">
   <meta property="og:title" content="Benefits of using Angular Universal in your Angular project">
   <meta property="og:url" content="http://www.marvinrusinek.com/2019/01/26/Angular-Universal/index.html">
   <meta property="og:site_name" content="Hexo">
-  <meta property="og:description" content="Angular Universal is a way of making your front-end code render faster">
+  <meta property="og:description" content="Angular Universal (SSR) is a way of making your front-end code render faster">
   <meta property="og:locale" content="default">
   <meta property="og:updated_time" content="2019-01-29T15:20:31.076Z">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Benefits of using Angular Universal in your Angular project">
-  <meta name="twitter:description" content="Angular Universal is a way of making your front-end code render faster">
+  <meta name="twitter:title" content="Angular Universal (SSR)">
+  <meta name="twitter:description" content="Angular Universal (SSR) is a way of making your front-end code render faster">
   <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   <link rel="icon" href="/favicon.png">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="http://www.marvinrusinek.com/blog/css/style.css">
+  <link rel="stylesheet" href="http://www.marvinrusinek.com/blog/css/styles-sidebar.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 </html>
 <body>
@@ -25,71 +28,72 @@
     <div id="wrap">
       <header id="header">
         <div id="banner"></div>
-        <div id="header-outer" class="outer">
-        <div id="header-title" class="inner">
-          <h1 id="logo-wrap">
-            <a href="/" id="logo">Welcome to my Web Development Blog!</a>
-          </h1>
-        </div>
-        <div id="header-inner" class="inner">
-          <nav id="main-nav">
-            <a id="main-nav-toggle" class="nav-icon"></a>
-              <a class="main-nav-link" href="/">Home</a>
-          </nav>
-          <nav id="sub-nav">
-            <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-          </nav>
-          <div id="search-form-wrap">
-            <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-              <input type="search" name="q" class="search-form-input" placeholder="Search">
-              <button type="submit" class="search-form-submit">&#xF002;</button>
-              <input type="hidden" name="sitesearch" value="http://www.marvinrusinek.com"></form>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="outer">
-      <section id="main">
-        <article id="post-Angular-Universal" class="article article-type-post" itemscope="" itemprop="blogPost">
-          <div class="article-meta">
-            <a href="/blog/2019/01/26/Angular-Universal/" class="article-date">
-              <time datetime="2019-01-26T19:00:00.000Z" itemprop="datePublished">2019-01-26</time>
-            </a>
-          </div>
-          <div class="article-inner">
-            <header class="article-header">
-              <h1 class="article-title" itemprop="name">
-                Benefits of using Angular Universal in your Angular project
+          <div id="header-outer" class="outer">
+            <div id="header-title" class="inner" style="margin-top: -40px;">
+              <h1 id="logo-wrap">
+                <a href="/blog" id="logo">Marvin Rusinek Blog</a><br />
+                <span style="color: #ffffff; font-size: 16px;">Angular and JavaScript Web Development</span>
               </h1>
-            </header>
+            </div>
+            <div id="header-inner" class="inner">
+              <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                  <a class="main-nav-link nounderline" href="/">Home</a>
+              </nav>
+              <nav id="sub-nav">
+                <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+              </nav>
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+                  <input type="search" name="q" class="search-form-input" placeholder="Search">
+                  <button type="submit" class="search-form-submit">&#xF002;</button>
+                  <input type="hidden" name="sitesearch" value="http://www.marvinrusinek.com"></form>
+              </div>
+            </div>
+          </div>
+      </header>
+      <div class="outer">
+        <section id="main">
+          <article id="post-Angular-Universal" class="article article-type-post" itemscope="" itemprop="blogPost">
+            <div class="article-meta">
+              <a href="/blog/2019/01/26/Angular-Universal/" class="article-date">
+                <time datetime="2019-01-26T19:00:00.000Z" itemprop="datePublished">Saturday, January 26, 2019</time>
+              </a>
+            </div>
+            <div class="article-inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">
+                  Benefits of using Angular Universal in your Angular project
+                </h1>
+              </header>
 
-            <div class="article-entry" itemprop="articleBody">
-              <p>Angular Universal is a way of making your front-end code render faster by putting a runnable version
-              of your code on a server. The benefit is to make your code run faster in the browser and it is basically a
-              cached version that the server understands and passes back to the client before the page gets load. This
-              is known as Server-Side Rendering (SSR). In addition to the SSR aspect, Angular Universal makes your
-              index.html file indexable by a search engine which has great benefit for the website’s searchability known
-              as Search Engine Optimization (SEO).</p>
-              <p>I was intrigued by this dual benefit when I started learning about Angular Universal by taking a course
-              on Udemy (“Angular 5 - The Complete Guide”). In the course, Maximilian Schwarzmuller gives a thorough setup
-              of the NodeJS code needed to communicate with the backend along with various configurations. In the end, a
-              server.js file gets created which contains the runnable client-side code on the backend. This file can
-              then be deployed to a server that has NodeJS enabled. There are several commands necessary to get this to
-              work. They are as follows:</p>
-              <p>ng build –prod –aot –build-optimizer=true         // this builds the browser version of the code<br>
-              ng run PROJECTNAME:server                           // this creates a runnable version of the project on the server<br>
-              npm run webpack:server                              // webpack creates a minified version of the project that can be run on the server<br>
-              node dist/server.js                                 // runs the server.js file on localhost:4000</p>
-              <p>I ran these commands on the command line for my project after doing the necessary configurations, but I
-              have encountered a Deprecation Warning as follows:<br>(node:9724) [DEP0005] DeprecationWarning: Buffer()
-              is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(),
-              or Buffer.from() methods instead.</p>
-              <p>I suppose I could deploy it as follows, but the code delivered to the front-end is not pretty and I
-              would like to resolve this warning so that the code in the browser displays correctly. After some
-              Googling, it seems that it might have to do something with yarn. The warning might be because I had yarn
-              installed and maybe that’s why it&apos;s complaining, I&apos;m not entirely sure. Maybe I need to build
-              the project with yarn??? If anyone reads this blog post, any help with this would be greatly appreciated.
-              Please contact me directly through my website. Thanks.</p>
+              <div class="article-entry" itemprop="articleBody">
+                <p>Angular Universal is a way of making your front-end code render faster by putting a runnable version
+                of your code on a server. The benefit is to make your code run faster in the browser and it is basically
+                a cached version that the server understands and passes back to the client before the page gets load.
+                This is known as Server-Side Rendering (SSR). In addition to the SSR aspect, Angular Universal makes
+                your index.html file indexable by a search engine which has great benefit for the website’s searchability
+                known as Search Engine Optimization (SEO).</p>
+                <p>I was intrigued by this dual benefit when I started learning about Angular Universal by taking a
+                course on Udemy (“Angular 5 - The Complete Guide”). In the course, Maximilian Schwarzmuller gives a
+                thorough setup of the NodeJS code needed to communicate with the backend along with various
+                configurations. In the end, a server.js file gets created which contains the runnable client-side code
+                on the backend. This file can then be deployed to a server that has NodeJS enabled. There are several
+                commands necessary to get this to work. They are as follows:</p>
+                <p>ng build –prod –aot –build-optimizer=true         // this builds the browser version of the code<br>
+                ng run PROJECTNAME:server                           // this creates a runnable version of the project on the server<br>
+                npm run webpack:server                              // webpack creates a minified version of the project that can be run on the server<br>
+                node dist/server.js                                 // runs the server.js file on localhost:4000</p>
+                <p>I ran these commands on the command line for my project after doing the necessary configurations, but
+                I have encountered a Deprecation Warning as follows:<br>(node:9724) [DEP0005] DeprecationWarning:
+                Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(),
+                Buffer.allocUnsafe(), or Buffer.from() methods instead.</p>
+                <p>I suppose I could deploy it as follows, but the code delivered to the front-end is not pretty and I
+                would like to resolve this warning so that the code in the browser displays correctly. After some
+                Googling, it seems that it might have to do something with yarn. The warning might be because I had yarn
+                installed and maybe that’s why it&apos;s complaining, I&apos;m not entirely sure. Maybe I need to build
+                the project with yarn??? If anyone reads this blog post, any help with this would be greatly appreciated.
+                Please contact me directly through my website. Thanks.</p>
             </div>
 
             <footer class="article-footer">
@@ -99,35 +103,65 @@
           </div>
 
           <nav id="article-nav">
-              <a href="/blog/2019/01/26/EmailJS/" id="article-nav-newer" class="article-nav-link-wrap">
-                <strong class="article-nav-caption">Newer</strong>
-                <div class="article-nav-title">
-                    How to use EmailJS in your Angular reactive form
-                </div>
-              </a>
-              <a href="/blog/2019/01/10/My-First-Blog-Post/" id="article-nav-older" class="article-nav-link-wrap">
-                <strong class="article-nav-caption">Older</strong>
-                <div class="article-nav-title">My First Blog Post</div>
-              </a>
+            <a href="/blog/2019/01/26/EmailJS/" id="article-nav-newer" class="article-nav-link-wrap nounderline">
+              <strong class="article-nav-caption">Newer</strong>
+              <div class="article-nav-title">
+                EmailJS in your reactive form
+              </div>
+            </a>
+            <a href="/blog/2019/01/10/My-First-Blog-Post/" id="article-nav-older" class="article-nav-link-wrap nounderline">
+              <strong class="article-nav-caption">Older</strong>
+              <div class="article-nav-title">My First Blog Post</div>
+            </a>
           </nav>
         </article>
       </section>
 
       <aside id="sidebar">
-        <div class="widget-wrap">
-          <h3 class="widget-title">Recent Posts</h3>
-          <div class="widget">
-            <ul>
+        <div class="widget-wrap widget-wrap-contact-box">
+          <img src="../../../../../../assets/images/marvin-about.jpg" class="rounded-circle my-image" /><br />
+          <h3 class="name-center">Marvin Rusinek&nbsp;&nbsp;</h3><br />
+          <div class="sm-lift-center">
+              <span class="text-center sm-icons-align">
+                <a href="https://www.twitter.com/marvinrusinek" class="nounderline" target="_blank">
+                  <img src="../../../../../../assets/images/contact/twitter.svg" height="25" width="25" />
+                </a>&nbsp;
+                <a href="https://www.linkedin.com/in/marvin-rusinek-10b3994/" class="nounderline" target="_blank">
+                  <img src="../../../../../../assets/images/contact/linkedin.gif" height="25" width="25" />
+                </a>&nbsp;
+                <a href="https://github.com/marvinrusinek" class="nounderline" target="_blank">
+                  <img src="../../../../../../assets/images/contact/github.png" height="25" width="25" />
+                </a>
+              </span><br />
+            <div class="interests">
+              <span><i>Programming</i> | <i>Blogging</i></span>
+            </div>
+          </div>
+          <p class="dev-exp-align"><i>Angular and JavaScript Developer with experience in C# and Java programming</i></p>
+              <span class="text-center">
+                <a href="http://www.marvinrusinek.com/index.html#contact" target="_blank" title="Contact Me" class="contact-cta">Contact Me</a>
+              </span>
+          <br />
+          <div class="location-education-align">
+            <span class="location-education-span">Location:</span><br />Brooklyn, NY</span><br />
+            <span class="location-education-span">Education:</span><br />NYU Tandon School of Engineering</span>
+          </div>
+        </div>
+
+        <div class="widget-wrap widget-wrap-latest-posts">
+          <h3 class="widget-title">Latest Posts</h3>
+          <div class="widget widget-latest-posts-inner-div">
+            <ul class="latest-posts-ul">
               <li>
                 <a href="/blog/2019/01/29/JSON-and-Data-Binding/">JSON and Two-Way Data-Binding</a>
               </li>
               <li>
-                <a href="/blog/2019/01/26/EmailJS/">How to use EmailJS in your Angular reactive form</a>
+                <a href="/blog/2019/01/26/EmailJS/">EmailJS in your reactive form</a>
               </li>
               <li>
-                <a href="/blog/2019/01/26/Angular-Universal/">Benefits of using Angular Universal in your Angular
-                  project</a>
+                <a href="/blog/2019/01/26/Angular-Universal/">Angular Universal (SSR)</a>
               </li>
+              <li>
                 <a href="/blog/2019/01/10/My-First-Blog-Post/">My First Blog Post</a>
               </li>
             </ul>
@@ -138,16 +172,16 @@
 
     <footer id="footer">
       <div class="outer">
-        <div id="footer-info" class="inner">
+        <div id="footer-info" class="inner text-center">
           &copy; 2019 Marvin Rusinek<br>
-          Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+          Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
         </div>
       </div>
     </footer>
   </div>
 
   <nav id="mobile-nav">
-    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/" class="mobile-nav-link nounderline">Home</a>
   </nav>
   </div>
   </body>

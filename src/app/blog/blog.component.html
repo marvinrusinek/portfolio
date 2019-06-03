@@ -1,6 +1,5 @@
 <section id="blog" class="blog container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
   <h2 class="heading" data-sal-duration="400" data-sal="slide-up" data-sal-delay="200">Blog</h2>
-  <p class="align-blog-subheading"><a href="http://www.marvinrusinek.com/blog">Click here to view my blog website</a></p>
 
   <div class="container">
     <div class="row">
@@ -13,14 +12,19 @@
       <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" *ngFor="let blogpost of blogposts"
            data-sal-duration="blogpost.duration" data-sal="blogpost.animation" data-sal-delay="blogpost.delay">
         <figure>
-          <img src={{blogpost.image}} class="blog-component-image" title={{blogpost.blogImageTitle}} />
+          <img src={{blogpost.image}} class="blog-component-image" title={{blogpost.imageTitle}} />
         </figure>
         <figcaption>
-          <span class="title">{{blogpost.blogTitle}}</span>
-          <!--<time class="date">29 Jan. 2019</time>-->
-          <a href={{blogpost.blogUrl}} class="btn" target="_blank">View blog</a>
+          <span class="title">{{blogpost.title}}</span>
+          <time class="date">{{blogpost.datePublished}}</time>
+          <p class="text-justify">{{blogpost.teaser}}</p>
+          <a href={{blogpost.url}} target="_blank" style="text-decoration: none">More >> </a>
         </figcaption>
       </div>
     </div>
   </div>
+
+  <p class="blog-subheading-align">
+    <a href="http://www.marvinrusinek.com/blog" target="_blank" title="Blog">Click to view the entire blog website</a>
+  </p>
 </section>
