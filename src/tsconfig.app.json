@@ -8,6 +8,10 @@
   /* "angularCompilerOptions": {
     "enableIvy": true
   }, */
+  "include": [
+    "main.ts",
+    "polyfills.ts"
+  ],
   "exclude": [
     "test.ts",
     "**/*.spec.ts"

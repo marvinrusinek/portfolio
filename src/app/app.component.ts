@@ -7,7 +7,7 @@ const hasDocument = typeof document === 'object';
 const hasWindow = typeof window === 'object';
 const isBrowser = hasDocument && hasWindow;
 
-export class CarouselData {
+/* export class CarouselData {
   id?: string;
   text: string;
   dataMerge?: number;
@@ -15,7 +15,7 @@ export class CarouselData {
   dotContent?: string;
   src?: string;
   dataHash?: string;
-}
+} */
 
 @Component({
   selector: 'app-root',
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  carouselData: CarouselData[] = [
+/*   carouselData: CarouselData[] = [
     { text: 'Slide 1', src: 'assets/images/350x450&text=1.png', dataMerge: 2, width: 300, dotContent: 'text1', dataHash: 'one'},
     { text: 'Slide 2', src: 'assets/images/350x650&text=2.png', dataMerge: 1, width: 500, dotContent: 'text2', dataHash: 'two'},
     { text: 'Slide 3', src: 'assets/images/350x250&text=3-fallback.png', dataMerge: 3, dotContent: 'text3', dataHash: 'three'},
@@ -46,10 +46,10 @@ export class AppComponent implements OnInit {
   ];
   title = 'owl-carousel-libdemo';
   owlNext = '&rarr;';
-  owlPrev = '&larr;';
+  owlPrev = '&larr;'; */
 
 
-  customOptions: any = {
+/*  customOptions: any = {
     // autoWidth: true,
     loop: true,
     // autoHeight: true,
@@ -125,5 +125,5 @@ export class AppComponent implements OnInit {
     const startClasses: any = { ...this.classes};
     delete startClasses['fade-spin'];
     this.classes = startClasses;
-  }
+  } */
 }

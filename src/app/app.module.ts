@@ -25,6 +25,7 @@ import { ScrollSpyModule } from '@thisissoon/angular-scrollspy';
 import { RecaptchaModule, RecaptchaSettings, RECAPTCHA_SETTINGS } from 'ng-recaptcha';
 import { RecaptchaFormsModule } from 'ng-recaptcha/forms';
 
+
 import { appRoutes } from './app-routing.module';
 
 import { AppComponent } from './app.component';

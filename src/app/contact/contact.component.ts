@@ -10,6 +10,7 @@ import { ContactInfoService } from "../shared/services/contactinfo.service";
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
+
 export class ContactComponent implements OnInit {
   public contactFormFields = [];
   public contactMethods = [];

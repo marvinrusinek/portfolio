@@ -3,6 +3,18 @@
 
   <div class="container">
     <div class="row">
+      <p class="intro">The purpose of this blog is to share aspects of Angular and JavaScript that I find interesting. I
+      enjoy blogging because it allows me to provide others with my insights as a web developer as well as for informing
+      my own projects.</p>
+    </div>
+  </div>
+
+  <p class="blog-subheading-align">
+    <a href="http://www.marvinrusinek.com/blog" target="_blank" title="Blog">Click here to view my blog</a>
+  </p>
+
+  <div class="container">
+    <div class="row">
       <p class="my-latest-posts-text">My Latest Posts:</p>
     </div>
   </div>
@@ -16,15 +28,11 @@
         </figure>
         <figcaption>
           <span class="title">{{blogpost.title}}</span>
-          <time class="date">{{blogpost.datePublished}}</time>
+          <time class="date">{{ blogpost.datePublished | date:'longDate' }}</time>
           <p class="text-justify">{{blogpost.teaser}}</p>
-          <a href={{blogpost.url}} target="_blank" style="text-decoration: none">More >> </a>
+          <a href={{blogpost.url}} target="_blank" class="btn">View more »</a>
         </figcaption>
       </div>
     </div>
   </div>
-
-  <p class="blog-subheading-align">
-    <a href="http://www.marvinrusinek.com/blog" target="_blank" title="Blog">Click to view the entire blog website</a>
-  </p>
 </section>
