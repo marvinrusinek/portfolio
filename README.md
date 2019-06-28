@@ -5,6 +5,7 @@ My portfolio website is live on www.marvinrusinek.com
 The website demonstrates my Angular expertise with:
    - Angular-CLI
    - Component architecture
+   - Single Page Application
    - Interface design
    - RESTful API using RxJS and Observables
    - Two-way data-binding (working with JSON)
