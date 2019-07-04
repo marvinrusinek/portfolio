@@ -25,7 +25,7 @@ The website also showcases my knowledge of
    - CSS3/SCSS (Flexbox)
    - JavaScript/jQuery
    - Bootstrap and Foundation
-   - Scrolling animations
+   - Animations/scrolling animations
    - git
 
 This project can NOT be used for any purpose without written permission.
