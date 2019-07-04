@@ -1,4 +1,4 @@
-Portfolio Website (Angular v.7)
+Portfolio Website (Angular v.8)
 
 My portfolio website is live on www.marvinrusinek.com
 
