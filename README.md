@@ -17,8 +17,7 @@ The website demonstrates my Angular expertise with:
    - Angular Routing
    - Angular Material
    - Server Side Rendering using Angular Universal (in progress)
-   - NPM Package integration (Isotope, sal.js, hexo, etc.)
-   - SSL
+   - NPM Package integration (Isotope, sal.js, ngx-slick-carousel, hexo)
    
 The website also showcases my knowledge of    
    - HTML5
