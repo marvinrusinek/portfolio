@@ -15,7 +15,7 @@ The website demonstrates my Angular expertise with:
    - Modals
    - Reactive forms (validation/submission)
    - Angular Routing
-   - Angular Material
+   - Angular Material and Material Design Components (MDC)
    - Server Side Rendering using Angular Universal (in progress)
    - NPM Package integration (Isotope, sal.js, ngx-slick-carousel, hexo)
    
